@@ -1,0 +1,227 @@
+.section {
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 3rem 4rem;
+  }
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bentoGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bentoItem {
+  background-color: var(--surface-container-lowest);
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+.bentoItem:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.largeItem {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .largeItem {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+.textItem {
+  grid-column: span 1;
+  background-color: var(--surface-container-low);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+@media (min-width: 768px) {
+  .textItem {
+    grid-column: span 2;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 20;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 62, 199, 0.3);
+}
+
+.imageContainerLarge {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageContainerLarge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.bentoItem:hover .overlay {
+  opacity: 1;
+}
+
+.infoLarge {
+  padding: 2rem;
+  background: var(--surface-container-lowest);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bentoItem:hover .infoLarge {
+  transform: translateY(0);
+}
+
+.titleLarge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--on-surface);
+}
+
+.descLarge {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.priceLarge {
+  font-size: 1.125rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--primary);
+}
+
+.headingTech {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: italic;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  color: var(--on-surface);
+  background: linear-gradient(135deg, var(--on-surface) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descTech {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  max-width: 20rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btnExplore {
+  width: fit-content;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--on-surface);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.btnExplore:hover {
+  color: var(--primary);
+}
+
+.imageContainerSmall {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageContainerSmall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoSmall {
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, var(--surface-container-lowest) 70%, transparent);
+}
+
+.titleSmall {
+  font-size: 0.875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+  color: var(--on-surface);
+}
+
+.priceSmall {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+}

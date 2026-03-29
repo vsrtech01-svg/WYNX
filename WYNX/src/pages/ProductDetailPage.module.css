@@ -1,0 +1,392 @@
+.breadcrumb {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+  .breadcrumb {
+    padding: 1.5rem 4rem;
+  }
+}
+
+.breadcrumb a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: var(--primary);
+}
+
+.currentPage {
+  color: var(--on-surface);
+  font-weight: 700;
+}
+
+.productDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem 4rem;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .productDetail {
+    flex-direction: row;
+    padding: 0 4rem 6rem;
+    gap: 4rem;
+  }
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.mainImage {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  background-color: var(--surface-container-low);
+}
+
+.mainImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 20;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 62, 199, 0.3);
+}
+
+.infoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryLabel {
+  font-size: 0.625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.productName {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color: var(--on-surface);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .productName {
+    font-size: 3rem;
+  }
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--on-surface);
+}
+
+.oldPrice {
+  font-size: 1.125rem;
+  color: var(--outline);
+  text-decoration: line-through;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+}
+
+.sectionLabel {
+  font-size: 0.625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--outline);
+  margin-bottom: 1rem;
+}
+
+.sizeSection {
+  margin-bottom: 2rem;
+}
+
+.sizeGrid {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sizeBtn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: var(--surface-container-highest);
+  color: var(--on-surface);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.sizeBtn:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.activeSizeBtn {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 76, 237, 0.2);
+}
+
+.activeSizeBtn:hover {
+  background-color: var(--primary);
+}
+
+.quantitySection {
+  margin-bottom: 2rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qtyBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface-container-highest);
+  border-radius: 6px;
+  color: var(--on-surface);
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.qtyBtn:hover {
+  background-color: var(--surface-container-high);
+}
+
+.qtyValue {
+  font-size: 1.125rem;
+  font-weight: 900;
+  min-width: 2rem;
+  text-align: center;
+  color: var(--on-surface);
+}
+
+.addToCartBtn {
+  width: 100%;
+  max-width: 24rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,62,199,0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.disabledBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.addedBtn {
+  background-color: #16a34a;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+}
+
+.btnContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.features {
+  border-top: 1px solid var(--surface-container-highest);
+  padding-top: 2rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureList li {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.featureList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Related Products */
+.relatedSection {
+  padding: 0 2.5rem 5rem;
+  border-top: 2px solid var(--surface-container-highest);
+  padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .relatedSection {
+    padding: 0 4rem 6rem;
+    padding-top: 4rem;
+  }
+}
+
+.relatedHeader {
+  margin-bottom: 2rem;
+}
+
+.relatedTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  color: var(--on-surface);
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .relatedGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.relatedCard {
+  cursor: pointer;
+}
+
+.relatedImage {
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: var(--surface-container-low);
+}
+
+.relatedImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relatedName {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  color: var(--on-surface);
+}
+
+.relatedPrice {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+/* Not Found */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.notFound h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  margin-bottom: 0.5rem;
+}
+
+.notFound p {
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,198 @@
+.searchNotice {
+  padding: 1rem 2.5rem;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  background: var(--surface-container-low);
+  border-bottom: 1px solid var(--surface-container-highest);
+}
+
+@media (min-width: 768px) {
+  .searchNotice {
+    padding: 1rem 4rem;
+  }
+}
+
+.section {
+  padding: 0 2.5rem 5rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 0 4rem 8rem 4rem;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--surface-container-highest);
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  color: var(--on-surface);
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.count {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.productCard {
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background-color: var(--surface-container-low);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, var(--secondary-container) 0%, var(--primary-fixed) 100%);
+  color: var(--on-secondary-container);
+  font-size: 0.5625rem;
+  font-weight: 900;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom-left-radius: 8px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.productCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.quickAdd {
+  background-color: white;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.productName {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+  color: var(--on-surface);
+}
+
+.productCategory {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: var(--on-surface);
+}
+
+.oldPrice {
+  font-size: 0.75rem;
+  color: var(--outline);
+  text-decoration: line-through;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.emptyState h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: var(--secondary);
+  font-size: 0.875rem;
+}
