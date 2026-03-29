@@ -3,14 +3,15 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import styles from './ProductDetailPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Minus, Plus, ShoppingCart, Check } from 'lucide-react';
-import { getProductById } from '../data/products';
+import { getProductById, getProductByToken } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const product = getProductById(id);
+  // Resolve product by ID first, then try by token (for WhatsApp deep links)
+  const product = getProductById(id) || getProductByToken(id);
   const { addToCart } = useCart();
   
   const [selectedSize, setSelectedSize] = useState(null);

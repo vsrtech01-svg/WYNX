@@ -4,10 +4,14 @@ import styles from './CheckoutPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Truck, Check, ChevronDown, AlertCircle, MessageCircle, ShoppingCart, MapPin, User, Phone, Send } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { getProductById } from '../data/products';
 import { getStates, getCities, lookupPincode } from '../data/indianLocations';
 
 // ─── OWNER WHATSAPP NUMBER (with country code, no +) ──────
-const OWNER_WHATSAPP_NUMBER = '919876543210'; // Replace with actual owner number
+const OWNER_WHATSAPP_NUMBER = '917014212397';
+
+// ─── WEBSITE BASE URL (for product deep links) ─────
+const WEBSITE_BASE_URL = window.location.origin;
 
 // ─── VALIDATION UTILS ─────────────────────────
 const validators = {
@@ -266,26 +270,30 @@ const CheckoutPage = () => {
     return isValid;
   };
 
-  // ─── Build WhatsApp message ───────────────
+  // ─── Build WhatsApp message with tokens ───────────────
   const buildWhatsAppMessage = () => {
     const productLines = cart.map(item => {
-      return `📦 Product: ${item.name}\n📏 Size: ${item.size}\n🔢 Quantity: ${item.quantity}`;
+      // Look up the full product to get its token
+      const fullProduct = getProductById(item.id);
+      const token = fullProduct?.token || item.id;
+      const productLink = `${WEBSITE_BASE_URL}/product/${token}`;
+      return `📦 Item: ${productLink}\n📏 Size: ${item.size}\n🔢 Qty: ${item.quantity}`;
     }).join('\n\n');
 
     const message = `Hi! I'd like to place an order 🛒
 
+Name: ${formData.fullName}
+
 ${productLines}
 
-📍 Shipping Details:
-Name: ${formData.fullName}
-Address: ${formData.address}
-City: ${formData.city}
-Pincode: ${formData.pincode}
-Phone Number: ${formData.phone.replace(/\s/g, '')}
+📍 Shipping:
+${formData.address}
+${formData.city} - ${formData.pincode}
+Phone: ${formData.phone.replace(/\s/g, '')}
 
-💰 Order Total: ₹${total.toLocaleString('en-IN')}
+💰 Total: ₹${total.toLocaleString('en-IN')}
 
-Please confirm total amount and payment details. Thanks!`;
+Please confirm details and payment. Thanks!`;
 
     return message;
   };

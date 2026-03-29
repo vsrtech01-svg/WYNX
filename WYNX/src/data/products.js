@@ -1,7 +1,9 @@
 // Full product catalog for WYNX eCommerce — MEN ONLY
+// Each product has a unique token for WhatsApp order tracking
 const products = [
   {
     id: 'men-apex-v1',
+    token: 'MN-APEX-01',
     name: 'APEX V1 Compression',
     price: 85.00,
     oldPrice: null,
@@ -17,6 +19,7 @@ const products = [
   },
   {
     id: 'men-velocity-shorts',
+    token: 'MN-VLCT-02',
     name: 'Velocity Split Shorts',
     price: 55.00,
     oldPrice: null,
@@ -32,6 +35,7 @@ const products = [
   },
   {
     id: 'men-stealth-tights',
+    token: 'MN-STLT-03',
     name: 'Stealth Tights 2.0',
     price: 72.00,
     oldPrice: null,
@@ -47,6 +51,7 @@ const products = [
   },
   {
     id: 'men-circuit-tank',
+    token: 'MN-CRCT-04',
     name: 'Circuit Training Tank',
     price: 42.00,
     oldPrice: 58.00,
@@ -62,6 +67,7 @@ const products = [
   },
   {
     id: 'men-alpha-windbreaker',
+    token: 'MN-ALPH-05',
     name: 'Alpha Windbreaker',
     price: 120.00,
     oldPrice: null,
@@ -77,6 +83,7 @@ const products = [
   },
   {
     id: 'men-heavyweight-hoodie',
+    token: 'MN-HVWT-06',
     name: 'Heavyweight Fleece Hoodie',
     price: 95.00,
     oldPrice: null,
@@ -92,6 +99,7 @@ const products = [
   },
   {
     id: 'men-core-tee',
+    token: 'MN-CORE-07',
     name: 'Core Performance Tee',
     price: 38.00,
     oldPrice: null,
@@ -107,6 +115,7 @@ const products = [
   },
   {
     id: 'men-titan-joggers',
+    token: 'MN-TITN-08',
     name: 'Titan Training Joggers',
     price: 78.00,
     oldPrice: 92.00,
@@ -123,6 +132,7 @@ const products = [
   // Additional men's products
   {
     id: 'men-shadow-compression-top',
+    token: 'MN-SHDW-09',
     name: 'Shadow Compression Top',
     price: 68.00,
     oldPrice: null,
@@ -138,6 +148,7 @@ const products = [
   },
   {
     id: 'men-vortex-tank',
+    token: 'MN-VRTX-10',
     name: 'Vortex Training Tank',
     price: 44.00,
     oldPrice: 52.00,
@@ -153,6 +164,7 @@ const products = [
   },
   {
     id: 'men-enduro-shorts',
+    token: 'MN-ENDR-11',
     name: 'Enduro Training Shorts',
     price: 58.00,
     oldPrice: null,
@@ -168,6 +180,7 @@ const products = [
   },
   {
     id: 'men-arctic-jacket',
+    token: 'MN-ARCT-12',
     name: 'Arctic Shield Jacket',
     price: 145.00,
     oldPrice: null,
@@ -186,6 +199,7 @@ const products = [
 export default products;
 
 export const getProductById = (id) => products.find(p => p.id === id);
+export const getProductByToken = (token) => products.find(p => p.token === token.toUpperCase());
 export const getProductsByCategory = (category) => products.filter(p => p.category === category);
 export const getBestSellers = () => products.filter(p => p.tags?.includes('best-seller'));
 export const getFeaturedProducts = () => products.filter(p => ['men-apex-v1', 'men-velocity-shorts', 'men-stealth-tights'].includes(p.id));
