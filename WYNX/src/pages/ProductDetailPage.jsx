@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import styles from './ProductDetailPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent } from 'lucide-react';
-import { getProductById, getProductByToken } from '../data/products';
+import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 

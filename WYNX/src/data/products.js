@@ -651,7 +651,6 @@ const products = [
 export default products;
 
 export const getProductById = (id) => products.find(p => p.id === id);
-};
 export const getProductsByCategory = (category) => products.filter(p => p.category === category);
 export const getProductsBySubcategory = (subcategory) => products.filter(p => p.subcategory === subcategory);
 export const getBestSellers = () => products.filter(p => p.tags?.includes('best-seller'));
