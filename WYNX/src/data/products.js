@@ -680,7 +680,12 @@ const products = [
 export default products;
 
 export const getProductById = (id) => products.find(p => p.id === id);
-export const getProductByToken = (token) => products.find(p => p.token === token.toUpperCase());
+export const getProductByToken = (token) => {
+  if (!token) return undefined;
+  // Decode URI component in case of encoded characters, then trim and uppercase
+  const cleanToken = decodeURIComponent(token).trim().toUpperCase();
+  return products.find(p => p.token === cleanToken);
+};
 export const getProductsByCategory = (category) => products.filter(p => p.category === category);
 export const getProductsBySubcategory = (subcategory) => products.filter(p => p.subcategory === subcategory);
 export const getBestSellers = () => products.filter(p => p.tags?.includes('best-seller'));

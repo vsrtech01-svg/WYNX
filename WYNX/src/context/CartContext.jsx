@@ -82,6 +82,7 @@ export const CartProvider = ({ children }) => {
       type: 'ADD_TO_CART',
       payload: {
         id: product.id,
+        token: product.token,
         name: product.name,
         price: product.price,
         img: product.img,

@@ -163,7 +163,7 @@ const CollectionPage = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     layout
                   >
-                    <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to={`/product/${product.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className={`product-image-container ${styles.imageContainer}`}>
                         {product.badge && <div className={styles.badge}>{product.badge}</div>}
                         {product.discount && (

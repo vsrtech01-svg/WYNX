@@ -55,13 +55,13 @@ const CartPage = () => {
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     layout
                   >
-                    <Link to={`/product/${item.id}`} className={styles.itemImage}>
+                    <Link to={`/product/${item.token || item.id}`} className={styles.itemImage}>
                       <img src={item.img} alt={item.name} />
                     </Link>
                     <div className={styles.itemDetails}>
                       <div className={styles.itemTop}>
                         <div>
-                          <Link to={`/product/${item.id}`} className={styles.itemName}>{item.name}</Link>
+                          <Link to={`/product/${item.token || item.id}`} className={styles.itemName}>{item.name}</Link>
                           <p className={styles.itemSize}>Size: {item.size}</p>
                         </div>
                         <motion.button 

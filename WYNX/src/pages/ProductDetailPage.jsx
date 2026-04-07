@@ -8,15 +8,24 @@ import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
 const ProductDetailPage = () => {
-  const { id } = useParams();
+  const { token } = useParams();
   const navigate = useNavigate();
-  // Resolve product by ID first, then try by token (for WhatsApp deep links)
-  const product = getProductById(id) || getProductByToken(id);
+  
+  // Resolve product by token first, then fallback to ID just in case
+  const product = getProductByToken(token) || getProductById(token);
+  
   const { addToCart } = useCart();
   
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [addedToCart, setAddedToCart] = useState(false);
+
+  // Debugging logs as requested
+  if (product) {
+    console.log(`[Product Found] URL Token: ${token} matched Product: ${product.name}`);
+  } else {
+    console.error(`[Error: Product Not Found] No product matched the URL token: ${token}`);
+  }
 
   if (!product) {
     return (
@@ -250,7 +259,7 @@ const ProductDetailPage = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
                 >
-                  <Link to={`/product/${rProduct.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link to={`/product/${rProduct.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className={`product-image-container ${styles.relatedImage}`}>
                       <img src={rProduct.img} alt={rProduct.name} />
                     </div>

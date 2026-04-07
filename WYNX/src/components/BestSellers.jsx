@@ -45,7 +45,7 @@ const BestSellers = () => {
             animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
           >
-            <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to={`/product/${product.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className={`product-image-container ${styles.imageContainer}`}>
                 {product.badge && <div className={styles.badge}>{product.badge}</div>}
                 <img src={product.img} alt={product.name} />

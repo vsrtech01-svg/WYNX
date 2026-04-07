@@ -56,7 +56,7 @@ const TrendingSection = () => {
               animate={isInView ? { y: 0, opacity: 1 } : { y: 40, opacity: 0 }}
               transition={{ duration: 0.6, delay: index * 0.12 }}
             >
-              <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link to={`/product/${product.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className={`product-image-container ${styles.imageContainer}`}>
                   <div className={styles.trendBadge}>
                     <TrendingUp size={10} />
