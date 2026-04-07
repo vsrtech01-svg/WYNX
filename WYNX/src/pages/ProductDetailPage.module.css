@@ -66,7 +66,7 @@
 .badge {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   z-index: 20;
   background-color: var(--primary);
   color: white;
@@ -77,6 +77,21 @@
   letter-spacing: 0.1em;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 62, 199, 0.3);
+}
+
+.discountBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 20;
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  letter-spacing: 0.02em;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.3);
 }
 
 .infoSection {
@@ -103,7 +118,7 @@
   letter-spacing: -0.05em;
   line-height: 1.1;
   color: var(--on-surface);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -112,11 +127,45 @@
   }
 }
 
+/* Rating */
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.ratingBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  color: white;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.reviewCount {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* Price */
 .priceRow {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.discountPercent {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: #16a34a;
 }
 
 .price {
@@ -130,6 +179,61 @@
   font-size: 1.125rem;
   color: var(--outline);
   text-decoration: line-through;
+}
+
+/* Buy At Price */
+.buyAtRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(0, 76, 237, 0.08) 0%, rgba(79, 172, 254, 0.08) 100%);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--on-surface);
+}
+
+.buyAtRow strong {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+/* Offers Section */
+.offersSection {
+  margin-bottom: 1.5rem;
+}
+
+.offersSection .sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+
+.offersList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.offerItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant);
+  padding: 0.5rem 0;
+}
+
+.offerDot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border-radius: 50%;
+  margin-top: 0.35rem;
 }
 
 .description {
@@ -354,10 +458,29 @@
   color: var(--on-surface);
 }
 
+.relatedPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .relatedPrice {
   font-size: 1rem;
   font-weight: 900;
-  color: var(--primary);
+  color: var(--on-surface);
+}
+
+.relatedOldPrice {
+  font-size: 0.75rem;
+  color: var(--outline);
+  text-decoration: line-through;
+}
+
+.relatedDiscount {
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: #16a34a;
 }
 
 /* Not Found */

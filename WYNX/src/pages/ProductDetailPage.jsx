@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import styles from './ProductDetailPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Minus, Plus, ShoppingCart, Check } from 'lucide-react';
+import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent } from 'lucide-react';
 import { getProductById, getProductByToken } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
@@ -71,6 +71,9 @@ const ProductDetailPage = () => {
           >
             <div className={`product-image-container ${styles.mainImage}`}>
               {product.badge && <div className={styles.badge}>{product.badge}</div>}
+              {product.discount && (
+                <div className={styles.discountBadge}>↓{product.discount}% OFF</div>
+              )}
               <img src={product.img} alt={product.name} />
             </div>
           </motion.div>
@@ -85,12 +88,58 @@ const ProductDetailPage = () => {
             <span className={styles.categoryLabel}>{product.subcategory}</span>
             <h1 className={styles.productName}>{product.name}</h1>
             
+            {/* Rating */}
+            {product.rating && (
+              <div className={styles.ratingRow}>
+                <div className={styles.ratingBadge}>
+                  <Star size={12} fill="white" />
+                  <span>{product.rating}</span>
+                </div>
+                <span className={styles.reviewCount}>{product.reviews} {product.reviews === 1 ? 'Rating' : 'Ratings'}</span>
+              </div>
+            )}
+
+            {/* Price */}
             <div className={styles.priceRow}>
-              <span className={styles.price}>${product.price.toFixed(2)}</span>
-              {product.oldPrice && (
-                <span className={styles.oldPrice}>${product.oldPrice.toFixed(2)}</span>
+              {product.discount && (
+                <span className={styles.discountPercent}>↓{product.discount}%</span>
               )}
+              {product.oldPrice && (
+                <span className={styles.oldPrice}>₹{product.oldPrice.toLocaleString('en-IN')}</span>
+              )}
+              <span className={styles.price}>₹{product.price}</span>
             </div>
+
+            {/* Buy At Price */}
+            {product.buyAtPrice && (
+              <div className={styles.buyAtRow}>
+                <Tag size={14} />
+                <span>Buy at <strong>₹{product.buyAtPrice}</strong> with offers</span>
+              </div>
+            )}
+
+            {/* Offers */}
+            {product.offers && product.offers.length > 0 && (
+              <div className={styles.offersSection}>
+                <h3 className={styles.sectionLabel}>
+                  <Percent size={14} /> Available Offers
+                </h3>
+                <div className={styles.offersList}>
+                  {product.offers.map((offer, i) => (
+                    <motion.div 
+                      key={i} 
+                      className={styles.offerItem}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.4 + (i * 0.1) }}
+                    >
+                      <span className={styles.offerDot}></span>
+                      <span>{offer.text}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <p className={styles.description}>{product.description}</p>
 
@@ -161,7 +210,7 @@ const ProductDetailPage = () => {
                     exit={{ opacity: 0, y: -10 }}
                     className={styles.btnContent}
                   >
-                    <ShoppingCart size={18} /> {selectedSize ? 'Add to Cart' : 'Select a Size'}
+                    <ShoppingCart size={18} /> {selectedSize ? `Add to Cart — ₹${product.price}` : 'Select a Size'}
                   </motion.span>
                 )}
               </AnimatePresence>
@@ -206,7 +255,11 @@ const ProductDetailPage = () => {
                       <img src={rProduct.img} alt={rProduct.name} />
                     </div>
                     <h3 className={styles.relatedName}>{rProduct.name}</h3>
-                    <span className={styles.relatedPrice}>${rProduct.price.toFixed(2)}</span>
+                    <div className={styles.relatedPriceRow}>
+                      <span className={styles.relatedPrice}>₹{rProduct.price}</span>
+                      {rProduct.oldPrice && <span className={styles.relatedOldPrice}>₹{rProduct.oldPrice}</span>}
+                      {rProduct.discount && <span className={styles.relatedDiscount}>{rProduct.discount}% off</span>}
+                    </div>
                   </Link>
                 </motion.div>
               ))}

@@ -103,6 +103,20 @@
   border-bottom-left-radius: 8px;
 }
 
+.discountBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 900;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: 0.02em;
+  border-bottom-right-radius: 8px;
+}
+
 .imageContainer img {
   width: 100%;
   height: 100%;
@@ -164,6 +178,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .price {
@@ -176,6 +191,13 @@
   font-size: 0.75rem;
   color: var(--outline);
   text-decoration: line-through;
+}
+
+.discountText {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  color: #16a34a;
+  letter-spacing: 0.02em;
 }
 
 .emptyState {
@@ -195,4 +217,107 @@
 .emptyState p {
   color: var(--secondary);
   font-size: 0.875rem;
+}
+
+/* Coming Soon Modal */
+.comingSoonOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.comingSoonModal {
+  background: linear-gradient(145deg, var(--surface-container) 0%, var(--surface-container-low) 100%);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--surface-container-highest);
+}
+
+.comingSoonClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--surface-container-highest);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--on-surface-variant);
+  transition: all 0.2s ease;
+}
+
+.comingSoonClose:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.comingSoonIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, #4facfe 100%);
+  color: white;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 76, 237, 0.3);
+}
+
+.comingSoonTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-surface);
+  margin-bottom: 0.5rem;
+}
+
+.comingSoonCategory {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.comingSoonText {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.comingSoonDivider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #4facfe);
+  border-radius: 2px;
+  margin: 0 auto 1rem auto;
+}
+
+.comingSoonSub {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--secondary);
 }

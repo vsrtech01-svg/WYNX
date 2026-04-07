@@ -225,3 +225,28 @@
   font-weight: 700;
   color: var(--primary);
 }
+
+.priceRowLarge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.oldPriceLarge {
+  font-size: 0.875rem;
+  color: var(--outline);
+  text-decoration: line-through;
+}
+
+.priceRowSmall {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.oldPriceSmall {
+  font-size: 0.75rem;
+  color: var(--outline);
+  text-decoration: line-through;
+}
+

@@ -13,6 +13,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import AboutPage from './pages/AboutPage';
 import TrendingPage from './pages/TrendingPage';
 import NewArrivalsPage from './pages/NewArrivalsPage';
+import PolicyPage from './pages/PolicyPage';
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/trending" element={<TrendingPage />} />
           <Route path="/new-arrivals" element={<NewArrivalsPage />} />
+          <Route path="/policy/:type" element={<PolicyPage />} />
         </Routes>
       </AnimatePresence>
       <Footer />

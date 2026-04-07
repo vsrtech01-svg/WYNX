@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import styles from './CollectionPage.module.css';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useRef } from 'react';
+import { Clock, X } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
 import { useCart } from '../context/CartContext';
@@ -13,11 +14,11 @@ const CollectionPage = () => {
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get('search') || '';
   const { addToCart } = useCart();
+  const [comingSoonCategory, setComingSoonCategory] = useState(null);
   
   const [filters, setFilters] = useState({
     subcategory: 'all',
     size: null,
-    intensity: null,
   });
 
   const containerRef = useRef(null);
@@ -47,16 +48,15 @@ const CollectionPage = () => {
       result = result.filter(p => p.sizes.includes(filters.size));
     }
 
-    // Intensity filter
-    if (filters.intensity && filters.intensity !== 'all') {
-      result = result.filter(p => p.intensity === filters.intensity);
-    }
-
     return result;
   }, [filters, searchQuery]);
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
+  };
+
+  const handleComingSoon = (categoryName) => {
+    setComingSoonCategory(categoryName);
   };
 
   const handleQuickAdd = (e, product) => {
@@ -67,10 +67,66 @@ const CollectionPage = () => {
 
   return (
     <>
+      {/* Coming Soon Modal */}
+      <AnimatePresence>
+        {comingSoonCategory && (
+          <motion.div 
+            className={styles.comingSoonOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setComingSoonCategory(null)}
+          >
+            <motion.div 
+              className={styles.comingSoonModal}
+              initial={{ scale: 0.8, opacity: 0, y: 30 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 30 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <motion.button 
+                className={styles.comingSoonClose}
+                onClick={() => setComingSoonCategory(null)}
+                whileHover={{ scale: 1.1, rotate: 90 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <X size={20} />
+              </motion.button>
+              <motion.div 
+                className={styles.comingSoonIcon}
+                animate={{ 
+                  rotate: [0, 10, -10, 0],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{ 
+                  duration: 2, 
+                  repeat: Infinity,
+                  ease: 'easeInOut'
+                }}
+              >
+                <Clock size={48} />
+              </motion.div>
+              <h2 className={styles.comingSoonTitle}>COMING SOON</h2>
+              <p className={styles.comingSoonCategory}>{comingSoonCategory}</p>
+              <p className={styles.comingSoonText}>
+                We're working on expanding our {comingSoonCategory.toLowerCase()} collection. Currently, WYNX only sells premium track pants and lowers.
+              </p>
+              <div className={styles.comingSoonDivider}></div>
+              <p className={styles.comingSoonSub}>Stay tuned for updates!</p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="app-container">
-        <Sidebar onFilterChange={handleFilterChange} activeFilters={filters} />
+        <Sidebar 
+          onFilterChange={handleFilterChange} 
+          activeFilters={filters} 
+          onComingSoon={handleComingSoon}
+        />
         <main className="main-content">
-          <Hero title={"MEN'S\nCOLLECTION"} subtitle="High-Velocity Engineering" />
+          <Hero title={"MEN'S\nCOLLECTION"} subtitle="Premium Track Pants & Lowers" />
           
           {searchQuery && (
             <motion.div 
@@ -110,6 +166,9 @@ const CollectionPage = () => {
                     <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className={`product-image-container ${styles.imageContainer}`}>
                         {product.badge && <div className={styles.badge}>{product.badge}</div>}
+                        {product.discount && (
+                          <div className={styles.discountBadge}>↓{product.discount}%</div>
+                        )}
                         <img src={product.img} alt={product.name} />
                         <div className={styles.imageOverlay}>
                           <motion.button 
@@ -125,8 +184,9 @@ const CollectionPage = () => {
                       <h3 className={styles.productName}>{product.name}</h3>
                       <p className={styles.productCategory}>{product.subcategory}</p>
                       <div className={styles.priceContainer}>
-                        <span className={styles.price}>${product.price.toFixed(2)}</span>
-                        {product.oldPrice && <span className={styles.oldPrice}>${product.oldPrice.toFixed(2)}</span>}
+                        <span className={styles.price}>₹{product.price}</span>
+                        {product.oldPrice && <span className={styles.oldPrice}>₹{product.oldPrice}</span>}
+                        {product.discount && <span className={styles.discountText}>{product.discount}% off</span>}
                       </div>
                     </Link>
                   </motion.div>

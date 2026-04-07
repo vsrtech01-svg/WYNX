@@ -40,7 +40,9 @@ const ProductList = () => {
         {/* New Drop Item */}
         <motion.div variants={itemVariants} className={`${styles.bentoItem} ${styles.largeItem}`}>
           <Link to={`/product/${featured[0]?.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-            <div className={styles.badge}>New Drop</div>
+            <div className={styles.badge}>
+              {featured[0]?.discount ? `${featured[0].discount}% OFF` : 'New Drop'}
+            </div>
             <div className={`product-image-container ${styles.imageContainerLarge}`}>
               <img src={featured[0]?.img} alt={featured[0]?.name} />
               <div className={styles.overlay}></div>
@@ -48,18 +50,21 @@ const ProductList = () => {
             <div className={styles.infoLarge}>
               <h3 className={styles.titleLarge}>{featured[0]?.name}</h3>
               <p className={styles.descLarge}>{featured[0]?.description?.substring(0, 80)}...</p>
-              <span className={styles.priceLarge}>${featured[0]?.price.toFixed(2)}</span>
+              <div className={styles.priceRowLarge}>
+                <span className={styles.priceLarge}>₹{featured[0]?.price}</span>
+                {featured[0]?.oldPrice && <span className={styles.oldPriceLarge}>₹{featured[0]?.oldPrice}</span>}
+              </div>
             </div>
           </Link>
         </motion.div>
 
         {/* Text Callout */}
         <motion.div variants={itemVariants} className={`${styles.bentoItem} ${styles.textItem}`}>
-          <h2 className={styles.headingTech}>THE<br/>GEAR OF<br/>CHAMPIONS</h2>
-          <p className={styles.descTech}>Uncompromising materials. Aggressive silhouettes. Engineered to dominate the training floor.</p>
+          <h2 className={styles.headingTech}>PREMIUM<br/>TRACK<br/>PANTS</h2>
+          <p className={styles.descTech}>Uncompromising comfort. Modern silhouettes. Engineered for everyday performance and style.</p>
           <motion.div whileHover={{ x: 5 }}>
             <Link to="/collection/men" className={styles.btnExplore}>
-              Explore Tech Specs →
+              Explore Collection →
             </Link>
           </motion.div>
         </motion.div>
@@ -72,7 +77,10 @@ const ProductList = () => {
             </div>
             <div className={styles.infoSmall}>
               <h3 className={styles.titleSmall}>{featured[1]?.name}</h3>
-              <p className={styles.priceSmall}>${featured[1]?.price.toFixed(2)}</p>
+              <div className={styles.priceRowSmall}>
+                <p className={styles.priceSmall}>₹{featured[1]?.price}</p>
+                {featured[1]?.oldPrice && <p className={styles.oldPriceSmall}>₹{featured[1]?.oldPrice}</p>}
+              </div>
             </div>
           </Link>
         </motion.div>
@@ -85,7 +93,10 @@ const ProductList = () => {
             </div>
             <div className={styles.infoSmall}>
               <h3 className={styles.titleSmall}>{featured[2]?.name}</h3>
-              <p className={styles.priceSmall}>${featured[2]?.price.toFixed(2)}</p>
+              <div className={styles.priceRowSmall}>
+                <p className={styles.priceSmall}>₹{featured[2]?.price}</p>
+                {featured[2]?.oldPrice && <p className={styles.oldPriceSmall}>₹{featured[2]?.oldPrice}</p>}
+              </div>
             </div>
           </Link>
         </motion.div>

@@ -12,7 +12,12 @@ const Footer = () => {
     { label: 'About', to: '/about' },
   ];
 
-  const bottomLinks = ['Support', 'Shipping', 'Returns', 'Privacy'];
+  const bottomLinks = [
+    { label: 'Terms', to: '/policy/terms' },
+    { label: 'Shipping', to: '/policy/shipping' },
+    { label: 'Returns', to: '/policy/returns' },
+    { label: 'Privacy', to: '/policy/privacy' },
+  ];
   
   return (
     <footer className={styles.footer}>
@@ -35,14 +40,14 @@ const Footer = () => {
 
       <div className={styles.bottomLinks}>
         {bottomLinks.map((link) => (
-          <motion.a 
-            key={link} 
-            href="#" 
-            className={styles.bottomLink}
-            whileHover={{ color: 'var(--primary)' }}
-          >
-            {link}
-          </motion.a>
+          <motion.div key={link.label} whileHover={{ color: 'var(--primary)' }}>
+            <Link 
+              to={link.to} 
+              className={styles.bottomLink}
+            >
+              {link.label}
+            </Link>
+          </motion.div>
         ))}
       </div>
       

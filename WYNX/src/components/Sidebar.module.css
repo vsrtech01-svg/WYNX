@@ -70,6 +70,22 @@
   color: white;
 }
 
+.unavailableCategory {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.unavailableCategory:hover {
+  background-color: var(--surface-container-highest);
+  color: var(--on-surface-variant);
+  opacity: 0.55;
+}
+
+.lockIcon {
+  margin-left: auto;
+  opacity: 0.6;
+}
+
 .icon {
   margin-right: 0.75rem;
   display: flex;

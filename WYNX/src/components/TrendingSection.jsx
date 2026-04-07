@@ -76,8 +76,9 @@ const TrendingSection = () => {
                 </div>
                 <h3 className={styles.productName}>{product.name}</h3>
                 <div className={styles.priceContainer}>
-                  <span className={styles.price}>${product.price.toFixed(2)}</span>
-                  {product.oldPrice && <span className={styles.oldPrice}>${product.oldPrice.toFixed(2)}</span>}
+                  <span className={styles.price}>₹{product.price}</span>
+                  {product.oldPrice && <span className={styles.oldPrice}>₹{product.oldPrice}</span>}
+                  {product.discount && <span className={styles.discountText}>{product.discount}% off</span>}
                 </div>
               </Link>
             </motion.div>
