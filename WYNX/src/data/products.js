@@ -4,7 +4,6 @@
 const products = [
   {
     id: 'wynx-solid-black-track-v1',
-    token: 'WX-BLK-01',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -29,7 +28,6 @@ const products = [
   },
   {
     id: 'wynx-solid-black-track-v2',
-    token: 'WX-BLK-02',
     name: 'Wynx Men Solid Black Track Pants',
     price: 364,
     oldPrice: 2499,
@@ -52,7 +50,6 @@ const products = [
   },
   {
     id: 'wynx-solid-black-stripe-track',
-    token: 'WX-BSTR-03',
     name: 'Wynx Men Solid Black Track Pants',
     price: 270,
     oldPrice: 2499,
@@ -75,7 +72,6 @@ const products = [
   },
   {
     id: 'wynx-solid-blue-track',
-    token: 'WX-BLU-04',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 2499,
@@ -98,7 +94,6 @@ const products = [
   },
   {
     id: 'wynx-solid-black-stripe-track-v2',
-    token: 'WX-BSTR-05',
     name: 'Wynx Men Solid Black Track Pants',
     price: 364,
     oldPrice: 2499,
@@ -121,7 +116,6 @@ const products = [
   },
   {
     id: 'wynx-4way-black-track-v1',
-    token: 'WX-4WB-06',
     name: 'Wynx Men 4-Way Black Track Pants',
     price: 364,
     oldPrice: 1499,
@@ -144,7 +138,6 @@ const products = [
   },
   {
     id: 'wynx-solid-grey-track',
-    token: 'WX-GRY-07',
     name: 'Wynx Men Solid Grey Track Pants',
     price: 364,
     oldPrice: 2499,
@@ -167,7 +160,6 @@ const products = [
   },
   {
     id: 'wynx-solid-navy-blue-track',
-    token: 'WX-NVY-08',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 2499,
@@ -192,7 +184,6 @@ const products = [
   },
   {
     id: 'wynx-black-premium-track',
-    token: 'WX-BPR-09',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -217,7 +208,6 @@ const products = [
   },
   {
     id: 'wynx-4way-black-track-v2',
-    token: 'WX-4WB-10',
     name: 'Wynx Men 4-Way Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -240,7 +230,6 @@ const products = [
   },
   {
     id: 'wynx-3line-black-track',
-    token: 'WX-3LN-11',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -263,7 +252,6 @@ const products = [
   },
   {
     id: 'wynx-ns-black-track',
-    token: 'WX-NSB-12',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -286,7 +274,6 @@ const products = [
   },
   {
     id: 'wynx-solid-grey-track-v2',
-    token: 'WX-GRY-13',
     name: 'Wynx Men Solid Grey Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -309,7 +296,6 @@ const products = [
   },
   {
     id: 'wynx-solid-grey-track-v3',
-    token: 'WX-GRY-14',
     name: 'Wynx Men Solid Grey Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -332,7 +318,6 @@ const products = [
   },
   {
     id: 'wynx-solid-blue-track-v2',
-    token: 'WX-BLU-15',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 2499,
@@ -355,7 +340,6 @@ const products = [
   },
   {
     id: 'wynx-3line-navy-blue-track',
-    token: 'WX-3NV-16',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -378,7 +362,6 @@ const products = [
   },
   {
     id: 'wynx-ns-black-track-v2',
-    token: 'WX-NSB-17',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -401,7 +384,6 @@ const products = [
   },
   {
     id: 'wynx-solid-grey-track-v4',
-    token: 'WX-GRY-18',
     name: 'Wynx Men Solid Grey Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -424,7 +406,6 @@ const products = [
   },
   {
     id: 'wynx-self-design-black-track',
-    token: 'WX-SDB-19',
     name: 'Wynx Men Self Design Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -447,7 +428,6 @@ const products = [
   },
   {
     id: 'wynx-ns-black-track-v3',
-    token: 'WX-NSB-20',
     name: 'Wynx Men Solid Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -470,7 +450,6 @@ const products = [
   },
   {
     id: 'wynx-ns-navy-blue-track',
-    token: 'WX-NNB-21',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -493,7 +472,6 @@ const products = [
   },
   {
     id: 'wynx-4way-navy-blue-track',
-    token: 'WX-4NB-22',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 364,
     oldPrice: 1499,
@@ -516,7 +494,6 @@ const products = [
   },
   {
     id: 'wynx-ns-navy-blue-track-v2',
-    token: 'WX-NNB-23',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 364,
     oldPrice: 1499,
@@ -539,7 +516,6 @@ const products = [
   },
   {
     id: 'wynx-self-design-black-track-v2',
-    token: 'WX-SDB-24',
     name: 'Wynx Men Self Design Black Track Pants',
     price: 364,
     oldPrice: 1499,
@@ -562,7 +538,6 @@ const products = [
   },
   {
     id: 'wynx-3line-navy-blue-track-v2',
-    token: 'WX-3NV-25',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -585,7 +560,6 @@ const products = [
   },
   {
     id: 'wynx-4way-navy-blue-track-v2',
-    token: 'WX-4NB-26',
     name: 'Wynx Men Solid Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -608,7 +582,6 @@ const products = [
   },
   {
     id: 'wynx-self-design-blue-track',
-    token: 'WX-SDB-27',
     name: 'Wynx Men Self Design Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -631,7 +604,6 @@ const products = [
   },
   {
     id: 'wynx-self-design-blue-track-v2',
-    token: 'WX-SDB-28',
     name: 'Wynx Men Self Design Blue Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -654,7 +626,6 @@ const products = [
   },
   {
     id: 'wynx-self-design-black-track-v3',
-    token: 'WX-SDB-29',
     name: 'Wynx Men Self Design Black Track Pants',
     price: 355,
     oldPrice: 1499,
@@ -680,11 +651,6 @@ const products = [
 export default products;
 
 export const getProductById = (id) => products.find(p => p.id === id);
-export const getProductByToken = (token) => {
-  if (!token) return undefined;
-  // Decode URI component in case of encoded characters, then trim and uppercase
-  const cleanToken = decodeURIComponent(token).trim().toUpperCase();
-  return products.find(p => p.token === cleanToken);
 };
 export const getProductsByCategory = (category) => products.filter(p => p.category === category);
 export const getProductsBySubcategory = (subcategory) => products.filter(p => p.subcategory === subcategory);

@@ -270,14 +270,21 @@ const CheckoutPage = () => {
     return isValid;
   };
 
-  // ─── Build WhatsApp message with tokens ───────────────
+  // ─── Build WhatsApp message  ───────────────
   const buildWhatsAppMessage = () => {
     const productLines = cart.map(item => {
-      // Look up the full product to get its token
-      const fullProduct = getProductById(item.id);
-      const token = fullProduct?.token || item.id;
-      const productLink = `${WEBSITE_BASE_URL}/product/${token}`;
-      return `📦 Item: ${productLink}\n📏 Size: ${item.size}\n🔢 Qty: ${item.quantity}`;
+      // Extract color from product name
+      let color = '';
+      if (item.name.toLowerCase().includes('navy blue')) color = 'Navy Blue';
+      else if (item.name.toLowerCase().includes('blue')) color = 'Blue';
+      else if (item.name.toLowerCase().includes('black')) color = 'Black';
+      else if (item.name.toLowerCase().includes('grey')) color = 'Grey';
+      
+      const colorLine = color ? `\n🎨 Color: ${color}` : '';
+
+      return `📦 Product: ${item.name}${colorLine}
+📏 Size: ${item.size}
+🔢 Quantity: ${item.quantity}`;
     }).join('\n\n');
 
     const message = `Hi! I'd like to place an order 🛒
@@ -286,14 +293,13 @@ Name: ${formData.fullName}
 
 ${productLines}
 
-📍 Shipping:
-${formData.address}
-${formData.city} - ${formData.pincode}
-Phone: ${formData.phone.replace(/\s/g, '')}
+📍 Shipping Details:
+Address: ${formData.address}
+City: ${formData.city}
+Pincode: ${formData.pincode}
+Phone Number: ${formData.phone.replace(/\s/g, '')}
 
-💰 Total: ₹${total.toLocaleString('en-IN')}
-
-Please confirm details and payment. Thanks!`;
+Please confirm total amount and payment details. Thanks!`;
 
     return message;
   };

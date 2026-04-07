@@ -39,7 +39,7 @@ const ProductList = () => {
       >
         {/* New Drop Item */}
         <motion.div variants={itemVariants} className={`${styles.bentoItem} ${styles.largeItem}`}>
-          <Link to={`/product/${featured[0]?.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to={`/product/${featured[0]?.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className={styles.badge}>
               {featured[0]?.discount ? `${featured[0].discount}% OFF` : 'New Drop'}
             </div>
@@ -71,7 +71,7 @@ const ProductList = () => {
 
         {/* Regular Item 1 */}
         <motion.div variants={itemVariants} className={styles.bentoItem}>
-          <Link to={`/product/${featured[1]?.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to={`/product/${featured[1]?.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className={`product-image-container ${styles.imageContainerSmall}`}>
               <img src={featured[1]?.img} alt={featured[1]?.name} />
             </div>
@@ -87,7 +87,7 @@ const ProductList = () => {
 
         {/* Regular Item 2 */}
         <motion.div variants={itemVariants} className={styles.bentoItem}>
-          <Link to={`/product/${featured[2]?.token}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to={`/product/${featured[2]?.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className={`product-image-container ${styles.imageContainerSmall}`}>
               <img src={featured[2]?.img} alt={featured[2]?.name} />
             </div>
