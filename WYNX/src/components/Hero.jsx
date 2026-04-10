@@ -40,13 +40,13 @@ const Hero = ({ title, subtitle, category }) => {
 
       <motion.div 
         className={styles.graphicSidebar}
-        initial={isDesktop ? { x: '100%', opacity: 0 } : false}
-        animate={isDesktop ? { x: 0, opacity: 1 } : false}
+        initial={{ x: '100%', opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className={styles.slantedContainer}>
            <img 
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1200" 
+              src="/images/hero-man-model.jpg" 
               alt="Tracksuit Model" 
               className={styles.heroImage} 
            />
@@ -65,8 +65,8 @@ const Hero = ({ title, subtitle, category }) => {
       <div className={styles.content}>
         <motion.h1 
           className={styles.title}
-          initial={isDesktop ? { x: -60, opacity: 0 } : false}
-          animate={isDesktop ? { x: 0, opacity: 1 } : false}
+          initial={{ x: -40, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           key={displayTitle}
         >
@@ -80,8 +80,8 @@ const Hero = ({ title, subtitle, category }) => {
         
         <motion.p 
           className={styles.subtitle}
-          initial={isDesktop ? { x: -40, opacity: 0 } : false}
-          animate={isDesktop ? { x: 0, opacity: 1 } : false}
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           key={displaySubtitle}
         >
@@ -90,8 +90,8 @@ const Hero = ({ title, subtitle, category }) => {
         
         <motion.div
            className={styles.actionContainer}
-           initial={isDesktop ? { y: 20, opacity: 0 } : false}
-           animate={isDesktop ? { y: 0, opacity: 1 } : false}
+           initial={{ y: 20, opacity: 0 }}
+           animate={{ y: 0, opacity: 1 }}
            transition={{ duration: 0.8, delay: 0.6 }}
         >
            <button className={styles.shopBtn} onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth'})}>
