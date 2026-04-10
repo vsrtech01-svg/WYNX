@@ -68,6 +68,13 @@ body {
   scrollbar-color: var(--primary) var(--surface-container);
 }
 
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 64px; /* Mobile Bottom Nav */
+  }
+}
+
+
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -102,8 +109,15 @@ a {
 /* Layout Classes */
 .app-container {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   padding-top: 72px; /* For fixed navbar */
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+  }
 }
 
 /* App.css or layout specific additions */

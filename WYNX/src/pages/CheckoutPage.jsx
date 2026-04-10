@@ -8,7 +8,7 @@ import { getProductById } from '../data/products';
 import { getStates, getCities, lookupPincode } from '../data/indianLocations';
 
 // ─── OWNER WHATSAPP NUMBER (with country code, no +) ──────
-const OWNER_WHATSAPP_NUMBER = '917014212397';
+const OWNER_WHATSAPP_NUMBER = '916350070744';
 
 // ─── WEBSITE BASE URL (for product deep links) ─────
 const WEBSITE_BASE_URL = window.location.origin;

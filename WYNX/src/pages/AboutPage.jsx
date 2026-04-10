@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './AboutPage.module.css';
 import { motion, useInView } from 'framer-motion';
-import { Zap, Shield, Target, Award, ArrowRight } from 'lucide-react';
+import { Zap, Shield, Target, Award, ArrowRight, MapPin, Phone } from 'lucide-react';
 
 const stats = [
   { value: '10K+', label: 'Athletes Worldwide' },
@@ -35,11 +35,11 @@ const values = [
 ];
 
 const timeline = [
-  { year: '2021', title: 'The Beginning', desc: 'WYNX was founded in a small garage with one mission: make performance gear that actually performs.' },
-  { year: '2022', title: 'First Collection', desc: 'Launched our debut men\'s compression line, selling out in 48 hours.' },
-  { year: '2023', title: 'Global Expansion', desc: 'Expanded to 30+ countries and introduced our patented Dry-Velocity fabric technology.' },
-  { year: '2024', title: 'Community Built', desc: 'Reached 10,000+ athletes in our community and launched the WYNX Training Program.' },
-  { year: '2025', title: 'The Future', desc: 'Introducing next-gen adaptive compression and sustainable manufacturing processes.' },
+  { title: 'The Beginning', desc: 'WYNX was founded in a small garage with one mission: make performance gear that actually performs.' },
+  { title: 'First Collection', desc: 'Launched our debut men\'s compression line, selling out in 48 hours.' },
+  { title: 'Global Expansion', desc: 'Expanded to 30+ countries and introduced our patented Dry-Velocity fabric technology.' },
+  { title: 'Community Built', desc: 'Reached 10,000+ athletes in our community and launched the WYNX Training Program.' },
+  { title: 'The Future', desc: 'Introducing next-gen adaptive compression and sustainable manufacturing processes.' },
 ];
 
 const AboutPage = () => {
@@ -155,7 +155,7 @@ const AboutPage = () => {
           <div className={styles.timeline}>
             {timeline.map((item, i) => (
               <motion.div 
-                key={item.year} 
+                key={item.title} 
                 className={styles.timelineItem}
                 initial={{ x: i % 2 === 0 ? -40 : 40, opacity: 0 }}
                 animate={timelineInView ? { x: 0, opacity: 1 } : {}}
@@ -163,12 +163,27 @@ const AboutPage = () => {
               >
                 <div className={styles.timelineDot}></div>
                 <div className={styles.timelineContent}>
-                  <span className={styles.timelineYear}>{item.year}</span>
                   <h3 className={styles.timelineTitle}>{item.title}</h3>
                   <p className={styles.timelineDesc}>{item.desc}</p>
                 </div>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* Contact Info */}
+        <section className={styles.contactSection}>
+          <div className={styles.contactGrid}>
+            <div className={styles.contactCard}>
+              <div className={styles.contactIcon}><MapPin size={24} /></div>
+              <h3 className={styles.contactTitle}>Visit Us</h3>
+              <p className={styles.contactDesc}>Bindayaka, Jaipur, Rajasthan 302041</p>
+            </div>
+            <div className={styles.contactCard}>
+              <div className={styles.contactIcon}><Phone size={24} /></div>
+              <h3 className={styles.contactTitle}>Contact Us</h3>
+              <p className={styles.contactDesc}>WhatsApp/Phone:<br/>+91 6350 070 744</p>
+            </div>
           </div>
         </section>
 

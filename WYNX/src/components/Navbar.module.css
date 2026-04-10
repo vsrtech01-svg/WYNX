@@ -133,6 +133,13 @@
 
 .cartBtnWrapper {
   position: relative;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cartBtnWrapper {
+    display: block;
+  }
 }
 
 .cartBtn {

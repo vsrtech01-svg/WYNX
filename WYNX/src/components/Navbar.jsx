@@ -11,7 +11,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { getCartCount } = useCart();
   const [searchQuery, setSearchQuery] = useState('');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const cartCount = getCartCount();
 
   const navLinks = [
@@ -92,47 +91,8 @@ const Navbar = () => {
               </AnimatePresence>
             </Link>
           </motion.div>
-
-          {/* Mobile hamburger */}
-          <motion.button 
-            className={styles.mobileMenuBtn}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            whileTap={{ scale: 0.9 }}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </motion.button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div 
-            className={styles.mobileMenu}
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {navLinks.map((link, i) => (
-              <motion.div
-                key={link.label}
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link 
-                  to={link.path} 
-                  className={`${styles.mobileLink} ${isActive(link.path) ? styles.activeMobileLink : ''}`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.nav>
   );
 };

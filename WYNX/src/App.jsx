@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import IntroLoader from './components/IntroLoader';
+import MobileBottomNav from './components/MobileBottomNav';
 import HomePage from './pages/HomePage';
 import CollectionPage from './pages/CollectionPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -45,6 +46,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
+      <MobileBottomNav />
     </>
   );
 }
