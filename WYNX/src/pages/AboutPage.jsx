@@ -5,9 +5,8 @@ import { motion, useInView } from 'framer-motion';
 import { Zap, Shield, Target, Award, ArrowRight, MapPin, Phone } from 'lucide-react';
 
 const stats = [
-  { value: '10K+', label: 'Athletes Worldwide' },
+  { value: '2K+', label: 'Athletes Worldwide' },
   { value: '98%', label: 'Customer Satisfaction' },
-  { value: '50+', label: 'Countries Served' },
   { value: '4.9★', label: 'Average Rating' },
 ];
 
@@ -37,8 +36,8 @@ const values = [
 const timeline = [
   { title: 'The Beginning', desc: 'WYNX was founded in a small garage with one mission: make performance gear that actually performs.' },
   { title: 'First Collection', desc: 'Launched our debut men\'s compression line, selling out in 48 hours.' },
-  { title: 'Global Expansion', desc: 'Expanded to 30+ countries and introduced our patented Dry-Velocity fabric technology.' },
-  { title: 'Community Built', desc: 'Reached 10,000+ athletes in our community and launched the WYNX Training Program.' },
+  { title: 'Global Expansion', desc: 'Established our presence across India and focused on delivering high-quality performance wear.' },
+  { title: 'Community Built', desc: 'Built a growing community of 2,000+ athletes and fitness enthusiasts.' },
   { title: 'The Future', desc: 'Introducing next-gen adaptive compression and sustainable manufacturing processes.' },
 ];
 
