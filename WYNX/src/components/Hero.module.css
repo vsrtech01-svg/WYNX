@@ -1,236 +1,63 @@
 .heroSection {
   position: relative;
-  min-height: 22rem;
-  background-color: var(--surface-container-lowest);
+  height: 16rem;
+  background-color: var(--surface-container-low);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.5rem;
   overflow: hidden;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--surface-container-highest);
 }
 
 @media (min-width: 768px) {
   .heroSection {
-    min-height: 32rem;
+    height: 24rem;
+    padding: 0 4rem;
   }
 }
 
-/* Background lines for sporty aesthetic */
-.bgWrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.slantedBgPattern {
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 150%;
-  height: 200%;
-  background: 
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 10px,
-      rgba(0, 82, 255, 0.04) 10px,
-      rgba(0, 82, 255, 0.04) 11px
-    );
-  z-index: 0;
-}
-
-.graphicSidebar {
-  display: block;
+.graphicElement {
   position: absolute;
   top: 0;
   right: 0;
   width: 50%;
   height: 100%;
+  opacity: 0.15;
+  pointer-events: none;
+  background: linear-gradient(135deg, var(--primary) 0%, #3a7bd5 100%);
+  transform: skewX(12deg) translateX(5rem);
   z-index: 1;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .graphicSidebar {
-    width: 60%;
-  }
-}
-
-.slantedContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: #d8e5ff;
-  border-left: 2px solid var(--primary);
-}
-
-@media (min-width: 768px) {
-  .slantedContainer {
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-    border-left: 4px solid var(--primary);
-  }
-}
-
-
-.heroImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  mix-blend-mode: multiply;
-  opacity: 0.95;
-}
-
-.comingSoonBadge {
-  position: absolute;
-  top: 15%;
-  right: 5%;
-  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-  color: white;
-  padding: 0.5rem 0.75rem;
-  border-radius: 8px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 900;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.3);
-  border: 1px solid rgba(255,255,255,0.2);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  z-index: 2;
-  transform-origin: center right;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
-@media (min-width: 768px) {
-  .comingSoonBadge {
-    top: 25%;
-    right: 15%;
-    padding: 1.25rem 2rem;
-    border-radius: 12px;
-    font-size: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.4);
-    gap: 0.75rem;
-  }
-}
-
-.sparkle {
-  font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-  .sparkle {
-    font-size: 1.25rem;
-  }
 }
 
 .content {
   position: relative;
   z-index: 10;
-  padding: 1.5rem;
-  width: 75%;
-}
-
-@media (min-width: 768px) {
-  .content {
-    padding: 0 3rem;
-    width: 60%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .content {
-    padding: 0 4rem;
-    width: 55%;
-  }
 }
 
 .title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.25rem;
+  font-size: 3.5rem;
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: -0.05em;
-  line-height: 1.05;
-  color: #1a1c1e;
+  line-height: 1;
+  color: var(--on-surface);
   text-shadow: 2px 4px 16px rgba(0,0,0,0.05);
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 3.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .title {
-    font-size: 5rem;
-  }
-}
-
-.title br {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .title br {
-    display: block;
+    font-size: 5.5rem;
   }
 }
 
 .subtitle {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #003ec7;
+  color: var(--primary);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-top: 1rem;
-}
-
-@media (min-width: 768px) {
-  .subtitle {
-    font-size: 1rem;
-    margin-top: 1.5rem;
-  }
-}
-
-.actionContainer {
-  margin-top: 2rem;
-}
-
-.shopBtn {
-  display: inline-block;
-  background-color: transparent;
-  color: #003ec7;
-  font-weight: 900;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  padding-bottom: 0.25rem;
-}
-
-.shopBtn::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #003ec7;
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.shopBtn:hover::after {
-  transform: scaleX(0);
 }

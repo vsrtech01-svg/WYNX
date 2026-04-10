@@ -4,30 +4,10 @@
   left: 0;
   width: 100%;
   background-color: var(--surface-container);
-  border-top: 1px solid var(--primary);
+  border-top: 1px solid var(--surface-container-highest);
   z-index: 1000;
   padding-bottom: env(safe-area-inset-bottom);
   display: block;
-  overflow: hidden;
-}
-
-.bottomNav::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -20%;
-  width: 150%;
-  height: 200%;
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      rgba(0, 82, 255, 0.05) 10px,
-      rgba(0, 82, 255, 0.05) 11px
-    );
-  z-index: -1;
-  pointer-events: none;
 }
 
 @media (min-width: 768px) {
