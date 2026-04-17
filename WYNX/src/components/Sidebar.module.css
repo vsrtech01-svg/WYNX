@@ -30,7 +30,7 @@
 }
 
 .header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -131,7 +131,7 @@
 }
 
 .label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   letter-spacing: -0.02em;

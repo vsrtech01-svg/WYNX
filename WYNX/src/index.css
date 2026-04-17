@@ -1,54 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&family=Inter:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@400,0,0,24&display=swap');
 
 :root {
-  --on-primary-fixed: #001452;
-  --background: #f9f9fc;
-  --tertiary-container: #656666;
-  --on-surface: #1a1c1e;
-  --on-primary-container: #dfe3ff;
-  --inverse-primary: #b7c4ff;
-  --on-tertiary: #ffffff;
-  --primary-container: #0052ff;
-  --surface-container: #eeeef0;
-  --tertiary-fixed-dim: #c6c6c7;
-  --surface-container-lowest: #ffffff;
-  --surface-container-highest: #e2e2e5;
-  --surface-container-high: #e8e8ea;
-  --on-secondary-container: #445a7f;
-  --on-secondary-fixed-variant: #31476b;
-  --secondary-container: #bcd2fe;
-  --on-secondary-fixed: #001b3d;
-  --on-tertiary-container: #e4e5e5;
-  --inverse-on-surface: #f0f0f3;
-  --error-container: #ffdad6;
-  --inverse-surface: #2f3133;
-  --surface-dim: #dadadc;
-  --tertiary: #4c4e4f;
-  --surface-tint: #004ced;
-  --secondary-fixed-dim: #b1c7f2;
-  --primary: #003ec7;
-  --on-surface-variant: #434656;
-  --tertiary-fixed: #e2e2e2;
-  --surface: #f9f9fc;
-  --surface-bright: #f9f9fc;
-  --on-tertiary-fixed: #1a1c1c;
-  --secondary-fixed: #d6e3ff;
-  --secondary: #495f84;
-  --surface-variant: #e2e2e5;
-  --error: #ba1a1a;
-  --surface-container-low: #f3f3f6;
-  --on-error: #ffffff;
-  --primary-fixed-dim: #b7c4ff;
-  --on-primary-fixed-variant: #0038b6;
-  --on-secondary: #ffffff;
-  --on-primary: #ffffff;
-  --on-tertiary-fixed-variant: #454747;
-  --on-error-container: #93000a;
-  --primary-fixed: #dde1ff;
-  --on-background: #1a1c1e;
-  --outline: #737688;
-  --outline-variant: #c3c5d9;
+  /* Reference Design Variables */
+  --background: #F5F0EB;
+  --on-background: #1B1D28;
+  
+  --primary: #2A2D41;
+  --on-primary: #FFFFFF;
+  
+  --accent: #FF575C;
+  --on-accent: #FFFFFF;
+  
+  --surface: #FFFFFF;
+  --on-surface: #1B1D28;
+  
+  --surface-container-low: #EBE5E0;
+  --surface-container: #F0EAE5;
+  --surface-container-high: #E6DFDA;
+  --surface-container-highest: rgba(27, 29, 40, 0.1);
+  
+  --outline: rgba(27, 29, 40, 0.4);
+  --outline-variant: rgba(27, 29, 40, 0.1);
+  --shadow: 0 4px 24px rgba(27, 29, 40, 0.08);
 }
 
 * {
@@ -58,7 +33,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: var(--background);
   color: var(--on-background);
   min-height: 100vh;
@@ -74,7 +49,6 @@ body {
   }
 }
 
-
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -86,8 +60,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, .font-headline {
-  font-family: 'Space Grotesk', sans-serif;
+h1, .font-heading {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+}
+
+h2, h3, h4, .font-subheading {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
 }
 
 .material-symbols-outlined {
@@ -99,11 +79,13 @@ button {
   all: unset;
   cursor: pointer;
   box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Layout Classes */
@@ -120,19 +102,16 @@ a {
   }
 }
 
-/* App.css or layout specific additions */
 .main-content {
   flex: 1;
   overflow-x: hidden;
 }
 
-/* Utility to ensure grayscale works nicely on images */
+/* Base product image hover logic */
 .product-image-container img {
-  filter: grayscale(100%);
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .product-image-container:hover img {
-  filter: grayscale(0%);
   transform: scale(1.05);
 }

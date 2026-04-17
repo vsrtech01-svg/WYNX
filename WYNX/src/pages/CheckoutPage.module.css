@@ -124,7 +124,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--on-surface);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -218,7 +218,7 @@
   border-bottom: 1px solid var(--surface-container-highest);
   font-size: 0.8125rem;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--on-surface);
   background: var(--surface-container-low);
 }

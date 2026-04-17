@@ -31,69 +31,71 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav 
-      className={styles.navbar}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-    >
-      <div className={styles.container}>
-        <motion.div 
-          className={styles.logo}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link to="/"><img src={wynxLogo} alt="WYNX" className={styles.logoImg} /></Link>
-        </motion.div>
-        
-        <div className={styles.links}>
-          {navLinks.map((link) => (
-            <Link 
-              key={link.label} 
-              to={link.path} 
-              className={`${styles.link} ${isActive(link.path) ? styles.activeLink : ''}`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-        
-        <div className={styles.actions}>
-          <form onSubmit={handleSearch} className={styles.searchWrapper}>
-            <Search className={styles.searchIcon} size={16} />
-            <input 
-              type="text" 
-              placeholder="SEARCH GEAR" 
-              className={styles.searchInput}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </form>
-          <motion.div
-            className={styles.cartBtnWrapper}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+    <div className={styles.navbarWrapper}>
+      <motion.nav 
+        className={styles.navbar}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <div className={styles.container}>
+          <motion.div 
+            className={styles.logo}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <Link to="/cart" className={styles.cartBtn}>
-              <ShoppingCart size={24} />
-              <AnimatePresence>
-                {cartCount > 0 && (
-                  <motion.span 
-                    className={styles.cartBadge}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    exit={{ scale: 0 }}
-                    transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-                  >
-                    {cartCount}
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </Link>
+            <Link to="/"><img src={wynxLogo} alt="WYNX" className={styles.logoImg} /></Link>
           </motion.div>
+          
+          <div className={styles.links}>
+            {navLinks.map((link) => (
+              <Link 
+                key={link.label} 
+                to={link.path} 
+                className={`${styles.link} ${isActive(link.path) ? styles.activeLink : ''}`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          
+          <div className={styles.actions}>
+            <form onSubmit={handleSearch} className={styles.searchWrapper}>
+              <Search className={styles.searchIcon} size={16} />
+              <input 
+                type="text" 
+                placeholder="Search..." 
+                className={styles.searchInput}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </form>
+            <motion.div
+              className={styles.cartBtnWrapper}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link to="/cart" className={styles.cartBtn}>
+                <ShoppingCart size={24} />
+                <AnimatePresence>
+                  {cartCount > 0 && (
+                    <motion.span 
+                      className={styles.cartBadge}
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      exit={{ scale: 0 }}
+                      transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+                    >
+                      {cartCount}
+                    </motion.span>
+                  )}
+                </AnimatePresence>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </motion.nav>
+      </motion.nav>
+    </div>
   );
 };
 

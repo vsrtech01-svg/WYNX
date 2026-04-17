@@ -1,63 +1,195 @@
 .heroSection {
   position: relative;
-  height: 16rem;
-  background-color: var(--surface-container-low);
+  min-height: 85vh;
+  background-color: var(--background);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 2.5rem;
+  align-items: center;
   overflow: hidden;
-  margin-bottom: 2rem;
+  padding: 6rem 1rem 4rem;
 }
 
 @media (min-width: 768px) {
   .heroSection {
-    height: 24rem;
-    padding: 0 4rem;
+    min-height: 90vh;
+    padding: 8rem 2.5rem 4rem;
   }
 }
 
-.graphicElement {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  opacity: 0.15;
-  pointer-events: none;
-  background: linear-gradient(135deg, var(--primary) 0%, #3a7bd5 100%);
-  transform: skewX(12deg) translateX(5rem);
-  z-index: 1;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+  }
 }
 
 .content {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background-color: rgba(27, 29, 40, 0.05);
+  color: var(--on-surface);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(27, 29, 40, 0.1);
 }
 
 .title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  font-style: italic;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-  line-height: 1;
+  line-height: 0.9;
   color: var(--on-surface);
-  text-shadow: 2px 4px 16px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 5.5rem;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 7.5rem;
   }
 }
 
 .subtitle {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--primary);
-  letter-spacing: 0.1em;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--on-surface);
+  opacity: 0.8;
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .actions {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.primaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
-  margin-top: 1rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+}
+
+.primaryBtn:hover {
+  background-color: transparent;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(42, 45, 65, 0.1);
+}
+
+.secondaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--on-surface);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(27, 29, 40, 0.2);
+}
+
+.secondaryBtn:hover {
+  background-color: rgba(27, 29, 40, 0.05);
+  border-color: var(--on-surface);
+}
+
+.graphicElement {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .graphicElement {
+    height: 600px;
+  }
+}
+
+.geoShape1 {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background-color: var(--accent);
+  border-radius: 1000px;
+  opacity: 0.9;
+  transform: rotate(-15deg);
+  box-shadow: 0 20px 40px rgba(255, 87, 92, 0.3);
+}
+
+.geoShape2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--surface-container-high);
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

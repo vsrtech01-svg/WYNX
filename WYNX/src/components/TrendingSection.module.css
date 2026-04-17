@@ -26,22 +26,21 @@
 .iconBadge {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #ff6b35, #ff4500);
+  border-radius: 50%;
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 87, 92, 0.3);
 }
 
 .title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.25rem;
-  font-weight: 900;
-  font-style: italic;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.02em;
   color: var(--on-surface);
   line-height: 1;
 }
@@ -124,15 +123,15 @@
   display: flex;
   align-items: center;
   gap: 0.375rem;
-  background: linear-gradient(135deg, #ff6b35, #ff4500);
+  background: var(--accent);
   color: white;
-  font-size: 0.5625rem;
-  font-weight: 900;
-  padding: 0.375rem 0.625rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 0.375rem 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+  letter-spacing: 0.05em;
+  border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(255, 87, 92, 0.2);
 }
 
 .imageContainer img {
