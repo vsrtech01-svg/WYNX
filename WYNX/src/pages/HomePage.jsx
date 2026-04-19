@@ -5,6 +5,8 @@ import ProductList from '../components/ProductList';
 import BestSellers from '../components/BestSellers';
 import TechBanner from '../components/TechBanner';
 import TrendingSection from '../components/TrendingSection';
+import CategoriesSection from '../components/CategoriesSection';
+import ReviewSection from '../components/ReviewSection';
 import NewArrivals from '../components/NewArrivals';
 
 const HomePage = () => {
@@ -19,7 +21,9 @@ const HomePage = () => {
       <main className="main-content">
         <Hero />
         <ProductList />
+        <CategoriesSection />
         <TrendingSection />
+        <ReviewSection />
         <BestSellers />
         <NewArrivals />
         <TechBanner />

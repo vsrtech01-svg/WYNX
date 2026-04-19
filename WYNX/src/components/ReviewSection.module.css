@@ -1,0 +1,133 @@
+.reviewSection {
+  padding: 6rem 0;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--on-surface);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+.highlight {
+  color: #ff4747;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+.scrollContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Fading edges */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scrollTrack {
+  display: flex;
+  width: fit-content;
+  gap: 1.5rem;
+  animation: scroll 40s linear infinite;
+  padding: 1rem 0;
+}
+
+.scrollTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
+}
+
+.reviewCard {
+  width: 320px;
+  background-color: var(--surface-container-low);
+  border-radius: 16px;
+  padding: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--surface-container-highest);
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .reviewCard {
+    width: 380px;
+  }
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.quoteIcon {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 71, 71, 0.2); /* light red */
+  line-height: 1;
+}
+
+.reviewText {
+  font-size: 0.9375rem;
+  color: var(--on-surface);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.reviewerInfo {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--surface-container-highest);
+}
+
+.reviewerName {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--on-surface);
+  margin-bottom: 0.25rem;
+}
+
+.reviewerMeta {
+  font-size: 0.75rem;
+  color: var(--secondary);
+}

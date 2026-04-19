@@ -258,6 +258,58 @@ const ProductDetailPage = () => {
           </motion.div>
         </div>
 
+        {/* Product Reviews */}
+        <section className={styles.reviewsSection}>
+          <div className={styles.relatedHeader}>
+            <h2 className={styles.relatedTitle}>Customer Reviews</h2>
+          </div>
+          <div className={styles.reviewsList}>
+            {[
+              {
+                id: 1,
+                name: "Rahul Verma",
+                rating: 5,
+                date: "2 weeks ago",
+                comment: "Bhai quality ek number hai! Fabric is much better than expected. Perfect fit for daily use."
+              },
+              {
+                id: 2,
+                name: "Siddhant Sharma",
+                rating: 5,
+                date: "1 month ago",
+                comment: "Comfort level is crazy. Delivery was fast too. Value for money."
+              },
+              {
+                id: 3,
+                name: "Ishaan Kapoor",
+                rating: 4,
+                date: "1 month ago",
+                comment: "Bohat hi premium feel hai fabric ki. Definitely going to buy more colors from WYNX."
+              }
+            ].map((review) => (
+              <div key={review.id} className={styles.reviewItem}>
+                <div className={styles.reviewItemHeader}>
+                  <div className={styles.reviewAuthor}>
+                    <div className={styles.authorAvatar}>
+                      {review.name.charAt(0)}
+                    </div>
+                    <div>
+                      <h4 className={styles.authorName}>{review.name} <span className={styles.verifiedBadge}><Check size={12} /> Verified</span></h4>
+                      <div className={styles.authorRating}>
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} size={14} fill={i < review.rating ? "#ff4747" : "transparent"} color={i < review.rating ? "#ff4747" : "#cbd5e1"} />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <span className={styles.reviewDate}>{review.date}</span>
+                </div>
+                <p className={styles.reviewComment}>{review.comment}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <section className={styles.relatedSection}>

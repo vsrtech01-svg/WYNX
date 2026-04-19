@@ -428,6 +428,103 @@
   font-weight: 700;
 }
 
+/* Reviews Section */
+.reviewsSection {
+  padding: 0 2.5rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .reviewsSection {
+    padding: 0 4rem 4rem;
+  }
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .reviewsList {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.reviewItem {
+  background-color: var(--surface-container-low);
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1;
+  border: 1px solid var(--surface-container-highest);
+}
+
+.reviewItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.reviewAuthor {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.authorName {
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: var(--on-surface);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.verifiedBadge {
+  font-size: 0.625rem;
+  color: #16a34a;
+  background-color: rgba(22, 163, 74, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.authorRating {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 0.25rem;
+}
+
+.reviewDate {
+  font-size: 0.75rem;
+  color: var(--secondary);
+}
+
+.reviewComment {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
 /* Related Products */
 .relatedSection {
   padding: 0 2.5rem 5rem;

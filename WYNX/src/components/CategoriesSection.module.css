@@ -1,0 +1,131 @@
+.categoriesSection {
+  padding: 4rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .categoriesSection {
+    padding: 6rem 2.5rem;
+  }
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(280px, auto);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .catLarge {
+    grid-column: span 7;
+  }
+  
+  .catSmall {
+    grid-column: span 5;
+  }
+  
+  .catMedium {
+    grid-column: span 6;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(230,200,165,1) 0%, rgba(135,110,80,1) 100%);
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #ff4747;
+  text-transform: uppercase;
+  margin-bottom: auto;
+}
+
+.catTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .catTitle {
+    font-size: 3rem;
+  }
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  padding-top: 10%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.05) translateX(-5px);
+}

@@ -208,9 +208,11 @@
 
 .bgTextContainer {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   white-space: nowrap;
   z-index: 1;
@@ -228,6 +230,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
+  line-height: 1;
 }
 
 .scrollIndicator {

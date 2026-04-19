@@ -102,11 +102,18 @@ const Hero = ({ title, subtitle, category }) => {
 
         <div className={styles.bgTextContainer}>
           <motion.div 
-            className={styles.largeBgText}
+            className={`${styles.largeBgText} ${styles.textTop}`}
             animate={{ x: [0, -1500] }}
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+          >
+            WYNX - SPORTWEAR - TRACKPANTS - COMFORT - WYNX - SPORTWEAR - TRACKPANTS - COMFORT - WYNX - SPORTWEAR - TRACKPANTS - COMFORT - 
+          </motion.div>
+          <motion.div 
+            className={`${styles.largeBgText} ${styles.textBottom}`}
+            animate={{ x: [-1500, 0] }}
             transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           >
-            TRACK PANTS • SPORTSWEAR • COLLECTION • ACTIVEWEAR • TRACK PANTS • SPORTSWEAR • COLLECTION • ACTIVEWEAR •
+            TRACK PANTS • SPORTSWEAR • COLLECTION • ACTIVEWEAR • TRACK PANTS • SPORTSWEAR • COLLECTION • ACTIVEWEAR • 
           </motion.div>
         </div>
 
