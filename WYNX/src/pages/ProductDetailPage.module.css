@@ -326,10 +326,46 @@
   color: var(--on-surface);
 }
 
-.addToCartBtn {
-  width: 100%;
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
   max-width: 24rem;
-  background-color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .actionButtons {
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+.addToCartBtn {
+  flex: 1;
+  width: 100%;
+  background-color: var(--surface-container-highest);
+  color: var(--on-surface);
+  padding: 1rem 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid var(--outline);
+}
+
+.addToCartBtn:hover:not(.disabledBtn) {
+  border-color: var(--on-surface);
+}
+
+.buyNowBtn {
+  flex: 1;
+  width: 100%;
+  background-color: #25D366;
   color: white;
   padding: 1rem 2rem;
   font-weight: 900;
@@ -338,11 +374,10 @@
   font-size: 0.75rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 14px rgba(0,62,199,0.3);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
-  margin-bottom: 2rem;
 }
 
 .disabledBtn {
@@ -353,6 +388,8 @@
 
 .addedBtn {
   background-color: #16a34a;
+  color: white;
+  border-color: #16a34a;
   box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
 }
 

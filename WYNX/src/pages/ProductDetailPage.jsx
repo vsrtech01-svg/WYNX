@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import styles from './ProductDetailPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent } from 'lucide-react';
+import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent, MessageCircle } from 'lucide-react';
 import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
@@ -14,7 +14,7 @@ const ProductDetailPage = () => {
   // Resolve product by ID
   const product = getProductById(id);
   
-  const { addToCart } = useCart();
+  const { addToCart, clearCart } = useCart();
   
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -43,6 +43,13 @@ const ProductDetailPage = () => {
     addToCart(product, selectedSize, quantity);
     setAddedToCart(true);
     setTimeout(() => setAddedToCart(false), 2000);
+  };
+
+  const handleBuyNow = () => {
+    if (!selectedSize) return;
+    clearCart();
+    addToCart(product, selectedSize, quantity);
+    navigate('/checkout');
   };
 
   return (
@@ -185,38 +192,52 @@ const ProductDetailPage = () => {
               </div>
             </div>
 
-            {/* Add to Cart */}
-            <motion.button 
-              className={`${styles.addToCartBtn} ${!selectedSize ? styles.disabledBtn : ''} ${addedToCart ? styles.addedBtn : ''}`}
-              onClick={handleAddToCart}
-              whileHover={selectedSize ? { scale: 1.02 } : {}}
-              whileTap={selectedSize ? { scale: 0.98 } : {}}
-              disabled={!selectedSize}
-            >
-              <AnimatePresence mode="wait">
-                {addedToCart ? (
-                  <motion.span
-                    key="added"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className={styles.btnContent}
-                  >
-                    <Check size={18} /> Added to Cart
-                  </motion.span>
-                ) : (
-                  <motion.span
-                    key="add"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className={styles.btnContent}
-                  >
-                    <ShoppingCart size={18} /> {selectedSize ? `Add to Cart — ₹${product.price}` : 'Select a Size'}
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </motion.button>
+            {/* Action Buttons */}
+            <div className={styles.actionButtons}>
+              <motion.button 
+                className={`${styles.addToCartBtn} ${!selectedSize ? styles.disabledBtn : ''} ${addedToCart ? styles.addedBtn : ''}`}
+                onClick={handleAddToCart}
+                whileHover={selectedSize ? { scale: 1.02 } : {}}
+                whileTap={selectedSize ? { scale: 0.98 } : {}}
+                disabled={!selectedSize}
+              >
+                <AnimatePresence mode="wait">
+                  {addedToCart ? (
+                    <motion.span
+                      key="added"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className={styles.btnContent}
+                    >
+                      <Check size={18} /> Added to Cart
+                    </motion.span>
+                  ) : (
+                    <motion.span
+                      key="add"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className={styles.btnContent}
+                    >
+                      <ShoppingCart size={18} /> {selectedSize ? `Add to Cart — ₹${product.price}` : 'Select a Size'}
+                    </motion.span>
+                  )}
+                </AnimatePresence>
+              </motion.button>
+              
+              <motion.button
+                className={`${styles.buyNowBtn} ${!selectedSize ? styles.disabledBtn : ''}`}
+                onClick={handleBuyNow}
+                whileHover={selectedSize ? { scale: 1.02 } : {}}
+                whileTap={selectedSize ? { scale: 0.98 } : {}}
+                disabled={!selectedSize}
+              >
+                 <div className={styles.btnContent}>
+                    <MessageCircle size={18} /> Buy Now via WhatsApp
+                 </div>
+              </motion.button>
+            </div>
 
             {/* Features */}
             <div className={styles.features}>
