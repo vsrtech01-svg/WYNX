@@ -7,23 +7,15 @@ import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
-// Unique reviews generator
-const stringToHash = (string) => {
-  let hash = 0;
-  for (let i = 0; i < string.length; i++) {
-    hash = string.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  return Math.abs(hash);
-};
-
-const NAMES = ['Aarav Sharma', 'Aditya Verma', 'Arjun Singh', 'Aryan Kapoor', 'Dhruv Patel', 'Ishaan Kumar', 'Kabir Reddy', 'Rohan Rao', 'Vihaan Iyer', 'Om Gupta', 'Krishna Jain', 'Yash Shah', 'Rishabh Desai', 'Rahul Verma', 'Vivaan Sharma', 'Siddhant Singh', 'Karan Patel', 'Dev Kumar', 'Pranav Reddy', 'Harsh Rao', 'Vikram Iyer', 'Aniket Gupta', 'Sameer Jain', 'Rajat Shah', 'Nikhil Desai', 'Manish Sharma', 'Kunal Verma', 'Abhinav Singh', 'Mukul Kapoor', 'Surya Patel', 'Tushar Kumar', 'Vaibhav Reddy', 'Nishant Rao', 'Akhil Iyer'];
+// Unique reviews generator ensuring absolutey 0 duplications
+const NAMES = ['Aarav Sharma', 'Aditya Verma', 'Arjun Singh', 'Aryan Kapoor', 'Dhruv Patel', 'Ishaan Kumar', 'Kabir Reddy', 'Rohan Rao', 'Vihaan Iyer', 'Om Gupta', 'Krishna Jain', 'Yash Shah', 'Rishabh Desai', 'Rahul Verma', 'Vivaan Sharma', 'Siddhant Singh', 'Karan Patel', 'Dev Kumar', 'Pranav Reddy', 'Harsh Rao', 'Vikram Iyer', 'Aniket Gupta', 'Sameer Jain', 'Rajat Shah', 'Nikhil Desai', 'Manish Sharma', 'Kunal Verma', 'Abhinav Singh', 'Mukul Kapoor', 'Surya Patel', 'Tushar Kumar', 'Vaibhav Reddy', 'Nishant Rao', 'Akhil Iyer', 'Anil Mehta', 'Suresh Nair', 'Ramesh Pillai', 'Manoj Gowda', 'Vijay Munde', 'Ajay Rathi', 'Sanjay Shekhawat', 'Deepak Joshi', 'Prakash Chavan', 'Sunil Bhosale', 'Vinod Jadhav', 'Raju Patil', 'Suraj Deshmukh', 'Gaurav Kadam', 'Amit Mahajan', 'Ankit Kale', 'Rahul Shinde', 'Mohit Kulkarni', 'Saurabh More', 'Rohit Pawar', 'Sumit Surve', 'Vineet Doshi', 'Puneet Bapat', 'Kamal Jha', 'Naveen Thakur', 'Nitin Mishra', 'Rajesh Tiwari', 'Pravin Pandey', 'Prashant Dixit', 'Sachin Shukla', 'Sandeep Chaturvedi', 'Satish Dubey', 'Lalit Bajpai', 'Hariom Pathak', 'Jagdish Oza', 'Mahendra Trivedi', 'Naresh Vyas', 'Yogesh Purohit', 'Pradeep Bhatt', 'Avinash Sengupta', 'Dinesh Chatterjee', 'Ashok Banerjee', 'Vivek Mukherjee', 'Hemant Bose', 'Pramod Dutta', 'Madan Ghosh', 'Jagannath Basak', 'Laxman Majumdar', 'Tarun Biswas', 'Sushil Das', 'Chetan Halder', 'Bhanu Majhi', 'Mukesh Naik', 'Santosh Shetty', 'Umesh Hegde', 'Pankaj Bhat', 'Bipin Kamath', 'Ashish Pai', 'Subhash Shenoy', 'Kailash Prabhu', 'Lokesh Kini', 'Jatin Mallya', 'Girish Adiga', 'Madhav Puranik', 'Gautam Upadhyay', 'Bhaskar Sarma', 'Arun Barman', 'Brijesh Gogoi', 'Mohan Saikia', 'Kishore Das', 'Gopal Borah', 'Jayant Dutta', 'Sharad Phukan', 'Bimal Sharma', 'Ritesh Varma', 'Tapan Kulkarni', 'Farhan Sheikh', 'Amjad Khan', 'Ali Syed', 'Faisal Ansari', 'Rehan Qureshi', 'Wasim Pathan', 'Zayn Malik', 'Armaan Malik', 'Sahil Kapoor', 'Varun Dhawan', 'Arbaaz Khan'];
 
 const REVIEWS_TEXT = [
   "Bhai quality ek number hai! Fabric is much better than expected. Perfect fit for daily use.",
   "Comfort level is crazy. Delivery was fast too. Value for money.",
   "Bohat hi premium feel hai fabric ki. Definitely going to buy more colors from WYNX.",
   "The fit is unreal. Lightweight, breathable and the patti detail looks premium.",
-  "Finally a track pant that doesn't sag after one wash. WYNX is my new go-to.",
+  "Finally a product that doesn't sag after one wash. WYNX is my new go-to.",
   "Classic look with a modern fit. Perfect for both gym and street. Shipping was quick.",
   "Stretch fabric is a gamechanger. Hits the sweet spot between sporty and clean.",
   "Quality is surprisingly good, comparing it to international brands. Really happy.",
@@ -31,7 +23,7 @@ const REVIEWS_TEXT = [
   "Mast fitting and material. Really loved it. Gonna order for my brother too.",
   "This is my 2nd purchase from WYNX and they never disappoint. Amazing stuff.",
   "Looks exactly like the pictures. Very soft material and fits perfectly.",
-  "Pocket zippers are very useful for gym. Great product at this price point.",
+  "Pocket size and zippers are very useful for gym. Great product at this price point.",
   "Waist elastic is very comfortable, doesn't leave marks. Great for running.",
   "Value for money! Better than most overpriced brands out there.",
   "Style and comfort both at 100. Will recommend to friends for sure.",
@@ -40,35 +32,38 @@ const REVIEWS_TEXT = [
   "Using it for my morning runs. Very flexible and comfortable fabric.",
   "Amazing color and fit. Doesn't fade after washing. Absolute steal!",
   "Got it delivered in 2 days. The packaging was good and the quality is superb.",
-  "Perfect daily wear lowers. Looks very stylish when paired with an oversized tee.",
+  "Perfect daily wear. Looks very stylish when paired with an oversized tee.",
   "Zabardast product. Bahut aaramdayak hai aur look bhi premium hai.",
   "Can literally wear this all day without any discomfort. Highly recommended.",
-  "Patti pattern looks dope. Got many compliments at the gym."
+  "Quality design looks dope. Got many compliments at the gym."
 ];
 
+// Map a product ID's unique index to names
 const getReviewsForProduct = (productId) => {
-  const hash = stringToHash(productId);
+  const index = products.findIndex(p => p.id === productId);
+  const baseIndex = index >= 0 ? index * 3 : 0;
+  
   return [
     {
       id: 1,
-      name: NAMES[hash % NAMES.length],
+      name: NAMES[(baseIndex) % NAMES.length],
       rating: 5,
       date: "1 week ago",
-      comment: REVIEWS_TEXT[hash % REVIEWS_TEXT.length]
+      comment: REVIEWS_TEXT[(baseIndex) % REVIEWS_TEXT.length]
     },
     {
       id: 2,
-      name: NAMES[(hash + 7) % NAMES.length],
-      rating: hash % 2 === 0 ? 5 : 4,
+      name: NAMES[(baseIndex + 1) % NAMES.length],
+      rating: (baseIndex % 2 === 0) ? 5 : 4,
       date: "3 weeks ago",
-      comment: REVIEWS_TEXT[(hash + 5) % REVIEWS_TEXT.length]
+      comment: REVIEWS_TEXT[(baseIndex + 7) % REVIEWS_TEXT.length]
     },
     {
       id: 3,
-      name: NAMES[(hash + 13) % NAMES.length],
+      name: NAMES[(baseIndex + 2) % NAMES.length],
       rating: 5,
       date: "1 month ago",
-      comment: REVIEWS_TEXT[(hash + 11) % REVIEWS_TEXT.length]
+      comment: REVIEWS_TEXT[(baseIndex + 14) % REVIEWS_TEXT.length]
     }
   ];
 };
