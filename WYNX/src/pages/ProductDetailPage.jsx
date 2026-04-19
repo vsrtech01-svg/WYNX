@@ -7,6 +7,72 @@ import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
+// Unique reviews generator
+const stringToHash = (string) => {
+  let hash = 0;
+  for (let i = 0; i < string.length; i++) {
+    hash = string.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  return Math.abs(hash);
+};
+
+const NAMES = ['Aarav Sharma', 'Aditya Verma', 'Arjun Singh', 'Aryan Kapoor', 'Dhruv Patel', 'Ishaan Kumar', 'Kabir Reddy', 'Rohan Rao', 'Vihaan Iyer', 'Om Gupta', 'Krishna Jain', 'Yash Shah', 'Rishabh Desai', 'Rahul Verma', 'Vivaan Sharma', 'Siddhant Singh', 'Karan Patel', 'Dev Kumar', 'Pranav Reddy', 'Harsh Rao', 'Vikram Iyer', 'Aniket Gupta', 'Sameer Jain', 'Rajat Shah', 'Nikhil Desai', 'Manish Sharma', 'Kunal Verma', 'Abhinav Singh', 'Mukul Kapoor', 'Surya Patel', 'Tushar Kumar', 'Vaibhav Reddy', 'Nishant Rao', 'Akhil Iyer'];
+
+const REVIEWS_TEXT = [
+  "Bhai quality ek number hai! Fabric is much better than expected. Perfect fit for daily use.",
+  "Comfort level is crazy. Delivery was fast too. Value for money.",
+  "Bohat hi premium feel hai fabric ki. Definitely going to buy more colors from WYNX.",
+  "The fit is unreal. Lightweight, breathable and the patti detail looks premium.",
+  "Finally a track pant that doesn't sag after one wash. WYNX is my new go-to.",
+  "Classic look with a modern fit. Perfect for both gym and street. Shipping was quick.",
+  "Stretch fabric is a gamechanger. Hits the sweet spot between sporty and clean.",
+  "Quality is surprisingly good, comparing it to international brands. Really happy.",
+  "Super comfortable for long travels. Looks very aesthetic too.",
+  "Mast fitting and material. Really loved it. Gonna order for my brother too.",
+  "This is my 2nd purchase from WYNX and they never disappoint. Amazing stuff.",
+  "Looks exactly like the pictures. Very soft material and fits perfectly.",
+  "Pocket zippers are very useful for gym. Great product at this price point.",
+  "Waist elastic is very comfortable, doesn't leave marks. Great for running.",
+  "Value for money! Better than most overpriced brands out there.",
+  "Style and comfort both at 100. Will recommend to friends for sure.",
+  "The stitching and finishing are top-notch. Feels very premium.",
+  "Was skeptical at first, but wow! The fabric is so light and breathable.",
+  "Using it for my morning runs. Very flexible and comfortable fabric.",
+  "Amazing color and fit. Doesn't fade after washing. Absolute steal!",
+  "Got it delivered in 2 days. The packaging was good and the quality is superb.",
+  "Perfect daily wear lowers. Looks very stylish when paired with an oversized tee.",
+  "Zabardast product. Bahut aaramdayak hai aur look bhi premium hai.",
+  "Can literally wear this all day without any discomfort. Highly recommended.",
+  "Patti pattern looks dope. Got many compliments at the gym."
+];
+
+const getReviewsForProduct = (productId) => {
+  const hash = stringToHash(productId);
+  return [
+    {
+      id: 1,
+      name: NAMES[hash % NAMES.length],
+      rating: 5,
+      date: "1 week ago",
+      comment: REVIEWS_TEXT[hash % REVIEWS_TEXT.length]
+    },
+    {
+      id: 2,
+      name: NAMES[(hash + 7) % NAMES.length],
+      rating: hash % 2 === 0 ? 5 : 4,
+      date: "3 weeks ago",
+      comment: REVIEWS_TEXT[(hash + 5) % REVIEWS_TEXT.length]
+    },
+    {
+      id: 3,
+      name: NAMES[(hash + 13) % NAMES.length],
+      rating: 5,
+      date: "1 month ago",
+      comment: REVIEWS_TEXT[(hash + 11) % REVIEWS_TEXT.length]
+    }
+  ];
+};
+
 const ProductDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -264,29 +330,7 @@ const ProductDetailPage = () => {
             <h2 className={styles.relatedTitle}>Customer Reviews</h2>
           </div>
           <div className={styles.reviewsList}>
-            {[
-              {
-                id: 1,
-                name: "Rahul Verma",
-                rating: 5,
-                date: "2 weeks ago",
-                comment: "Bhai quality ek number hai! Fabric is much better than expected. Perfect fit for daily use."
-              },
-              {
-                id: 2,
-                name: "Siddhant Sharma",
-                rating: 5,
-                date: "1 month ago",
-                comment: "Comfort level is crazy. Delivery was fast too. Value for money."
-              },
-              {
-                id: 3,
-                name: "Ishaan Kapoor",
-                rating: 4,
-                date: "1 month ago",
-                comment: "Bohat hi premium feel hai fabric ki. Definitely going to buy more colors from WYNX."
-              }
-            ].map((review) => (
+            {getReviewsForProduct(product.id).map((review) => (
               <div key={review.id} className={styles.reviewItem}>
                 <div className={styles.reviewItemHeader}>
                   <div className={styles.reviewAuthor}>

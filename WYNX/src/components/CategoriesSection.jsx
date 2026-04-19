@@ -28,7 +28,7 @@ const CategoriesSection = () => {
       id: "3-line",
       title: "3-Line",
       subtitle: "SPORTY",
-      img: "/products/grey-premium.png",
+      img: "/products/3line-black.png",
       filterMode: "3-line",
       className: styles.catMedium
     }
