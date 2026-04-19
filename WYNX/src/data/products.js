@@ -1308,6 +1308,188 @@ const products = [
     ],
     "buyAtPrice": 429,
     "img": "/products/shorts_burgundy_rush.png"
+  },
+  {
+    "id": "wynx-shorts-camo-urban",
+    "name": "Wynx Urban Camo Dark Shorts",
+    "price": 499,
+    "oldPrice": 1599,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "Limited",
+    "rating": 4.8,
+    "reviews": 14,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "intensity": "High",
+    "tags": [
+      "camo",
+      "shorts"
+    ],
+    "description": "Bold urban camo patterns meet superior comfort. The WYNX logo pops against the dark streetwear design.",
+    "features": [
+      "Urban Camo",
+      "Sweat-Wicking",
+      "Side Pockets",
+      "Premium Logo Print"
+    ],
+    "offers": [
+      {
+        "type": "bundle",
+        "text": "₹36 off — Add 2 items to unlock offer"
+      }
+    ],
+    "buyAtPrice": 449,
+    "img": "/products/shorts_camo_urban.png"
+  },
+  {
+    "id": "wynx-shorts-white-aero",
+    "name": "Wynx Aero White Sport Shorts",
+    "price": 459,
+    "oldPrice": 1299,
+    "discount": 64,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "New",
+    "rating": 4.6,
+    "reviews": 21,
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "intensity": "Base",
+    "tags": [
+      "white",
+      "shorts"
+    ],
+    "description": "Clean, athletic, and sharp. The Aero White shorts bring an unmistakable premium vibe with maximum breathability.",
+    "features": [
+      "4-Way Stretch",
+      "Breathable Mesh",
+      "Hidden Zip Pocket",
+      "Elastic Waistband"
+    ],
+    "offers": [
+      {
+        "type": "bank",
+        "text": "₹50 off on bank offers"
+      }
+    ],
+    "buyAtPrice": 409,
+    "img": "/products/shorts_white_aero.png"
+  },
+  {
+    "id": "wynx-shorts-red-flare",
+    "name": "Wynx Flare Red Athletic Shorts",
+    "price": 429,
+    "oldPrice": 1499,
+    "discount": 71,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": null,
+    "rating": 4.9,
+    "reviews": 6,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "intensity": "High",
+    "tags": [
+      "red",
+      "shorts"
+    ],
+    "description": "Make a bold statement with Flare Red. Built with durable performance fabric to withstand your toughest workouts.",
+    "features": [
+      "Bold Colorway",
+      "Anti-Odor Technology",
+      "Deep Pockets",
+      "Reflective Logo"
+    ],
+    "offers": [
+      {
+        "type": "bundle",
+        "text": "Buy 2 Get 10% Off"
+      }
+    ],
+    "buyAtPrice": 389,
+    "img": "/products/shorts_red_flare.png"
+  },
+  {
+    "id": "wynx-shorts-neon-volt",
+    "name": "Wynx Volt Neon Active Shorts",
+    "price": 479,
+    "oldPrice": 1399,
+    "discount": 65,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "Trending",
+    "rating": 4.7,
+    "reviews": 9,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "intensity": "Base",
+    "tags": [
+      "shorts",
+      "neon"
+    ],
+    "description": "Stand out from the crowd with striking neon. Volt Neon shorts offer high visibility and supreme stretch flexibility.",
+    "features": [
+      "Neon Visibility",
+      "Flexible Fit",
+      "Side Tape Detail",
+      "Quick Dry"
+    ],
+    "offers": [],
+    "buyAtPrice": 429,
+    "img": "/products/shorts_neon_volt.png"
+  },
+  {
+    "id": "wynx-shorts-black-gold",
+    "name": "Wynx Legacy Gold-Edition Shorts",
+    "price": 500,
+    "oldPrice": 1799,
+    "discount": 72,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "Premium",
+    "rating": 5,
+    "reviews": 11,
+    "sizes": [
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "intensity": "High",
+    "tags": [
+      "premium",
+      "shorts",
+      "gold"
+    ],
+    "description": "The absolute pinnacle of luxury streetwear. Legacy Gold-Edition shorts feature metallic gold foil branding on deep athletic black fabric.",
+    "features": [
+      "Gold Foil Logo",
+      "Deep Black Fabric",
+      "Ergonomic Seams",
+      "Durable Build"
+    ],
+    "offers": [
+      {
+        "type": "bundle",
+        "text": "₹37 off — Buy More Save More"
+      }
+    ],
+    "buyAtPrice": 450,
+    "img": "/products/shorts_black_gold.png"
   }
 ];
 

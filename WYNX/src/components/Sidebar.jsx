@@ -7,8 +7,8 @@ const Sidebar = ({ onFilterChange, activeFilters = {}, onComingSoon }) => {
   const categories = [
     { icon: <Shirt size={18} />, label: 'All Products', value: 'all', available: true },
     { icon: <Layers size={18} />, label: 'Lowers', value: 'Lowers', available: true },
+    { icon: <Waves size={18} />, label: 'Shorts', value: 'Shorts', available: true },
     { icon: <Ruler size={18} />, label: 'Tops', value: 'Tops', available: false },
-    { icon: <Waves size={18} />, label: 'Outerwear', value: 'Outerwear', available: false },
     { icon: <Zap size={18} />, label: 'Compression', value: 'Compression', available: false },
   ];
 

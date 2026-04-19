@@ -13,11 +13,12 @@ const CollectionPage = () => {
   const { category } = useParams();
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get('search') || '';
+  const categoryQuery = searchParams.get('category') || 'all';
   const { addToCart } = useCart();
   const [comingSoonCategory, setComingSoonCategory] = useState(null);
   
   const [filters, setFilters] = useState({
-    subcategory: 'all',
+    subcategory: categoryQuery,
     size: null,
   });
 

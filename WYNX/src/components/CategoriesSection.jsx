@@ -31,6 +31,14 @@ const CategoriesSection = () => {
       img: "/products/3line-black.png",
       filterMode: "3-line",
       className: styles.catMedium
+    },
+    {
+      id: "shorts",
+      title: "Shorts",
+      subtitle: "ACTIVEWEAR",
+      img: "/products/shorts_camo_urban.png",
+      filterMode: "Shorts",
+      className: styles.catMedium
     }
   ];
 
