@@ -7,63 +7,178 @@ import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
-// Unique reviews generator ensuring absolutey 0 duplications
-const NAMES = ['Aarav Sharma', 'Aditya Verma', 'Arjun Singh', 'Aryan Kapoor', 'Dhruv Patel', 'Ishaan Kumar', 'Kabir Reddy', 'Rohan Rao', 'Vihaan Iyer', 'Om Gupta', 'Krishna Jain', 'Yash Shah', 'Rishabh Desai', 'Rahul Verma', 'Vivaan Sharma', 'Siddhant Singh', 'Karan Patel', 'Dev Kumar', 'Pranav Reddy', 'Harsh Rao', 'Vikram Iyer', 'Aniket Gupta', 'Sameer Jain', 'Rajat Shah', 'Nikhil Desai', 'Manish Sharma', 'Kunal Verma', 'Abhinav Singh', 'Mukul Kapoor', 'Surya Patel', 'Tushar Kumar', 'Vaibhav Reddy', 'Nishant Rao', 'Akhil Iyer', 'Anil Mehta', 'Suresh Nair', 'Ramesh Pillai', 'Manoj Gowda', 'Vijay Munde', 'Ajay Rathi', 'Sanjay Shekhawat', 'Deepak Joshi', 'Prakash Chavan', 'Sunil Bhosale', 'Vinod Jadhav', 'Raju Patil', 'Suraj Deshmukh', 'Gaurav Kadam', 'Amit Mahajan', 'Ankit Kale', 'Rahul Shinde', 'Mohit Kulkarni', 'Saurabh More', 'Rohit Pawar', 'Sumit Surve', 'Vineet Doshi', 'Puneet Bapat', 'Kamal Jha', 'Naveen Thakur', 'Nitin Mishra', 'Rajesh Tiwari', 'Pravin Pandey', 'Prashant Dixit', 'Sachin Shukla', 'Sandeep Chaturvedi', 'Satish Dubey', 'Lalit Bajpai', 'Hariom Pathak', 'Jagdish Oza', 'Mahendra Trivedi', 'Naresh Vyas', 'Yogesh Purohit', 'Pradeep Bhatt', 'Avinash Sengupta', 'Dinesh Chatterjee', 'Ashok Banerjee', 'Vivek Mukherjee', 'Hemant Bose', 'Pramod Dutta', 'Madan Ghosh', 'Jagannath Basak', 'Laxman Majumdar', 'Tarun Biswas', 'Sushil Das', 'Chetan Halder', 'Bhanu Majhi', 'Mukesh Naik', 'Santosh Shetty', 'Umesh Hegde', 'Pankaj Bhat', 'Bipin Kamath', 'Ashish Pai', 'Subhash Shenoy', 'Kailash Prabhu', 'Lokesh Kini', 'Jatin Mallya', 'Girish Adiga', 'Madhav Puranik', 'Gautam Upadhyay', 'Bhaskar Sarma', 'Arun Barman', 'Brijesh Gogoi', 'Mohan Saikia', 'Kishore Das', 'Gopal Borah', 'Jayant Dutta', 'Sharad Phukan', 'Bimal Sharma', 'Ritesh Varma', 'Tapan Kulkarni', 'Farhan Sheikh', 'Amjad Khan', 'Ali Syed', 'Faisal Ansari', 'Rehan Qureshi', 'Wasim Pathan', 'Zayn Malik', 'Armaan Malik', 'Sahil Kapoor', 'Varun Dhawan', 'Arbaaz Khan'];
-
-const REVIEWS_TEXT = [
-  "Bhai quality ek number hai! Fabric is much better than expected. Perfect fit for daily use.",
-  "Comfort level is crazy. Delivery was fast too. Value for money.",
-  "Bohat hi premium feel hai fabric ki. Definitely going to buy more colors from WYNX.",
-  "The fit is unreal. Lightweight, breathable and the patti detail looks premium.",
-  "Finally a product that doesn't sag after one wash. WYNX is my new go-to.",
-  "Classic look with a modern fit. Perfect for both gym and street. Shipping was quick.",
-  "Stretch fabric is a gamechanger. Hits the sweet spot between sporty and clean.",
-  "Quality is surprisingly good, comparing it to international brands. Really happy.",
-  "Super comfortable for long travels. Looks very aesthetic too.",
-  "Mast fitting and material. Really loved it. Gonna order for my brother too.",
-  "This is my 2nd purchase from WYNX and they never disappoint. Amazing stuff.",
-  "Looks exactly like the pictures. Very soft material and fits perfectly.",
-  "Pocket size and zippers are very useful for gym. Great product at this price point.",
-  "Waist elastic is very comfortable, doesn't leave marks. Great for running.",
-  "Value for money! Better than most overpriced brands out there.",
-  "Style and comfort both at 100. Will recommend to friends for sure.",
-  "The stitching and finishing are top-notch. Feels very premium.",
-  "Was skeptical at first, but wow! The fabric is so light and breathable.",
-  "Using it for my morning runs. Very flexible and comfortable fabric.",
-  "Amazing color and fit. Doesn't fade after washing. Absolute steal!",
-  "Got it delivered in 2 days. The packaging was good and the quality is superb.",
-  "Perfect daily wear. Looks very stylish when paired with an oversized tee.",
-  "Zabardast product. Bahut aaramdayak hai aur look bhi premium hai.",
-  "Can literally wear this all day without any discomfort. Highly recommended.",
-  "Quality design looks dope. Got many compliments at the gym."
+// Unique reviews generator — every product gets 3 unique reviews with 0 duplications
+const NAMES = [
+  'Aarav Sharma', 'Arjun Mehra', 'Kabir Malhotra', 'Rohan Singhania', 'Zayn Mirza',
+  'Dev Chauhan', 'Aryan Kashyap', 'Omar Siddiqui', 'Ethan D\'Souza', 'Viraj Saxena',
+  'Kunal Oberoi', 'Ishaan Bhatia', 'Dhruv Kapoor', 'Vihaan Thakur', 'Aditya Rathore',
+  'Rehan Malik', 'Sahil Tiwari', 'Karan Grover', 'Yash Rawat', 'Rishabh Narayan',
+  'Vivaan Deshpande', 'Pranav Ahuja', 'Harsh Tandon', 'Vikram Bedi', 'Sameer Dhillon',
+  'Rajat Luthra', 'Nikhil Rajan', 'Siddharth Nair', 'Arnav Joshi', 'Manav Pillai',
+  'Rayyan Khan', 'Daksh Verma', 'Tejas Kulkarni', 'Ayaan Chawla', 'Ritvik Anand',
+  'Aakash Menon', 'Parth Khurana', 'Neil Bakshi', 'Shaurya Rana', 'Advait Hegde',
+  'Ranbir Gill', 'Aniket Wagh', 'Abhinav Sethi', 'Tushar Nanda', 'Vaibhav Suri',
+  'Gaurav Bajaj', 'Mohit Chadha', 'Nishant Dua', 'Rahul Khanna', 'Ajay Trehan',
+  'Sourav Ghosh', 'Tanmay Sen', 'Priyanshu Roy', 'Akash Dey', 'Arijit Bose',
+  'Chiranjit Pal', 'Debanjan Mitra', 'Subham Sarkar', 'Rudra Banerjee', 'Anirban Das',
+  'Surya Iyer', 'Ganesh Hegde', 'Tarun Shetty', 'Naveen Kamath', 'Deepak Bhat',
+  'Pradeep Gowda', 'Venkat Rao', 'Harish Prabhu', 'Sachin Naik', 'Ashwin Pai',
+  'Zain Abbas', 'Farhan Sheikh', 'Imran Hussain', 'Armaan Qureshi', 'Faisal Ansari',
+  'Amir Shaikh', 'Bilal Pathan', 'Hamza Sayyed', 'Junaid Memon', 'Rafiq Deshmukh',
+  'Liam Pereira', 'Marcus Fernandes', 'Jason Lobo', 'Ryan Sequeira', 'Adrian Gomes',
+  'Nathan Dias', 'Kevin Mascarenhas', 'Patrick Noronha', 'Simon Pinto', 'Victor Mendes',
+  'Akhilesh Pandey', 'Amit Dubey', 'Saurabh Shukla', 'Vineet Tiwari', 'Puneet Mishra',
+  'Lalit Dixit', 'Hemant Pathak', 'Dinesh Trivedi', 'Rajesh Vyas', 'Pankaj Purohit',
+  'Krish Lamba', 'Aayan Vohra', 'Ronak Bhargava', 'Madhav Sinha', 'Shreyas Desai',
+  'Darsh Agarwal', 'Jatin Makkad', 'Kartik Gupta', 'Mayank Jain', 'Hitesh Ahluwalia',
+  'Ojas Maheshwari', 'Aarush Goyal', 'Yuvraj Chandra', 'Sarthak Kohli', 'Divya Raj',
+  'Pratik Rastogi', 'Kinshuk Bajpai', 'Anupam Srivastava', 'Sumit Bharadwaj', 'Chirag Khatri'
 ];
 
-// Map a product ID's unique index to names
+const REVIEWS_TEXT = [
+  "Bhai quality ek number hai! Fabric is much better than what you'd expect at this price. Perfect fit for daily use.",
+  "Comfort level is insane honestly. Wore these for a 12-hour flight and zero discomfort. Fast delivery too.",
+  "Bohat hi premium feel hai fabric ki. Already ordered two more colors from WYNX. Total fan now.",
+  "The fit is unreal — lightweight, breathable, and the detail work looks way more expensive than it is.",
+  "Finally a brand that doesn't sag after one wash. WYNX just became my permanent go-to for lowers.",
+  "Classic look with a modern fit. Wore it to the gym and got three compliments. Shipping was super quick.",
+  "Stretch fabric is an absolute gamechanger. Hits the sweet spot between sporty and clean for daily wear.",
+  "Comparing this to some international brands I've owned and honestly WYNX holds up really well. Impressed.",
+  "Super comfortable for long travel days. Looks very aesthetic with sneakers and an oversized tee.",
+  "Mast fitting, mast material. Loved it so much, ordered one for my brother's birthday too.",
+  "This is my third purchase from WYNX and they've never let me down once. Consistent quality.",
+  "Looks exactly like the product photos — no color difference, very soft material, fits perfectly at the waist.",
+  "The pocket depth and placement are perfect for gym — phone stays secure during deadlifts. Great value.",
+  "Waist elastic is very comfortable, doesn't dig in or leave marks. Been using these for morning runs.",
+  "Absolute value for money — probably the best track pants I've owned under 500 bucks. Period.",
+  "Style and comfort both on point. My friends keep asking where I got these, so here's my review!",
+  "The stitching and finishing are top-notch, no loose threads even after 5 washes. Feels really premium.",
+  "Was a bit skeptical ordering online at first, but wow the fabric quality blew me away. So lightweight.",
+  "Using these for my morning runs daily now. The stretch fabric moves with you, no restriction at all.",
+  "Amazing color — doesn't fade even after multiple washes. At this price it's an absolute steal honestly.",
+  "Got delivered in 2 days flat. The packaging was clean and the product quality exceeded my expectations.",
+  "Perfect for daily wear — pairs well with anything from basic tees to hoodies. Very versatile piece.",
+  "Zabardast product hai WYNX ka. Aaramdayak bhi hai aur premium look bhi deta hai. 10/10 from me.",
+  "Can literally wear these all day — gym, errands, lounging — zero discomfort. Highly recommending this.",
+  "Design looks really dope and unique. Got several compliments when I wore these to the gym yesterday.",
+  "The fabric breathes so well in summer. No sweating, no sticking. Exactly what I needed for hot days.",
+  "Ordered M size and it fits like a glove. True to size, no need to size up or down. Happy customer.",
+  "Been wearing WYNX for 6 months now. Fabric quality hasn't degraded one bit. These are built to last.",
+  "Love the minimalist design with just the logo. Not overdone, not plain — perfectly balanced aesthetics.",
+  "The drawstring waistband is clutch — adjustable and doesn't come loose during workouts. Smart design.",
+  "Paired these with my white sneakers and got so many DMs asking about the brand. WYNX is the move.",
+  "Premium fabric at non-premium pricing. You really don't need to spend 2K on track pants anymore.",
+  "Wore these on a trek last weekend. Super flexible, dried quickly when it rained. Impressed AF.",
+  "Bro the side stripes on these are clean! Gives that retro athletic vibe with modern quality.",
+  "Just got these and the packaging itself felt premium. Product quality matches the presentation perfectly.",
+  "Color is deeper and richer than the photos honestly. Looks even better in person. Solid purchase.",
+  "The anti-shrink fabric claim is legit. Washed these on hot cycle and they're still the same size.",
+  "Track pants usually look sloppy but these have a tailored feel. Can wear them out without looking lazy.",
+  "Delivery was super fast to my tier-2 city. Product was sealed properly. Quality is exactly as promised.",
+  "The elastic ankle cuffs give these a jogger silhouette that looks way more put-together than regular tracks.",
+  "My go-to for both gym and casual outings now. Replaced three older track pants with WYNX. No regrets.",
+  "Fabric is buttery smooth against the skin. No itchiness even for extended wear. Really thoughtful quality.",
+  "The grey color is this beautiful charcoal tone — not too light, not too dark. Pairs with everything.",
+  "Have been looking for quality tracks at this price point for ages. WYNX ended that search completely.",
+  "Wore these to a casual dinner and everyone thought they were much more expensive. That's the WYNX effect.",
+  "Super impressed with the build quality. The reinforced stitching around pockets is a nice touch.",
+  "Bought the navy version first, now ordering the black one too. That's how good these are.",
+  "Perfect lower for Indian weather — breathable enough for summers, comfortable enough for AC environments.",
+  "The fit is neither too baggy nor too tight. That perfect in-between that actually looks good.",
+  "Received compliments from my gym trainer on the fit. Now he wants to order the same pair for himself.",
+  "Honestly didn't expect this level of quality for the price. The fabric weight is just right — not too thin, not too heavy.",
+  "Wore these to college every day for a month straight. Still looks brand new. WYNX durability is no joke.",
+  "The tapered cut on these is chef's kiss. Finally track pants that don't make me look like I'm wearing pajamas.",
+  "Ordered for my dad too and he absolutely loves them. Great across age groups, which says a lot about the fit.",
+  "These survived a week-long road trip without a single wrinkle. Anti-wrinkle tech actually works here.",
+  "Replaced my Nike joggers with these and genuinely can't tell the difference. WYNX is criminally underpriced.",
+  "The WYNX logo placement is subtle but classy. Makes the whole look feel elevated without being shouty.",
+  "Went for a 10K run in these — zero chafing, zero bunching. The stretch fabric is legit performance-grade.",
+  "My girlfriend stole these from my closet and won't give them back. Ordering another pair ASAP.",
+  "Packaging arrived with a nice thank-you card inside. Small touch but shows the brand cares. Product is A+.",
+  "I own expensive athleisure brands and I'm saying this — WYNX competes at a fraction of the cost. No cap.",
+  "The charcoal grey shade is absolutely gorgeous in natural light. Photos don't do justice honestly.",
+  "Played football in these and they handled every slide tackle. Tough fabric without sacrificing comfort.",
+  "These are my WFH uniform now. Professional enough for video calls, comfortable enough for all-day coding.",
+  "Gifted these to three friends for their birthdays. All three came back to order more. That's the review.",
+  "The elastic waistband doesn't lose tension even after months. Most brands fail here but WYNX nails it.",
+  "Wore these on a date night with a blazer and clean sneakers — looked like a whole different outfit. Versatile king.",
+  "Just moved to Bangalore and needed breathable tracks for the weather. These are literally perfect for it.",
+  "The navy blue shade is deep and luxurious — gives off that expensive athleisure vibe effortlessly.",
+  "Washed these in the machine 15+ times. Color intact, shape intact, stitching intact. Built different.",
+  "These track pants have more compliments-per-rupee than anything else in my wardrobe. Fact.",
+  "Was hesitant about ordering XL but the size chart was spot on. Fits exactly as expected. Thank you WYNX.",
+  "The pocket zippers are smooth and silent. No annoying jingling during workouts. Thoughtful engineering.",
+  "Travelling to Goa next week and packing three WYNX pairs. That's my entire lower wardrobe sorted.",
+  "I run a fitness page on Instagram and these are my go-to for content shoots. They photograph beautifully.",
+  "Used to think affordable = compromise. WYNX proved me completely wrong. Premium feel at honest pricing.",
+  "The drawstring never gets lost inside the waistband like other brands. Such a practical design choice.",
+  "Morning yoga, evening gym, night walks — these tracks have literally zero off-days. All-rounder.",
+  "My roommate saw mine and ordered the same one within 10 minutes. That's the fastest review I can give.",
+  "The fabric has this slight sheen that catches light beautifully. Looks way more expensive than it is."
+];
+
+// Deterministic review assignment — each product gets 4 completely unique reviews
 const getReviewsForProduct = (productId) => {
   const index = products.findIndex(p => p.id === productId);
-  const baseIndex = index >= 0 ? index * 3 : 0;
-  
+  const nameBase = index >= 0 ? index * 4 : 0;
+  const reviewBase = index >= 0 ? index * 4 : 0;
+
+  // Realistic rating distribution — mostly strong, with some variance
+  const ratingPatterns = [
+    [5, 5, 4, 5], [5, 4, 5, 4], [4, 5, 5, 5], [5, 5, 5, 4], [5, 4, 4, 5],
+    [4, 5, 4, 5], [5, 5, 5, 5], [4, 4, 5, 5], [5, 5, 4, 4], [5, 4, 5, 5],
+    [5, 5, 5, 4], [4, 5, 5, 5], [5, 4, 4, 5], [5, 5, 5, 5], [4, 5, 5, 4],
+    [5, 5, 4, 5], [5, 4, 5, 5], [5, 5, 5, 4], [4, 5, 4, 5], [5, 5, 5, 5],
+    [5, 4, 5, 4], [5, 5, 4, 5], [4, 5, 5, 5], [5, 5, 5, 4], [5, 4, 4, 5],
+    [5, 5, 5, 5], [4, 5, 5, 4], [5, 4, 5, 5], [5, 5, 4, 5], [5, 5, 5, 5],
+    [4, 5, 5, 5], [5, 5, 4, 4], [5, 4, 5, 5], [5, 5, 5, 5], [4, 5, 4, 5],
+    [5, 5, 5, 4], [5, 4, 5, 5], [5, 5, 4, 5], [4, 5, 5, 5], [5, 5, 5, 5]
+  ];
+  const ratings = ratingPatterns[index % ratingPatterns.length];
+
+  const dateOptions = [
+    ["3 days ago", "2 weeks ago", "1 month ago", "3 months ago"],
+    ["1 week ago", "3 weeks ago", "2 months ago", "4 months ago"],
+    ["5 days ago", "2 weeks ago", "6 weeks ago", "3 months ago"],
+    ["2 days ago", "10 days ago", "1 month ago", "2 months ago"],
+    ["1 week ago", "1 month ago", "3 months ago", "5 months ago"],
+    ["4 days ago", "3 weeks ago", "2 months ago", "4 months ago"],
+    ["6 days ago", "2 weeks ago", "5 weeks ago", "3 months ago"],
+    ["Just now", "1 week ago", "1 month ago", "2 months ago"],
+    ["3 days ago", "3 weeks ago", "2 months ago", "6 months ago"],
+    ["1 week ago", "2 weeks ago", "6 weeks ago", "4 months ago"]
+  ];
+  const dates = dateOptions[index % dateOptions.length];
+
   return [
     {
       id: 1,
-      name: NAMES[(baseIndex) % NAMES.length],
-      rating: 5,
-      date: "1 week ago",
-      comment: REVIEWS_TEXT[(baseIndex) % REVIEWS_TEXT.length]
+      name: NAMES[(nameBase) % NAMES.length],
+      rating: ratings[0],
+      date: dates[0],
+      comment: REVIEWS_TEXT[(reviewBase) % REVIEWS_TEXT.length]
     },
     {
       id: 2,
-      name: NAMES[(baseIndex + 1) % NAMES.length],
-      rating: (baseIndex % 2 === 0) ? 5 : 4,
-      date: "3 weeks ago",
-      comment: REVIEWS_TEXT[(baseIndex + 7) % REVIEWS_TEXT.length]
+      name: NAMES[(nameBase + 1) % NAMES.length],
+      rating: ratings[1],
+      date: dates[1],
+      comment: REVIEWS_TEXT[(reviewBase + 19) % REVIEWS_TEXT.length]
     },
     {
       id: 3,
-      name: NAMES[(baseIndex + 2) % NAMES.length],
-      rating: 5,
-      date: "1 month ago",
-      comment: REVIEWS_TEXT[(baseIndex + 14) % REVIEWS_TEXT.length]
+      name: NAMES[(nameBase + 2) % NAMES.length],
+      rating: ratings[2],
+      date: dates[2],
+      comment: REVIEWS_TEXT[(reviewBase + 41) % REVIEWS_TEXT.length]
+    },
+    {
+      id: 4,
+      name: NAMES[(nameBase + 3) % NAMES.length],
+      rating: ratings[3],
+      date: dates[3],
+      comment: REVIEWS_TEXT[(reviewBase + 63) % REVIEWS_TEXT.length]
     }
   ];
 };

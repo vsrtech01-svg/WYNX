@@ -12,7 +12,7 @@ const CategoriesSection = () => {
       id: "self-design",
       title: "Self Design",
       subtitle: "PATTI PATTERN",
-      img: "/products/blue-solid.png",
+      img: "/products/wynx-black-panel-1.png",
       filterMode: "self-design",
       className: styles.catLarge
     },
@@ -20,7 +20,7 @@ const CategoriesSection = () => {
       id: "solid",
       title: "Solid",
       subtitle: "CLEAN LOOK",
-      img: "/products/black-premium.png",
+      img: "/products/wynx-black-track-1.png",
       filterMode: "solid",
       className: styles.catSmall
     },
@@ -28,7 +28,7 @@ const CategoriesSection = () => {
       id: "3-line",
       title: "3-Line",
       subtitle: "SPORTY",
-      img: "/products/3line-black.png",
+      img: "/products/wynx-navy-3line-1.png",
       filterMode: "3-line",
       className: styles.catMedium
     },
@@ -36,7 +36,7 @@ const CategoriesSection = () => {
       id: "shorts",
       title: "Shorts",
       subtitle: "ACTIVEWEAR",
-      img: "/products/shorts_camo_urban.png",
+      img: "/products/wynx-shorts-camo-1.jpg",
       filterMode: "Shorts",
       className: styles.catMedium
     }

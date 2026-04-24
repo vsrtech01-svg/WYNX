@@ -9,9 +9,9 @@ const Hero = ({ title, subtitle, category }) => {
   const displaySubtitle = subtitle || "PREMIUM MEN'S STREETWEAR CRAFTED IN JAIPUR. BUILT FOR THE MODERN URBAN LIFESTYLE.";
 
   const images = [
-    "/products/black-premium.png",
-    "/products/grey-v3.png",
-    "/products/blue-solid.png"
+    "/products/wynx-black-track-1.png",
+    "/products/wynx-navy-track-1.png",
+    "/products/wynx-shorts-black-2.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
