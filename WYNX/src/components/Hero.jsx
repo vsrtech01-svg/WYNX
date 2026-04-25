@@ -11,7 +11,7 @@ const Hero = ({ title, subtitle, category }) => {
   const images = [
     "/products/wynx-black-track-1.png",
     "/products/wynx-navy-track-1.png",
-    "/products/wynx-shorts-black-2.jpg"
+    "/products/wynx-shorts-black-v2.png"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

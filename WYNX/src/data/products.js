@@ -1130,390 +1130,134 @@ const products = [
     "img": "/products/wynx-black-panel-1.png"
   },
   {
-    "id": "wynx-shorts-camo-stealth",
-    "name": "Shadow Ops Camo Shorts",
-    "price": 499,
-    "oldPrice": 1599,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Best Seller",
-    "rating": 4.8,
-    "reviews": 18,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "best-seller",
-      "shorts",
-      "trending"
-    ],
-    "description": "Shadow Ops Camo Shorts — dark urban camouflage meets premium WYNX craftsmanship. Bold vertical logo branding, drawstring waist, and ultra-breathable fabric make these the ultimate statement shorts for gym sessions and street runs alike.",
-    "features": [
-      "Urban Camo Print",
-      "Bold WYNX Logo Branding",
-      "Drawstring Waistband",
-      "Quick-Dry Fabric"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
-      }
-    ],
-    "buyAtPrice": 449,
-    "img": "/products/wynx-shorts-camo-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-silver-mist",
-    "name": "Glacier Mist Sport Shorts",
+    "id": "wynx-shorts-alpine-white",
+    "name": "Alpine Frost Sport Shorts",
     "price": 479,
     "oldPrice": 1499,
     "discount": 68,
     "category": "men",
     "subcategory": "Shorts",
     "badge": "New Drop",
-    "rating": 4.7,
-    "reviews": 14,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+    "rating": 4.8,
+    "reviews": 17,
+    "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
-    "tags": [
-      "new-arrival",
-      "shorts"
-    ],
-    "description": "Glacier Mist Sport Shorts — clean silver-grey with subtle WYNX logo and zip pockets. Lightweight, breathable performance fabric engineered for maximum airflow during intense training. The versatile neutral tone pairs with everything.",
-    "features": [
-      "Light Grey Colorway",
-      "Zip Side Pockets",
-      "Breathable Mesh Lining",
-      "Elastic Waistband"
-    ],
-    "offers": [
-      {
-        "type": "bank",
-        "text": "₹50 off on bank offers"
-      }
-    ],
+    "tags": ["new-arrival", "shorts", "trending"],
+    "description": "Alpine Frost Sport Shorts — pristine white with a clean, minimal WYNX script logo. Ultra-lightweight performance fabric with a relaxed athletic fit. These shorts bring effortless sophistication to your gym-to-street rotation.",
+    "features": ["Pristine White Colorway", "WYNX Script Logo", "Lightweight Performance Fabric", "Relaxed Athletic Fit"],
+    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
     "buyAtPrice": 429,
-    "img": "/products/wynx-shorts-grey-1.jpg"
+    "img": "/products/wynx-shorts-white-v2.png",
+    "reviewData": [
+      {"name": "Sameer Khatri", "rating": 5, "text": "Cleanest white shorts I've owned — the fabric doesn't go see-through and the WYNX logo is subtle but premium. Perfect for summer workouts."},
+      {"name": "Dhruv Malhotra", "rating": 4, "text": "Love the relaxed fit and breathable material. Only wish they came in a 3XL. Otherwise flawless quality for this price range."},
+      {"name": "Ishaan Batra", "rating": 5, "text": "Wore these to the gym and got three compliments. The white stays white even after multiple washes. Impressive build quality."},
+      {"name": "Neil Kapoor", "rating": 4, "text": "Great for both training and casual outings. The elastic waist sits just right without feeling too tight. Solid purchase."}
+    ]
   },
   {
-    "id": "wynx-shorts-noir-essential",
-    "name": "Noir Essential Shorts",
-    "price": 449,
+    "id": "wynx-shorts-sand-drift",
+    "name": "Sand Drift Lounge Shorts",
+    "price": 489,
+    "oldPrice": 1599,
+    "discount": 69,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "Trending",
+    "rating": 4.9,
+    "reviews": 14,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["trending", "shorts", "best-seller"],
+    "description": "Sand Drift Lounge Shorts — warm beige with the iconic WYNX script logo. A neutral-tone essential that pairs effortlessly with any top. Crafted from premium cotton-blend fabric for all-day comfort whether you're training or unwinding.",
+    "features": ["Warm Beige Tone", "Premium Cotton-Blend", "WYNX Script Logo", "Deep Side Pockets"],
+    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "buyAtPrice": 439,
+    "img": "/products/wynx-shorts-beige-v2.png",
+    "reviewData": [
+      {"name": "Kabir Sehgal", "rating": 5, "text": "This beige tone is incredible — neutral enough for everything but still looks premium. The fabric quality surprised me at this price point."},
+      {"name": "Yash Singhania", "rating": 5, "text": "These are my new go-to for weekends. Super comfortable, the fit is just right, and the beige color is exactly as shown."},
+      {"name": "Rohan Dasgupta", "rating": 4, "text": "Love the earth-tone aesthetic. They pair well with both black and white tees. The cotton-blend feels luxurious against the skin."},
+      {"name": "Arnav Thakur", "rating": 5, "text": "Ordered two pairs because the first one was so good. The drawstring waist holds perfectly during squats. Top-notch quality from WYNX."}
+    ]
+  },
+  {
+    "id": "wynx-shorts-midnight-navy",
+    "name": "Midnight Cruise Navy Shorts",
+    "price": 469,
+    "oldPrice": 1399,
+    "discount": 66,
+    "category": "men",
+    "subcategory": "Shorts",
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "reviews": 22,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "High",
+    "tags": ["best-seller", "shorts", "trending"],
+    "description": "Midnight Cruise Navy Shorts — deep navy with white WYNX script branding. Engineered for versatility — from morning runs to evening hangouts. The dark navy never fades and the fabric dries in minutes after a wash.",
+    "features": ["Deep Navy Colorway", "Quick-Dry Fabric", "WYNX Script Branding", "Fade-Resistant Dye"],
+    "offers": [{"type": "bundle", "text": "₹37 off — Buy More Save More"}],
+    "buyAtPrice": 419,
+    "img": "/products/wynx-shorts-navy-v2.png",
+    "reviewData": [
+      {"name": "Vikram Joshi", "rating": 5, "text": "Navy is always a safe bet but these elevate it to another level. The fit is modern, not baggy, and the logo placement is tasteful."},
+      {"name": "Aditya Choudhary", "rating": 4, "text": "Wore them for a 10K run and they performed like premium running shorts. Zero chafing, great breathability. Will buy the black version next."},
+      {"name": "Karan Mehra", "rating": 5, "text": "The color is a perfect deep navy — not too bright, not too dark. These look and feel way more expensive than they cost."},
+      {"name": "Pranav Nair", "rating": 5, "text": "Fast delivery and the packaging felt premium. The shorts themselves are excellent — lightweight, well-stitched, and the navy is gorgeous."}
+    ]
+  },
+  {
+    "id": "wynx-shorts-obsidian-core",
+    "name": "Obsidian Core Essential Shorts",
+    "price": 459,
     "oldPrice": 1299,
     "discount": 65,
     "category": "men",
     "subcategory": "Shorts",
     "badge": "Top Rated",
     "rating": 4.9,
-    "reviews": 22,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+    "reviews": 26,
+    "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
-    "tags": [
-      "best-seller",
-      "shorts",
-      "trending"
-    ],
-    "description": "Noir Essential Shorts — the ultimate black-on-black luxury. Premium satin-finish fabric with WYNX logo branding. Styled with a hoodie or tee, these shorts redefine what casual means. Built for the man who owns every room he walks into.",
-    "features": [
-      "Satin-Finish Fabric",
-      "WYNX Logo Print",
-      "Deep Side Pockets",
-      "Premium Drawstring"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
-      }
-    ],
-    "buyAtPrice": 399,
-    "img": "/products/wynx-shorts-black-1.png"
+    "tags": ["best-seller", "shorts", "new-arrival"],
+    "description": "Obsidian Core Essential Shorts — deep matte black with white WYNX script logo. The definitive black shorts for every man's rotation. Premium quick-dry fabric, reinforced stitching, and a fit that moves with you. The essential you never knew you needed.",
+    "features": ["Deep Matte Black", "Reinforced Stitching", "Quick-Dry Performance", "WYNX Script Logo"],
+    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "buyAtPrice": 409,
+    "img": "/products/wynx-shorts-black-v2.png",
+    "reviewData": [
+      {"name": "Zain Ahmed", "rating": 5, "text": "These are the perfect black shorts. Period. The matte finish looks premium and the fabric doesn't pill even after heavy use."},
+      {"name": "Aarav Sharma", "rating": 5, "text": "Bought these for the gym and ended up wearing them everywhere. The fit is spot-on and the black color stays rich wash after wash."},
+      {"name": "Dev Rajput", "rating": 4, "text": "Solid staple shorts. The WYNX logo is clean and minimal. The waistband is comfortable for long wear. Would recommend to anyone."},
+      {"name": "Reyansh Verma", "rating": 5, "text": "Quality is exceptional for the price. These look and feel like they should cost twice as much. The deep black is exactly what I wanted."}
+    ]
   },
   {
-    "id": "wynx-shorts-stealth-pro",
-    "name": "Stealth Pro Training Shorts",
-    "price": 489,
-    "oldPrice": 1599,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Premium",
-    "rating": 4.8,
-    "reviews": 16,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "premium",
-      "shorts",
-      "new-arrival"
-    ],
-    "description": "Stealth Pro Training Shorts — engineered for elite performance. All-black with WYNX branding on both the hoodie and shorts for a full coordinated look. Anti-odor tech and ergonomic cut deliver gym-ready comfort with street-ready aesthetics.",
-    "features": [
-      "Anti-Odor Technology",
-      "Ergonomic Seams",
-      "WYNX Coordinated Set Style",
-      "Quick-Dry Performance"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
-      }
-    ],
-    "buyAtPrice": 439,
-    "img": "/products/wynx-shorts-black-2.jpg"
-  },
-  {
-    "id": "wynx-shorts-burgundy-comp",
-    "name": "Crimson Forge Compression Shorts",
-    "price": 549,
-    "oldPrice": 1799,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Limited",
-    "rating": 4.9,
-    "reviews": 9,
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "limited",
-      "shorts",
-      "premium"
-    ],
-    "description": "Crimson Forge Compression Shorts — the apex of WYNX athletic engineering. Deep burgundy outer shell with integrated black compression tights underneath. Built for explosive training, sprint workouts, and athletes who demand zero restrictions.",
-    "features": [
-      "Built-In Compression Layer",
-      "Deep Burgundy Colorway",
-      "WYNX Performance Branding",
-      "4-Way Stretch Fabric"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
-      }
-    ],
-    "buyAtPrice": 499,
-    "img": "/products/wynx-shorts-burgundy-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-olive-tactical",
-    "name": "Ranger Tactical Olive Shorts",
-    "price": 489,
-    "oldPrice": 1599,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "New Drop",
-    "rating": 4.8,
-    "reviews": 15,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "new-arrival",
-      "shorts",
-      "trending"
-    ],
-    "description": "Ranger Tactical Olive Shorts — military-inspired streetwear at its finest. Deep olive with WYNX logo branding, paired with a utility vest for the ultimate urban combat look. Built for movement, styled for dominance.",
-    "features": [
-      "Military Olive Colorway",
-      "WYNX Logo Branding",
-      "Drawstring Waistband",
-      "Tactical Utility Design"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
-      }
-    ],
-    "buyAtPrice": 439,
-    "img": "/products/wynx-shorts-olive-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-arctic-white",
-    "name": "Arctic Pulse Sport Shorts",
-    "price": 479,
-    "oldPrice": 1499,
-    "discount": 68,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Trending",
-    "rating": 4.7,
-    "reviews": 19,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "Base",
-    "tags": [
-      "trending",
-      "shorts",
-      "new-arrival"
-    ],
-    "description": "Arctic Pulse Sport Shorts — crisp white with bold WYNX branding. Premium lightweight fabric paired with a sleek black compression top for a clean, athletic silhouette. Made for athletes who refuse to blend in.",
-    "features": [
-      "Pristine White Colorway",
-      "Bold WYNX Branding",
-      "Breathable Mesh Lining",
-      "Premium Elastic Waist"
-    ],
-    "offers": [
-      {
-        "type": "bank",
-        "text": "₹50 off on bank offers"
-      }
-    ],
-    "buyAtPrice": 429,
-    "img": "/products/wynx-shorts-white-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-volt-neon",
-    "name": "Volt Surge Neon Shorts",
+    "id": "wynx-shorts-graphite-flex",
+    "name": "Graphite Flex Training Shorts",
     "price": 499,
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
     "subcategory": "Shorts",
-    "badge": "Limited",
-    "rating": 4.9,
-    "reviews": 11,
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
+    "badge": "Premium",
+    "rating": 4.7,
+    "reviews": 13,
+    "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
-    "tags": [
-      "limited",
-      "shorts",
-      "trending"
-    ],
-    "description": "Volt Surge Neon Shorts — electrifying neon green that demands attention. Oversized WYNX logo, ultralight quick-dry fabric, and maximum mobility. Engineered for high-intensity sprints and built to turn every head on the track.",
-    "features": [
-      "Electric Neon Colorway",
-      "Oversized WYNX Logo",
-      "Quick-Dry Technology",
-      "Ultra-Lightweight Fabric"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
-      }
-    ],
+    "tags": ["premium", "shorts", "new-arrival"],
+    "description": "Graphite Flex Training Shorts — sleek charcoal-grey with white WYNX branding. The darkest grey in the lineup delivers a stealth aesthetic while the 4-way stretch fabric handles every lunge, sprint, and deadlift. For the man who trains hard and looks harder.",
+    "features": ["Charcoal Grey Colorway", "4-Way Stretch Fabric", "WYNX Performance Logo", "Ergonomic Cut"],
+    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
     "buyAtPrice": 449,
-    "img": "/products/wynx-shorts-neon-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-crimson-strike",
-    "name": "Crimson Strike Training Shorts",
-    "price": 469,
-    "oldPrice": 1499,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Best Seller",
-    "rating": 4.8,
-    "reviews": 21,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "best-seller",
-      "shorts"
-    ],
-    "description": "Crimson Strike Training Shorts — bold red with WYNX logo and white drawstring accent. Built for explosive HIIT sessions, lunges, and full-range movement. The contrast drawstring adds a premium touch to this high-octane essential.",
-    "features": [
-      "Bold Crimson Red",
-      "Contrast Drawstring",
-      "WYNX Performance Logo",
-      "4-Way Stretch Fabric"
-    ],
-    "offers": [
-      {
-        "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
-      }
-    ],
-    "buyAtPrice": 419,
-    "img": "/products/wynx-shorts-red-1.jpg"
-  },
-  {
-    "id": "wynx-shorts-navy-sprint",
-    "name": "Horizon Navy Sprint Shorts",
-    "price": 459,
-    "oldPrice": 1399,
-    "discount": 67,
-    "category": "men",
-    "subcategory": "Shorts",
-    "badge": "Top Rated",
-    "rating": 4.9,
-    "reviews": 24,
-    "sizes": [
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "intensity": "High",
-    "tags": [
-      "best-seller",
-      "shorts",
-      "trending"
-    ],
-    "description": "Horizon Navy Sprint Shorts — full navy coordinated set with matching WYNX tee for a head-to-toe athletic look. Aerodynamic cut, sweat-wicking fabric, and zero-restriction movement make these the ultimate performance shorts.",
-    "features": [
-      "Full Navy Coordinated Look",
-      "Sweat-Wicking Fabric",
-      "Aerodynamic Cut",
-      "WYNX Matching Set Ready"
-    ],
-    "offers": [
-      {
-        "type": "bank",
-        "text": "₹50 off on bank offers"
-      }
-    ],
-    "buyAtPrice": 409,
-    "img": "/products/wynx-shorts-navy-1.jpg"
+    "img": "/products/wynx-shorts-charcoal-v2.png",
+    "reviewData": [
+      {"name": "Omar Hussain", "rating": 5, "text": "The charcoal color is stunning in person. Not too light, not black — just perfect. The stretch fabric makes these ideal for leg day."},
+      {"name": "Vivaan Saxena", "rating": 4, "text": "Great fit and the charcoal looks sharp with any color top. The WYNX logo on the thigh is a nice touch. Very comfortable for all-day wear."},
+      {"name": "Harsh Agarwal", "rating": 5, "text": "These are the best training shorts I've used. The stretch is incredible and they don't ride up during squats. Premium feel throughout."},
+      {"name": "Lakshya Patel", "rating": 5, "text": "Ordered based on the product photo and they look even better in real life. The fabric quality is outstanding and delivery was super fast."}
+    ]
   }
 ];
 

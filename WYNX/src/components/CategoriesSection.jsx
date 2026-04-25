@@ -36,7 +36,7 @@ const CategoriesSection = () => {
       id: "shorts",
       title: "Shorts",
       subtitle: "ACTIVEWEAR",
-      img: "/products/wynx-shorts-camo-1.jpg",
+      img: "/products/wynx-shorts-beige-v2.png",
       filterMode: "Shorts",
       className: styles.catMedium
     }
