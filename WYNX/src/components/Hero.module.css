@@ -181,7 +181,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(27, 29, 40, 0.06);
   z-index: 2;
 }
 
@@ -203,7 +203,7 @@
   top: 20px;
   right: 20px;
   opacity: 0.8;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(27, 29, 40, 0.06);
 }
 
 .bgTextContainer {
@@ -226,7 +226,7 @@
   font-size: 8rem;
   font-weight: 800;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  -webkit-text-stroke: 1px rgba(27, 29, 40, 0.08);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -270,8 +270,8 @@
   overflow: hidden;
   display: flex;
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(27, 29, 40, 0.06);
+  border-bottom: 1px solid rgba(27, 29, 40, 0.06);
 }
 
 .tickerTrack {
@@ -311,6 +311,7 @@
   }
   .largeBgText {
     font-size: 5rem;
+    -webkit-text-stroke: 1px rgba(27, 29, 40, 0.06);
   }
 }
 
@@ -320,6 +321,7 @@
   }
   .largeBgText {
     font-size: 3.5rem;
+    -webkit-text-stroke: 1px rgba(27, 29, 40, 0.05);
   }
   .bgTextContainer {
     bottom: 25%;

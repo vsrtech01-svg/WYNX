@@ -22,7 +22,7 @@
 }
 
 .bentoItem {
-  background-color: var(--surface-container-lowest);
+  background-color: var(--surface-container-low);
   position: relative;
   cursor: pointer;
   border-radius: 12px;
@@ -54,7 +54,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid var(--surface-container-highest);
 }
 
 @media (min-width: 768px) {
@@ -109,14 +109,17 @@
 }
 
 .infoLarge {
-  padding: 2rem;
-  background: var(--surface-container-lowest);
+  padding: 1.5rem 2rem;
+  background: rgba(245, 240, 235, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   transform: translateY(100%);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-top: 1px solid rgba(27, 29, 40, 0.08);
 }
 
 .bentoItem:hover .infoLarge {
@@ -199,12 +202,14 @@
 }
 
 .infoSmall {
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, var(--surface-container-lowest) 70%, transparent);
+  background: linear-gradient(to top, rgba(245, 240, 235, 0.95) 60%, rgba(245, 240, 235, 0.7) 80%, transparent 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .titleSmall {

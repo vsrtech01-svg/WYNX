@@ -15,7 +15,14 @@
   
   --surface: #FFFFFF;
   --on-surface: #1B1D28;
+  --on-surface-variant: #5A5D6E;
   
+  --secondary: #6B6E7F;
+  --secondary-container: #E0DAD5;
+  --on-secondary-container: #2A2D41;
+  --primary-fixed: #D4CFC9;
+  
+  --surface-container-lowest: #FAF6F1;
   --surface-container-low: #EBE5E0;
   --surface-container: #F0EAE5;
   --surface-container-high: #E6DFDA;
