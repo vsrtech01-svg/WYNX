@@ -72,11 +72,14 @@ console.log('sitemap.xml generated with ' + ids.length + ' products.');
 const robots = `User-agent: *
 Allow: /
 
-# Block non-indexable or system routes
+# Block unnecessary/system pages
 Disallow: /checkout
 Disallow: /cart
-Disallow: /*?*
 Disallow: /api/
+
+# Block only tracking/query URLs (safe version)
+Disallow: /*?utm_
+Disallow: /*?ref=
 
 Sitemap: ${baseUrl}/sitemap.xml
 `;
