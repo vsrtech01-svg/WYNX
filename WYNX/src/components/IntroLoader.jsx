@@ -52,9 +52,9 @@ const IntroLoader = ({ onLoadingComplete }) => {
               className={styles.logo}
               animate={{ 
                 filter: [
-                  'drop-shadow(0 0 20px rgba(0, 60, 199, 0))',
-                  'drop-shadow(0 0 40px rgba(0, 60, 199, 0.3))',
-                  'drop-shadow(0 0 20px rgba(0, 60, 199, 0))',
+                  'drop-shadow(0 0 20px rgba(245, 240, 235, 0))',
+                  'drop-shadow(0 0 40px rgba(245, 240, 235, 0.25))',
+                  'drop-shadow(0 0 20px rgba(245, 240, 235, 0))',
                 ] 
               }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}

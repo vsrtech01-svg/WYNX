@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import styles from './CollectionPage.module.css';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import { Clock, X } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
+import MobileProductModal from '../components/MobileProductModal';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
@@ -16,6 +17,10 @@ const CollectionPage = () => {
   const categoryQuery = searchParams.get('category') || 'all';
   const { addToCart } = useCart();
   const [comingSoonCategory, setComingSoonCategory] = useState(null);
+  
+  // Mobile modal state
+  const [mobileModalProduct, setMobileModalProduct] = useState(null);
+  const [isMobileModalOpen, setIsMobileModalOpen] = useState(false);
   
   const [filters, setFilters] = useState({
     subcategory: categoryQuery,
@@ -65,6 +70,23 @@ const CollectionPage = () => {
     e.stopPropagation();
     addToCart(product, product.sizes[1] || product.sizes[0]);
   };
+
+  // Mobile: open modal instead of navigating
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  
+  const handleProductClick = useCallback((e, product) => {
+    if (window.innerWidth < 768) {
+      e.preventDefault();
+      setMobileModalProduct(product);
+      setIsMobileModalOpen(true);
+    }
+    // Desktop: normal Link navigation
+  }, []);
+
+  const closeMobileModal = useCallback(() => {
+    setIsMobileModalOpen(false);
+    setTimeout(() => setMobileModalProduct(null), 300);
+  }, []);
 
   return (
     <>
@@ -120,6 +142,13 @@ const CollectionPage = () => {
         )}
       </AnimatePresence>
 
+      {/* Mobile Product Modal */}
+      <MobileProductModal
+        product={mobileModalProduct}
+        isOpen={isMobileModalOpen}
+        onClose={closeMobileModal}
+      />
+
       <div className="app-container">
         <Sidebar 
           onFilterChange={handleFilterChange} 
@@ -161,10 +190,14 @@ const CollectionPage = () => {
                     initial={{ y: 50, opacity: 0 }}
                     animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                     exit={{ scale: 0.8, opacity: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
                     layout
                   >
-                    <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link 
+                      to={`/product/${product.id}`} 
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                      onClick={(e) => handleProductClick(e, product)}
+                    >
                       <div className={`product-image-container ${styles.imageContainer}`}>
                         {product.badge && <div className={styles.badge}>{product.badge}</div>}
                         {product.discount && (

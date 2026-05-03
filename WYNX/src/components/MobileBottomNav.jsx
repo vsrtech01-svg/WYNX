@@ -11,18 +11,20 @@ const MobileBottomNav = () => {
   const cartCount = getCartCount();
 
   const navItems = [
-    { path: '/collection/men', label: 'Home', icon: <Home size={22} /> },
-    { path: '/trending', label: 'Trending', icon: <TrendingUp size={22} /> },
-    { path: '/new-arrivals', label: 'New', icon: <Sparkles size={22} /> },
-    { path: '/about', label: 'About', icon: <Info size={22} /> },
-    { path: '/cart', label: 'Cart', icon: <ShoppingCart size={22} />, isCart: true },
+    { path: '/collection/men', label: 'Home', icon: Home },
+    { path: '/trending', label: 'Trending', icon: TrendingUp },
+    { path: '/new-arrivals', label: 'New', icon: Sparkles },
+    { path: '/about', label: 'About', icon: Info },
+    { path: '/cart', label: 'Cart', icon: ShoppingCart, isCart: true },
   ];
 
   return (
     <nav className={styles.bottomNav}>
       <div className={styles.navContainer}>
         {navItems.map((item) => {
-          const isActive = location.pathname.startsWith(item.path);
+          const isActive = location.pathname.startsWith(item.path) || 
+            (item.path === '/collection/men' && location.pathname === '/');
+          const Icon = item.icon;
 
           return (
             <Link 
@@ -32,10 +34,17 @@ const MobileBottomNav = () => {
             >
               <motion.div 
                 className={styles.iconWrapper}
-                whileTap={{ scale: 0.8 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                whileTap={{ scale: 0.82 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
               >
-                {item.icon}
+                {isActive && (
+                  <motion.div 
+                    className={styles.activeIndicator}
+                    layoutId="activeNavIndicator"
+                    transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                  />
+                )}
+                <Icon size={21} strokeWidth={isActive ? 2.5 : 1.8} />
                 {item.isCart && (
                   <AnimatePresence>
                     {cartCount > 0 && (

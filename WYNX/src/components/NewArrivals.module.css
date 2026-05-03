@@ -1,5 +1,5 @@
 .section {
-  padding: 0 2.5rem 5rem 2.5rem;
+  padding: 0 0.875rem 3rem 0.875rem;
 }
 
 @media (min-width: 768px) {
@@ -13,8 +13,8 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid var(--surface-container-highest);
-  padding-bottom: 1.5rem;
-  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .headerLeft {
@@ -70,8 +70,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
 }
 
 @media (min-width: 640px) {
@@ -95,7 +95,7 @@
   position: relative;
   aspect-ratio: 3 / 4;
   background-color: var(--surface-container-low);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -140,6 +140,12 @@
   transition: opacity 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .imageOverlay {
+    display: none;
+  }
+}
+
 .productCard:hover .imageOverlay {
   opacity: 1;
 }
@@ -159,21 +165,44 @@
 }
 
 .productName {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.125rem;
   color: var(--on-surface);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .productName {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
 }
 
 .productCategory {
-  font-size: 0.625rem;
+  font-size: 0.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .productCategory {
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .priceContainer {
@@ -183,9 +212,15 @@
 }
 
 .price {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 900;
   color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .price {
+    font-size: 1.125rem;
+  }
 }
 
 .oldPrice {
