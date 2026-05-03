@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Cakes — Premium Handcrafted Custom Cakes & Celebration Desserts</title>
+    <meta name="description"
+        content="German Cakes — exquisite handcrafted custom celebration cakes made with premium ingredients. Birthdays, anniversaries, weddings & special occasions. Order your dream cake today.">
+    <meta name="keywords"
+        content="German cakes, custom cakes, birthday cakes, wedding cakes, premium bakery, celebration cakes, handcrafted cakes, Black Forest cake, cheesecake">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="custom-cursor" class="custom-cursor"><img src="images/muffin-cursor.png" alt="" /></div>
+
+    <!-- ======================================
+         CINEMATIC CLOUD INTRO OVERLAY
+         ====================================== -->
+    <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+
+        <!-- Gradient Sky Background -->
+        <div class="intro-bg"></div>
+
+        <!-- Golden center light source (where logo appears) -->
+        <div class="intro-center-light"></div>
+
+        <!-- BACK CLOUD LAYER — most blurred, furthest depth -->
+        <div class="intro-cloud-layer intro-clouds-back">
+            <div class="ic-puff ic-b1"></div>
+            <div class="ic-puff ic-b2"></div>
+            <div class="ic-puff ic-b3"></div>
+            <div class="ic-puff ic-b4"></div>
+            <div class="ic-puff ic-b5"></div>
+        </div>
+
+        <!-- LEFT CLOUD GROUP — parts leftward on scroll -->
+        <div class="intro-cloud-group intro-clouds-left" id="introCloudsLeft">
+            <div class="ic-puff ic-l1"></div>
+            <div class="ic-puff ic-l2"></div>
+            <div class="ic-puff ic-l3"></div>
+            <div class="ic-puff ic-l4"></div>
+        </div>
+
+        <!-- RIGHT CLOUD GROUP — parts rightward on scroll -->
+        <div class="intro-cloud-group intro-clouds-right" id="introCloudsRight">
+            <div class="ic-puff ic-r1"></div>
+            <div class="ic-puff ic-r2"></div>
+            <div class="ic-puff ic-r3"></div>
+            <div class="ic-puff ic-r4"></div>
+        </div>
+
+        <!-- TOP CLOUD GROUP — drifts upward on scroll -->
+        <div class="intro-cloud-group intro-clouds-top" id="introCloudsTop">
+            <div class="ic-puff ic-t1"></div>
+            <div class="ic-puff ic-t2"></div>
+            <div class="ic-puff ic-t3"></div>
+        </div>
+
+        <!-- Atmospheric center haze / mist -->
+        <div class="intro-haze" id="introHaze"></div>
+        <div class="intro-haze-bottom" id="introHazeBottom"></div>
+
+        <!-- Logo Reveal Container -->
+        <div class="intro-logo-reveal" id="introLogo">
+            <div class="ilr-outer-glow"></div>
+            <div class="ilr-inner-glow"></div>
+            <img src="images/logo.png" alt="German Cakes — Premium Custom Cakes" class="ilr-img">
+            <div class="ilr-mist-veil"></div>
+        </div>
+
+        <!-- Floating Sparkles -->
+        <div class="intro-sparkles" aria-hidden="true">
+            <span class="i-sp i-sp1">✦</span>
+            <span class="i-sp i-sp2">✧</span>
+            <span class="i-sp i-sp3">✦</span>
+            <span class="i-sp i-sp4">✸</span>
+            <span class="i-sp i-sp5">✧</span>
+            <span class="i-sp i-sp6">✦</span>
+        </div>
+
+        <!-- Scroll cue -->
+        <div class="intro-scroll-cue" id="introScrollCue">
+            <div class="isc-icon">
+                <div class="isc-dot"></div>
+            </div>
+            <p class="isc-label">Scroll to Enter</p>
+            <div class="isc-chevron">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Skip Intro -->
+        <button class="intro-skip-btn" id="introSkipBtn" aria-label="Skip intro animation">
+            Skip <span>›</span>
+        </button>
+
+    </div>
+    <!-- END INTRO OVERLAY -->
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="header-logo" id="header-logo">
+                <img src="images/logo.png" alt="German Cakes Logo" class="header-logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="header-logo-text-fallback" style="display:none;">German <span>Cakes</span></div>
+            </a>
+
+            <nav class="header-nav" id="header-nav">
+                <a href="#about" id="nav-about" class="nav-glass-link">About</a>
+                <a href="#featured" id="nav-cakes" class="nav-glass-link">Our Cakes</a>
+                <a href="#gallery" id="nav-gallery" class="nav-glass-link">Gallery</a>
+                <a href="#testimonials" id="nav-reviews" class="nav-glass-link">Reviews</a>
+                <a href="#contact" id="nav-contact" class="nav-glass-link">Visit Us</a>
+                <a href="#contact" class="btn-nav-order btn-glass-order" id="nav-order">
+                    <span class="btn-order-sparkle">✦</span>
+                    <span>Order Now</span>
+                </a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <!-- THREE.JS BALLPIT CANVAS BACKGROUND -->
+        <canvas id="ballpit-canvas" class="ballpit-canvas"></canvas>
+
+        <!-- Decorative Clouds -->
+        <div class="hero-clouds-left">
+            <div class="cloud cloud-l1"></div>
+            <div class="cloud cloud-l2"></div>
+            <div class="cloud cloud-l3"></div>
+        </div>
+        <div class="hero-clouds-right">
+            <div class="cloud cloud-r1"></div>
+            <div class="cloud cloud-r2"></div>
+            <div class="cloud cloud-r3"></div>
+        </div>
+
+        <!-- Gold Dust Particles -->
+        <div class="hero-particles" id="hero-particles"></div>
+
+        <!-- Hanging Cake Decorations -->
+        <div class="hanging-decoration hanging-1" aria-hidden="true">
+            <div class="strand"></div>
+            <div class="ornament">
+                <svg viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="30" cy="52" rx="24" ry="14" fill="#e8c96e" opacity="0.9" />
+                    <rect x="10" y="36" width="40" height="16" rx="4" fill="#D4A843" />
+                    <rect x="14" y="22" width="32" height="16" rx="4" fill="#e8c96e" />
+                    <ellipse cx="30" cy="22" rx="16" ry="6" fill="#f0d87a" opacity="0.8" />
+                    <ellipse cx="30" cy="10" rx="8" ry="12" fill="#e8c96e" opacity="0.9" />
+                    <circle cx="22" cy="14" r="3" fill="#86D1EA" opacity="0.8" />
+                    <circle cx="38" cy="14" r="3" fill="#8D1DEA" opacity="0.8" />
+                    <circle cx="30" cy="6" r="3" fill="#E3F2F8" opacity="0.9" />
+                </svg>
+            </div>
+        </div>
+        <div class="hanging-decoration hanging-2" aria-hidden="true">
+            <div class="strand"></div>
+            <div class="ornament">
+                <svg viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 50 Q25 30 40 50" fill="#D4A843" opacity="0.9" />
+                    <rect x="8" y="36" width="34" height="14" rx="6" fill="#e8c96e" />
+                    <path d="M8 36 Q25 20 42 36" fill="#f0d87a" opacity="0.85" />
+                    <circle cx="15" cy="28" r="4" fill="#8BB661" opacity="0.8" />
+                    <circle cx="25" cy="24" r="4" fill="#86D1EA" opacity="0.8" />
+                    <circle cx="35" cy="28" r="4" fill="#8D1DEA" opacity="0.8" />
+                    <rect x="22" y="14" width="6" height="14" rx="3" fill="#D4A843" />
+                    <ellipse cx="25" cy="13" rx="5" ry="4" fill="#e8c96e" />
+                </svg>
+            </div>
+        </div>
+        <div class="hanging-decoration hanging-3" aria-hidden="true">
+            <div class="strand"></div>
+            <div class="ornament">
+                <svg viewBox="0 0 56 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="28" cy="54" rx="22" ry="10" fill="#D4A843" opacity="0.9" />
+                    <rect x="8" y="40" width="40" height="14" rx="4" fill="#e8c96e" />
+                    <rect x="12" y="26" width="32" height="16" rx="4" fill="#D4A843" opacity="0.9" />
+                    <ellipse cx="28" cy="26" rx="16" ry="5" fill="#f0d87a" />
+                    <rect x="16" y="12" width="24" height="16" rx="4" fill="#e8c96e" />
+                    <ellipse cx="28" cy="12" rx="12" ry="4" fill="#f0d87a" />
+                    <circle cx="20" cy="8" r="2.5" fill="#8BB661" opacity="0.9" />
+                    <circle cx="28" cy="6" r="2.5" fill="#86D1EA" opacity="0.9" />
+                    <circle cx="36" cy="8" r="2.5" fill="#E3F2F8" opacity="0.9" />
+                </svg>
+            </div>
+        </div>
+        <div class="hanging-decoration hanging-4" aria-hidden="true">
+            <div class="strand"></div>
+            <div class="ornament">
+                <svg viewBox="0 0 48 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 48 Q24 38 42 48 L38 58 H10 Z" fill="#D4A843" opacity="0.9" />
+                    <path d="M8 38 Q24 28 40 38 L42 48 Q24 42 6 48 Z" fill="#e8c96e" />
+                    <path d="M10 28 Q24 18 38 28 L40 38 Q24 32 8 38 Z" fill="#D4A843" opacity="0.85" />
+                    <path d="M12 18 Q24 8 36 18 L38 28 Q24 22 10 28 Z" fill="#e8c96e" />
+                    <circle cx="24" cy="12" r="5" fill="#f0d87a" />
+                    <circle cx="24" cy="8" r="3" fill="#D4A843" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Sparkles -->
+        <div class="sparkle spk-1">✦</div>
+        <div class="sparkle spk-2">✧</div>
+        <div class="sparkle spk-3">✦</div>
+        <div class="sparkle spk-4">✧</div>
+        <div class="sparkle spk-5">✦</div>
+        <div class="sparkle spk-6">✧</div>
+        <div class="sparkle spk-7">✦</div>
+        <div class="sparkle spk-8">✧</div>
+
+        <!-- Hero Content -->
+        <div class="hero-content-wrap">
+            <!-- Logo -->
+            <div class="hero-logo-area">
+                <img src="images/logo.png" alt="German Cakes Logo" class="hero-logo-img" id="hero-logo-img"
+                    onerror="this.style.display='none'; document.getElementById('hero-logo-fallback').style.display='block'">
+                <div class="hero-logo-fallback" id="hero-logo-fallback">
+                    <div class="hero-logo-fallback-text">German <span>Cakes</span></div>
+                </div>
+            </div>
+
+            <div class="hero-tagline-badge">
+                <span class="badge-dot"></span>
+                <span>Handcrafted Celebration Cakes</span>
+                <span class="badge-dot"></span>
+            </div>
+
+            <h1 class="hero-headline">
+                Your Dream Cake,<br>
+                <em>Perfectly</em> <span class="headline-accent">Crafted</span>
+            </h1>
+
+            <p class="hero-subheadline">
+                Premium handcrafted cakes for birthdays, anniversaries, weddings & every sweet celebration.<br
+                    class="hero-br">
+                Designed with artistry. Made with love.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#contact" class="btn-hero-primary" id="hero-btn-order">
+                    <span class="btn-icon">🎂</span>
+                    <span>Order Custom Cake</span>
+                </a>
+                <a href="#featured" class="btn-hero-secondary" id="hero-btn-explore">
+                    <span>Explore Our Menu</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="500">0</div>
+                    <div class="hero-stat-suffix">+</div>
+                    <div class="hero-stat-label">Cakes Monthly</div>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="15">0</div>
+                    <div class="hero-stat-suffix">+</div>
+                    <div class="hero-stat-label">Years of Craft</div>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="4.9">0</div>
+                    <div class="hero-stat-suffix"> ★</div>
+                    <div class="hero-stat-label">Customer Rating</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave divider -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,50 C180,100 360,0 540,50 C720,100 900,0 1080,50 C1260,100 1440,50 1440,50 L1440,100 L0,100 Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED CAKES SECTION ===== -->
+    <section class="featured-section" id="featured">
+        <div class="featured-bg-deco" aria-hidden="true">
+            <div class="fbd-cloud fbd-cloud-1"></div>
+            <div class="fbd-cloud fbd-cloud-2"></div>
+            <div class="featured-sparkle fbd-s1">✦</div>
+            <div class="featured-sparkle fbd-s2">✧</div>
+            <div class="featured-sparkle fbd-s3">✦</div>
+            <div class="featured-sparkle fbd-s4">✧</div>
+        </div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Freshly Baked Daily</span>
+                <h2 class="section-title">Our Signature <em>Cakes</em></h2>
+                <p class="section-subtitle">
+                    Every cake is a masterpiece — crafted fresh with authentic recipes and premium locally sourced
+                    ingredients.
+                </p>
+            </div>
+
+            
+            <div class="menu-filters reveal-up" id="menu-filters">
+                <button class="menu-filter-btn active" data-filter="all">All</button>
+                <button class="menu-filter-btn" data-filter="classic">Classic</button>
+                <button class="menu-filter-btn" data-filter="specialty">Specialty</button>
+                <button class="menu-filter-btn" data-filter="seasonal">Seasonal</button>
+            </div>
+<div class="cake-grid">
+                <!-- Card 1 -->
+                <div class="cake-card" id="cake-card-1">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/black-forest.png" alt="Schwarzwälder Kirschtorte — German Black Forest Cake"
+                            class="bounce-img">
+                        <div class="cake-card-badge bestseller">✦ Bestseller</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">🎂 Classic German</div>
+                        <h3 class="cake-card-title">Black Forest Cake</h3>
+                        <p class="cake-card-desc">Layers of rich chocolate sponge, whipped cream & tart cherries — the
+                            iconic Schwarzwälder Kirschtorte.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $45</div>
+                            <button class="btn-cake-order" id="btn-order-blackforest">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="cake-card" id="cake-card-2">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/baumkuchen.png" alt="Baumkuchen — German Tree Cake golden layers"
+                            class="bounce-img">
+                        <div class="cake-card-badge artisan">✦ Artisan</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">🌟 Specialty</div>
+                        <h3 class="cake-card-title">Baumkuchen</h3>
+                        <p class="cake-card-desc">The legendary "Tree Cake" — delicate golden layers baked one ring at a
+                            time, glazed to perfection.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $52</div>
+                            <button class="btn-cake-order" id="btn-order-baumkuchen">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="cake-card" id="cake-card-3">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/cheesecake.png" alt="Käsekuchen — Authentic German Cheesecake"
+                            class="bounce-img">
+                        <div class="cake-card-badge popular">✦ Popular</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">🍰 Traditional</div>
+                        <h3 class="cake-card-title">Käsekuchen</h3>
+                        <p class="cake-card-desc">Velvety smooth German cheesecake with a golden butter crust, crowned
+                            with luscious seasonal berries.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $38</div>
+                            <button class="btn-cake-order" id="btn-order-cheesecake">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="cake-card" id="cake-card-4">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/bee-sting.png" alt="Bienenstich — German Bee Sting Cake" class="bounce-img">
+                        <div class="cake-card-badge seasonal">✦ Seasonal</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">🍯 Signature</div>
+                        <h3 class="cake-card-title">Bienenstich</h3>
+                        <p class="cake-card-desc">The beloved Bee Sting cake — soft yeasted dough with caramelized
+                            almond topping and luscious vanilla cream.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $42</div>
+                            <button class="btn-cake-order" id="btn-order-beesting">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="cake-card" id="cake-card-5">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/dobos-torte.png" alt="Dobos Torte — Layered chocolate buttercream masterpiece"
+                            class="bounce-img">
+                        <div class="cake-card-badge premium">✦ Premium</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">👑 Showstopper</div>
+                        <h3 class="cake-card-title">Dobos Torte</h3>
+                        <p class="cake-card-desc">A stunning layered masterpiece with rich chocolate buttercream and a
+                            signature caramel top — pure elegance.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $58</div>
+                            <button class="btn-cake-order" id="btn-order-dobos">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="cake-card" id="cake-card-6">
+                    <div class="cake-card-image-wrap">
+                        <img src="images/strudel.png" alt="Apfelstrudel — Classic German Apple Strudel"
+                            class="bounce-img">
+                        <div class="cake-card-badge classic">✦ Classic</div>
+                        <div class="cake-card-hover-glow"></div>
+                    </div>
+                    <div class="cake-card-body">
+                        <div class="cake-card-category">🍎 Heritage</div>
+                        <h3 class="cake-card-title">Apfelstrudel</h3>
+                        <p class="cake-card-desc">Flaky golden pastry wrapped around spiced apple filling — a timeless
+                            Austrian-German treasure.</p>
+                        <div class="cake-card-footer">
+                            <div class="cake-card-price">From $32</div>
+                            <button class="btn-cake-order" id="btn-order-strudel">Order <span>→</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-cta reveal-up">
+                <a href="#contact" class="btn-section-cta" id="btn-view-all">
+                    <span>✦</span> View Full Menu <span>✦</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <div class="about-image-stack">
+                        <div class="about-img-main">
+                            <img src="images/hero-cake.png" alt="Premium German celebration cake" class="bounce-img">
+                        </div>
+                        <div class="about-img-accent about-img-accent-1">
+                            <img src="images/cupcakes.png" alt="Artisan cupcakes" class="bounce-img">
+                        </div>
+                        <div class="about-floating-card">
+                            <div class="afc-icon">🏆</div>
+                            <div class="afc-text">
+                                <strong>Award Winning</strong>
+                                <span>Premium Bakery</span>
+                            </div>
+                        </div>
+                        <div class="about-floater-sparkle">✦</div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal-right">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">Where Every Cake<br><em>Tells a Story</em></h2>
+                    <p class="about-description">
+                        German Cakes is a premium custom cake studio dedicated to turning your sweetest celebrations
+                        into unforgettable memories. Born from a deep love of artisan baking and elegant design, we
+                        craft each cake from scratch using the finest European ingredients.
+                    </p>
+                    <p class="about-description">
+                        Whether it's an intimate birthday gathering or a grand wedding reception, our master bakers
+                        bring boundless creativity and meticulous attention to detail — ensuring every slice is as
+                        beautiful as it is delicious.
+                    </p>
+
+                    <div class="about-pillars">
+                        <div class="about-pillar">
+                            <div class="pillar-icon">🧁</div>
+                            <div class="pillar-content">
+                                <strong>Artisan Crafted</strong>
+                                <span>Every cake handmade by master bakers</span>
+                            </div>
+                        </div>
+                        <div class="about-pillar">
+                            <div class="pillar-icon">🌿</div>
+                            <div class="pillar-content">
+                                <strong>Premium Ingredients</strong>
+                                <span>European butter, Belgian chocolate & more</span>
+                            </div>
+                        </div>
+                        <div class="about-pillar">
+                            <div class="pillar-icon">🎨</div>
+                            <div class="pillar-content">
+                                <strong>Custom Designs</strong>
+                                <span>Your vision, beautifully realized</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US SECTION ===== -->
+    <section class="why-section" id="why">
+        <div class="why-bg-blob why-blob-1"></div>
+        <div class="why-bg-blob why-blob-2"></div>
+        <div class="container">
+            <div class="section-header section-header-light reveal-up">
+                <span class="section-label section-label-light">Why German Cakes?</span>
+                <h2 class="section-title white-title">The Sweet Difference</h2>
+                <p class="section-subtitle light-subtitle">
+                    From heritage recipes to premium ingredients — here's why families choose German Cakes for every
+                    celebration.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal-card" id="why-card-1">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="32" r="14" fill="#e8c96e" opacity="0.15" />
+                                <path d="M10 34 Q24 18 38 34" stroke="#D4A843" stroke-width="2" fill="none" />
+                                <rect x="8" y="34" width="32" height="8" rx="4" fill="#D4A843" opacity="0.9" />
+                                <rect x="12" y="26" width="24" height="10" rx="3" fill="#e8c96e" />
+                                <circle cx="18" cy="20" r="4" fill="#8D1DEA" opacity="0.7" />
+                                <circle cx="24" cy="18" r="4" fill="#86D1EA" opacity="0.7" />
+                                <circle cx="30" cy="20" r="4" fill="#8BB661" opacity="0.7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Handcrafted With Care</h3>
+                    <p class="why-card-text">Each cake is meticulously hand-decorated by our master bakers, with decades
+                        of artisan craft shaping every detail.</p>
+                </div>
+
+                <div class="why-card reveal-card" id="why-card-2">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 8 L26 16 L34 18 L28 24 L30 32 L24 28 L18 32 L20 24 L14 18 L22 16 Z"
+                                    fill="#e8c96e" opacity="0.9" />
+                                <circle cx="24" cy="36" r="6" fill="#86D1EA" opacity="0.3" />
+                                <path d="M20 36 Q24 30 28 36" stroke="#D4A843" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Premium Ingredients</h3>
+                    <p class="why-card-text">We source only the finest — European butter, Belgian chocolate, fresh
+                        cream, natural extracts, and seasonal fruits.</p>
+                </div>
+
+                <div class="why-card reveal-card" id="why-card-3">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="26" width="28" height="16" rx="5" fill="#e8c96e" opacity="0.9" />
+                                <path d="M10 26 Q24 10 38 26" fill="#D4A843" opacity="0.7" />
+                                <rect x="20" y="14" width="8" height="14" rx="4" fill="#8D1DEA" opacity="0.6" />
+                                <circle cx="24" cy="12" r="5" fill="#e8c96e" />
+                                <path d="M18 24 Q24 18 30 24" stroke="#D4A843" stroke-width="1.5" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Custom Cake Designs</h3>
+                    <p class="why-card-text">Dream it, we bake it. From whimsical themes to elegant tiers, we bring
+                        every custom vision to life beautifully.</p>
+                </div>
+
+                <div class="why-card reveal-card" id="why-card-4">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="14" fill="#8BB661" opacity="0.15" />
+                                <path d="M16 24 L21 29 L32 18" stroke="#8BB661" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <circle cx="24" cy="24" r="14" stroke="#8BB661" stroke-width="2" fill="none" />
+                                <circle cx="24" cy="10" r="3" fill="#e8c96e" />
+                                <circle cx="10" cy="24" r="3" fill="#86D1EA" />
+                                <circle cx="38" cy="24" r="3" fill="#8D1DEA" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Perfect Celebrations</h3>
+                    <p class="why-card-text">Birthdays, anniversaries, weddings, baby showers — we specialise in cakes
+                        that make every milestone shine.</p>
+                </div>
+
+                <div class="why-card reveal-card" id="why-card-5">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 8 C14 8 8 18 8 24 C8 34 14 40 24 40 C34 40 40 34 40 24 C40 18 34 8 24 8Z"
+                                    fill="#86D1EA" opacity="0.15" />
+                                <path d="M14 28 C14 22 18 16 24 14" stroke="#86D1EA" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <path d="M34 20 C34 26 30 32 24 34" stroke="#D4A843" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <circle cx="24" cy="24" r="4" fill="#e8c96e" />
+                                <path d="M20 12 L22 10 L24 12 L26 10 L28 12" stroke="#e8c96e" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Trusted Local Bakery</h3>
+                    <p class="why-card-text">Your neighbourhood cake studio with a warm heart — loved by thousands of
+                        families in your community for over 15 years.</p>
+                </div>
+
+                <div class="why-card reveal-card" id="why-card-6">
+                    <div class="why-card-icon-wrap">
+                        <div class="why-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 34 L24 10 L36 34 Z" fill="#8D1DEA" opacity="0.15" />
+                                <line x1="24" y1="10" x2="24" y2="34" stroke="#8D1DEA" stroke-width="2" />
+                                <ellipse cx="24" cy="36" rx="12" ry="4" fill="#8D1DEA" opacity="0.3" />
+                                <circle cx="24" cy="10" r="4" fill="#e8c96e" />
+                                <path d="M18 22 Q24 16 30 22" stroke="#D4A843" stroke-width="1.5" fill="none" />
+                                <circle cx="16" cy="30" r="2" fill="#86D1EA" />
+                                <circle cx="32" cy="30" r="2" fill="#8BB661" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="why-card-title">Fast & Friendly Service</h3>
+                    <p class="why-card-text">Quick order turnaround, warm communication, and hassle-free delivery —
+                        because your celebration can't wait.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Our Creations</span>
+                <h2 class="section-title">The Cake <em>Gallery</em></h2>
+                <p class="section-subtitle">A glimpse into our bakery — beautiful cakes crafted with passion and
+                    precision.</p>
+            </div>
+
+            <div class="gallery-masonry">
+                <div class="gallery-item gallery-item-tall" id="gallery-1">
+                    <img src="images/hero-cake.png" alt="Elaborate multi-tiered celebration cake with gold accents">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Celebration Masterpiece</h4>
+                            <p>Multi-tiered gold-accented cake</p>
+                            <span class="gallery-tag">Custom Order</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✦</div>
+                </div>
+
+                <div class="gallery-item" id="gallery-2">
+                    <img src="images/strudel.png" alt="German Apple Strudel with flaky golden pastry">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Apfelstrudel</h4>
+                            <p>Classic apple strudel</p>
+                            <span class="gallery-tag">Heritage</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✧</div>
+                </div>
+
+                <div class="gallery-item" id="gallery-3">
+                    <img src="images/bee-sting.png" alt="German Bienenstich Bee Sting cake">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Bienenstich</h4>
+                            <p>Caramelized almond beauty</p>
+                            <span class="gallery-tag">Signature</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✦</div>
+                </div>
+
+                <div class="gallery-item gallery-item-wide" id="gallery-4">
+                    <img src="images/cupcakes.png" alt="Gourmet artisan cupcakes with elegant frosting">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Gourmet Cupcakes</h4>
+                            <p>Beautifully frosted artisan cupcakes</p>
+                            <span class="gallery-tag">Party Treats</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✧</div>
+                </div>
+
+                <div class="gallery-item" id="gallery-5">
+                    <img src="images/dobos-torte.png" alt="Layered Dobos Torte with caramel topping">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Dobos Torte</h4>
+                            <p>Chocolate buttercream masterpiece</p>
+                            <span class="gallery-tag">Showstopper</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✦</div>
+                </div>
+
+                <div class="gallery-item" id="gallery-6">
+                    <img src="images/baumkuchen.png" alt="Baumkuchen German Tree Cake golden layers">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h4>Baumkuchen</h4>
+                            <p>Golden layered tree cake</p>
+                            <span class="gallery-tag">Artisan</span>
+                        </div>
+                    </div>
+                    <div class="gallery-corner-sparkle">✧</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-bg-deco" aria-hidden="true">
+            <div class="tbd-cloud tbd-cloud-1"></div>
+            <div class="tbd-cloud tbd-cloud-2"></div>
+            <div class="tbd-sparkle tbd-spk-1">✦</div>
+            <div class="tbd-sparkle tbd-spk-2">✧</div>
+            <div class="tbd-sparkle tbd-spk-3">✦</div>
+        </div>
+        <div class="container">
+            <div class="section-header section-header-light reveal-up">
+                <span class="section-label section-label-light">Sweet Words</span>
+                <h2 class="section-title white-title">What Our <em class="italic-cream">Customers</em> Say</h2>
+                <p class="section-subtitle light-subtitle">Real reviews from real cake lovers — our customers tell it
+                    best.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="testimonial-1">
+                    <div class="testimonial-quote">❝</div>
+                    <p class="testimonial-text">
+                        The Black Forest cake was absolutely divine! Moist, rich, and the cherries were the perfect
+                        touch. Our anniversary was made truly special. We'll be back for every celebration!
+                    </p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #86D1EA, #113A78);">
+                            MK</div>
+                        <div class="testimonial-info">
+                            <strong>Maria Kessler</strong>
+                            <span>Anniversary Celebration</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-badge">🎂</div>
+                    <div class="testimonial-sparkle">✦</div>
+                </div>
+
+                <div class="testimonial-card testimonial-featured" id="testimonial-2">
+                    <div class="testimonial-quote">❝</div>
+                    <p class="testimonial-text">
+                        I ordered a custom wedding cake and it exceeded all expectations. The attention to detail was
+                        incredible, and every guest commented on how stunning and delicious it was. Truly premium
+                        quality!
+                    </p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8D1DEA, #113A78);">
+                            JS</div>
+                        <div class="testimonial-info">
+                            <strong>Johann Schmidt</strong>
+                            <span>Wedding Cake Order</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-badge">🧁</div>
+                    <div class="testimonial-sparkle">✧</div>
+                </div>
+
+                <div class="testimonial-card" id="testimonial-3">
+                    <div class="testimonial-quote">❝</div>
+                    <p class="testimonial-text">
+                        Best Käsekuchen I've ever had outside of Germany! The texture is perfect — creamy yet light.
+                        German Cakes has become our go-to for every family gathering. Highly recommended!
+                    </p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8BB661, #113A78);">
+                            LW</div>
+                        <div class="testimonial-info">
+                            <strong>Lisa Weiss</strong>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-badge">🍰</div>
+                    <div class="testimonial-sparkle">✦</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / CTA SECTION ===== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left: store image + info card -->
+                <div class="contact-visual reveal-left">
+                    <div class="contact-img-wrap">
+                        <img src="images/storefront.png" alt="German Cakes bakery storefront with warm lighting">
+                        <div class="contact-img-badge">
+                            <div class="cib-dot"></div>
+                            <div class="cib-text">
+                                <strong>📍 German Cakes Bakery</strong>
+                                <span>Open Daily · 7:00 AM — 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <span class="cic-icon">📍</span>
+                            <div class="cic-content">
+                                <strong>Our Location</strong>
+                                <span>123 Bäckerstraße, City Centre</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <span class="cic-icon">📞</span>
+                            <div class="cic-content">
+                                <strong>Call Us</strong>
+                                <span>+1 (555) 234-5678</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <span class="cic-icon">🕐</span>
+                            <div class="cic-content">
+                                <strong>Opening Hours</strong>
+                                <span>Daily: 7:00 AM — 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: CTA content -->
+                <div class="contact-content reveal-right">
+                    <span class="section-label">Order Your Dream Cake</span>
+                    <h2 class="section-title">Every Celebration<br>Deserves <em>Perfect Cake</em></h2>
+                    <p class="contact-desc">
+                        Step into our warm bakery or reach out to place a custom order. Whether you're celebrating a
+                        birthday, anniversary, wedding, or just because — we're here to make it magical.
+                    </p>
+
+                    <div class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="e.g. Sophie Müller" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cake-type">Type of Cake</label>
+                            <select id="cake-type">
+                                <option value="">Select cake type...</option>
+                                <option>Birthday Cake</option>
+                                <option>Wedding Cake</option>
+                                <option>Anniversary Cake</option>
+                                <option>Custom Theme Cake</option>
+                                <option>Cupcakes / Mini Cakes</option>
+                                <option>Other Celebration</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your dream cake</label>
+                            <textarea id="message" rows="3"
+                                placeholder="Describe your cake, flavours, design, occasion, serving size..."></textarea>
+                        </div>
+                        <button class="btn-form-submit" id="btn-submit">
+                            <span class="btn-icon">🎂</span>
+                            <span>Send My Order Request</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-top-wave">
+            <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1440,20 1440,20 L1440,0 L0,0 Z" fill="#ffffff" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo-text">German <span>Cakes</span></div>
+                    <p class="footer-tagline">Handcrafted with love since 2010.<br>One exquisite cake at a time.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" id="social-fb" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" id="social-ig" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="var(--royal-blue)" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--royal-blue)"
+                                    stroke-width="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp" id="social-wa" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Cakes</h4>
+                    <ul>
+                        <li><a href="#featured">Black Forest Cake</a></li>
+                        <li><a href="#featured">Baumkuchen</a></li>
+                        <li><a href="#featured">Käsekuchen</a></li>
+                        <li><a href="#featured">Bienenstich</a></li>
+                        <li><a href="#featured">Dobos Torte</a></li>
+                        <li><a href="#contact">Custom Cakes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#featured">Cake Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Gift Cards</a></li>
+                        <li><a href="#contact">Catering</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contacts">
+                        <div class="footer-contact-item">
+                            <span>📍</span>
+                            <span>123 Bäckerstraße,<br>City Centre, 10115</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>📞</span>
+                            <span>+1 (555) 234-5678</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>✉️</span>
+                            <span>hello@germancakes.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>🕐</span>
+                            <span>Daily: 7:00 AM — 8:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 German Cakes. All rights reserved. Baked with 💛</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THREE.JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
