@@ -49,12 +49,18 @@
 .textItem {
   grid-column: span 1;
   background-color: var(--surface-container-low);
-  padding: 2rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
   border: 1px solid var(--surface-container-highest);
+}
+
+@media (min-width: 768px) {
+  .textItem {
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -136,12 +142,19 @@
 
 .titleLarge {
   font-family: 'Clash Display', sans-serif;
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .titleLarge {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .descLarge {
@@ -161,13 +174,20 @@
 
 .headingTech {
   font-family: 'Clash Display', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.02em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 1.1;
   color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .headingTech {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .descTech {

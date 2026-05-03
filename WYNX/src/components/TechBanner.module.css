@@ -1,11 +1,11 @@
 .container {
   background-color: var(--primary);
   color: white;
-  padding: 3rem;
+  padding: 2.5rem 1.5rem;
   position: relative;
   overflow: hidden;
-  margin: 0 2.5rem 5rem 2.5rem;
-  border-radius: 20px;
+  margin: 0 0.875rem 3rem 0.875rem;
+  border-radius: 16px;
   box-shadow: 0 20px 40px rgba(42, 45, 65, 0.2);
 }
 
@@ -53,11 +53,12 @@
 
 .title {
   font-family: 'Clash Display', sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
+  word-break: break-word;
 }
 
 @media (min-width: 768px) {

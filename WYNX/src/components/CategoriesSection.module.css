@@ -12,11 +12,12 @@
 
 .title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: var(--on-surface);
+  word-break: break-word;
 }
 
 @media (min-width: 768px) {
@@ -95,10 +96,11 @@
 
 .catTitle {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: white;
   margin-top: auto;
+  word-break: break-word;
 }
 
 @media (min-width: 768px) {
