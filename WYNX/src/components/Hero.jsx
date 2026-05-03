@@ -1,30 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import { getProductById } from '../data/products';
+import HeroProductPopup from './HeroProductPopup';
 
 const Hero = ({ title, subtitle, category }) => {
   const displayTitle = title || "DEFINE\nYOUR EDGE";
   const displaySubtitle = subtitle || "PREMIUM MEN'S STREETWEAR CRAFTED IN JAIPUR. BUILT FOR THE MODERN URBAN LIFESTYLE.";
 
-  const images = [
-    "/products/wynx-black-track-1.png",
-    "/products/wynx-navy-track-1.png",
-    "/products/wynx-shorts-black-v2.png"
+  // Carousel images mapped to product IDs
+  const heroItems = [
+    { img: "/products/wynx-black-track-1.png", productId: "wynx-solid-black-track-v1" },
+    { img: "/products/wynx-navy-track-1.png", productId: "wynx-solid-blue-track-v2" },
+    { img: "/products/wynx-shorts-black-v2.png", productId: "wynx-shorts-obsidian-core" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [popupProduct, setPopupProduct] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setCurrentIndex((prev) => (prev + 1) % heroItems.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, [images.length]);
+  }, [heroItems.length]);
+
+  const handleImageClick = useCallback((productId) => {
+    const product = getProductById(productId);
+    if (product) {
+      setPopupProduct(product);
+      setIsPopupOpen(true);
+    }
+  }, []);
+
+  const closePopup = useCallback(() => {
+    setIsPopupOpen(false);
+    setTimeout(() => setPopupProduct(null), 300);
+  }, []);
 
   return (
     <>
+      {/* Hero Product Popup */}
+      <HeroProductPopup
+        product={popupProduct}
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+      />
+
       <section className={styles.heroSection}>
         <div className={styles.container}>
           <div className={styles.content}>
@@ -82,11 +107,17 @@ const Hero = ({ title, subtitle, category }) => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
           >
-            <div className={styles.carouselContainer}>
+            <div 
+              className={styles.carouselContainer}
+              onClick={() => handleImageClick(heroItems[currentIndex].productId)}
+              role="button"
+              tabIndex={0}
+              aria-label="View product details"
+            >
               <AnimatePresence mode="wait">
                 <motion.img
                   key={currentIndex}
-                  src={images[currentIndex]}
+                  src={heroItems[currentIndex].img}
                   alt="WYNX Wear"
                   className={styles.carouselImg}
                   initial={{ opacity: 0, x: 50 }}
@@ -95,6 +126,9 @@ const Hero = ({ title, subtitle, category }) => {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 />
               </AnimatePresence>
+              <div className={styles.carouselOverlay}>
+                <span className={styles.tapHint}>Tap to view</span>
+              </div>
             </div>
             <div className={styles.backgroundAccent}></div>
           </motion.div>

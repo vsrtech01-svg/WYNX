@@ -1,0 +1,229 @@
+/* Hero Product Popup — Premium zoom overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.popup {
+  background: var(--surface, #ffffff);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 460px;
+  width: 100%;
+  position: relative;
+  box-shadow:
+    0 32px 80px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(27, 29, 40, 0.06);
+}
+
+@media (min-width: 768px) {
+  .popup {
+    max-width: 520px;
+    border-radius: 24px;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: var(--on-surface, #1b1d28);
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s;
+}
+
+.closeBtn:hover {
+  background: white;
+}
+
+/* Product image */
+.imageSection {
+  position: relative;
+  aspect-ratio: 4 / 3.5;
+  overflow: hidden;
+  background-color: var(--surface-container-low, #ebe5e0);
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(135deg, var(--secondary-container, #e0dad5) 0%, var(--primary-fixed, #d4cfc9) 100%);
+  color: var(--on-secondary-container, #2a2d41);
+  font-size: 0.5625rem;
+  font-weight: 900;
+  padding: 0.4rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+}
+
+.discountBadge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 900;
+  padding: 0.4rem 0.75rem;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+/* Info section */
+.infoSection {
+  padding: 1.5rem;
+}
+
+.subcategory {
+  font-size: 0.5625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--primary, #2a2d41);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.productName {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--on-surface, #1b1d28);
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .productName {
+    font-size: 1.75rem;
+  }
+}
+
+/* Price */
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--on-surface, #1b1d28);
+}
+
+.oldPrice {
+  font-size: 0.875rem;
+  color: var(--outline, rgba(27, 29, 40, 0.4));
+  text-decoration: line-through;
+}
+
+.discountText {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+/* Description */
+.description {
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant, #5a5d6e);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+/* Actions */
+.actionRow {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.buyNowBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--primary, #2a2d41);
+  color: white;
+  padding: 0.875rem 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6875rem;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-height: 50px;
+}
+
+.buyNowBtn:hover {
+  background-color: var(--on-surface, #1b1d28);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(42, 45, 65, 0.2);
+}
+
+.whatsappBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.875rem 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6875rem;
+  border-radius: 12px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+  transition: all 0.2s ease;
+  min-height: 50px;
+}
+
+.whatsappBtn:hover {
+  background-color: #20bd5a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+}
