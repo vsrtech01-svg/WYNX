@@ -1392,8 +1392,8 @@ const products = [
   {
     "id": "wynx-panel-charcoal-track",
     "name": "Ashen Drift Panel Lowers",
-    "price": 519,
-    "oldPrice": 1799,
+    "price": 489,
+    "oldPrice": 1699,
     "discount": 71,
     "category": "men",
     "subcategory": "Lowers",
@@ -1415,7 +1415,7 @@ const products = [
       {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
       {"type": "bank", "text": "₹50 off on bank offers"}
     ],
-    "buyAtPrice": 469,
+    "buyAtPrice": 439,
     "img": "/products/wynx-charcoal-panel-1.png",
     "reviewData": [
       {"name": "Shreyansh Bhardwaj", "rating": 5, "date": "2 days ago", "text": "The charcoal panel design is absolutely elite. White piping gives it that premium edge. Fabric is incredibly smooth — feels like you're wearing liquid comfort. Best track pants I've bought in years."},
@@ -1428,8 +1428,8 @@ const products = [
   {
     "id": "wynx-panel-brown-track",
     "name": "Mocha Flux Panel Lowers",
-    "price": 529,
-    "oldPrice": 1899,
+    "price": 499,
+    "oldPrice": 1799,
     "discount": 72,
     "category": "men",
     "subcategory": "Lowers",
@@ -1451,7 +1451,7 @@ const products = [
       {"type": "bundle", "text": "₹42 off — Add 2 items to unlock offer"},
       {"type": "bank", "text": "Paytm ₹50 off"}
     ],
-    "buyAtPrice": 479,
+    "buyAtPrice": 449,
     "img": "/products/wynx-brown-panel-1.png",
     "reviewData": [
       {"name": "Harjot Sandhu", "rating": 5, "date": "3 days ago", "text": "Brown track pants sound like an unusual choice but these look absolutely fire. The graphite panel and white piping make the whole design pop. Fabric quality is exceptional. Will order more colours."},
@@ -1464,9 +1464,9 @@ const products = [
   {
     "id": "wynx-panel-mauve-track",
     "name": "Rosewood Cipher Panel Lowers",
-    "price": 539,
-    "oldPrice": 1999,
-    "discount": 73,
+    "price": 479,
+    "oldPrice": 1699,
+    "discount": 72,
     "category": "men",
     "subcategory": "Lowers",
     "badge": "Limited",
@@ -1487,7 +1487,7 @@ const products = [
       {"type": "bundle", "text": "₹44 off — Add 2 items to unlock offer"},
       {"type": "bank", "text": "₹50 off on bank offers"}
     ],
-    "buyAtPrice": 489,
+    "buyAtPrice": 429,
     "img": "/products/wynx-mauve-panel-1.png",
     "reviewData": [
       {"name": "Aaditya Inamdar", "rating": 5, "date": "1 day ago", "text": "Wasn't sure about mauve for men's track pants but these absolutely work. The dusty rose-grey combination is tasteful and unique. Several gym members stopped to ask where I got these. WYNX wins again."},
@@ -1500,8 +1500,8 @@ const products = [
   {
     "id": "wynx-panel-navy-track",
     "name": "Indigo Storm Panel Lowers",
-    "price": 519,
-    "oldPrice": 1799,
+    "price": 469,
+    "oldPrice": 1599,
     "discount": 71,
     "category": "men",
     "subcategory": "Lowers",
@@ -1523,7 +1523,7 @@ const products = [
       {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
       {"type": "bank", "text": "Paytm ₹50 off"}
     ],
-    "buyAtPrice": 469,
+    "buyAtPrice": 419,
     "img": "/products/wynx-navy-panel-1.png",
     "reviewData": [
       {"name": "Sachit Kulkarni", "rating": 5, "date": "2 days ago", "text": "The navy panel lower is an absolute stunner. Deep navy with graphite panels is such a premium combination. Fabric is top-tier smooth — zero irritation even after wearing for 8+ hours. My new daily go-to."},
@@ -1536,9 +1536,9 @@ const products = [
   {
     "id": "wynx-panel-black-track",
     "name": "Shadow Veil Panel Lowers",
-    "price": 509,
-    "oldPrice": 1799,
-    "discount": 72,
+    "price": 459,
+    "oldPrice": 1599,
+    "discount": 71,
     "category": "men",
     "subcategory": "Lowers",
     "badge": "Hot Deal",
@@ -1559,7 +1559,7 @@ const products = [
       {"type": "bundle", "text": "₹42 off — Add 2 items to unlock offer"},
       {"type": "bank", "text": "₹50 off on bank offers"}
     ],
-    "buyAtPrice": 459,
+    "buyAtPrice": 409,
     "img": "/products/wynx-black-panel-2.png",
     "reviewData": [
       {"name": "Anshuman Tripathi", "rating": 5, "date": "1 day ago", "text": "These are the most premium-feeling track pants I've ever worn under 600 bucks. The jet black with charcoal panels is a head-turner. White piping is sharp. Fabric is buttery smooth. Absolutely worth every rupee."},
@@ -1567,6 +1567,78 @@ const products = [
       {"name": "Rituraj Choudhary", "rating": 5, "date": "1 week ago", "text": "These Shadow Veil lowers are exactly what I was looking for — sleek, minimal, yet distinctive. The monochromatic black panel design is elite. Fabric quality is exceptional for the price. Already ordered the charcoal version."},
       {"name": "Gajendra Shekhawat", "rating": 4, "date": "3 weeks ago", "text": "Excellent quality and a very unique design. The black panel lower looks much more premium than the price indicates. Waistband elastic is comfortable and the fit is great at XXL. Small wish: a zip pocket. Otherwise perfection."},
       {"name": "Shashank Goswami", "rating": 5, "date": "1 month ago", "text": "Replaced my old black track pants with these and there's no going back. The panel design elevates a classic black to something truly special. WYNX branding is subtle and tasteful. Premium all around. Highly recommend."}
+    ]
+  },
+  {
+    "id": "wynx-panel-maroon-track",
+    "name": "Crimson Reign Panel Lowers",
+    "price": 479,
+    "oldPrice": 1699,
+    "discount": 72,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "New Drop",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL", "3XL"],
+    "intensity": "Pro",
+    "tags": ["new-arrival", "trending", "best-seller"],
+    "description": "Crimson Reign Panel Lowers — a bold, deep maroon colourway with graphite contrast panels and signature white piping. This rich burgundy-red brings intense personality to your athleisure wardrobe. The dual-panel construction adds structured dimension while the smooth-knit fabric delivers all-day comfort. Wear it like the statement it is.",
+    "features": [
+      "Deep Maroon-Burgundy Colourway",
+      "Graphite Contrast Panel Inserts",
+      "White Signature Piping",
+      "Premium Smooth-Knit Fabric",
+      "Drawstring Elastic Waistband"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "\u20b938 off \u2014 Add 2 items to unlock offer"},
+      {"type": "bank", "text": "\u20b950 off on bank offers"}
+    ],
+    "buyAtPrice": 429,
+    "img": "/products/wynx-maroon-panel-1.png",
+    "reviewData": [
+      {"name": "Prateek Vashishth", "rating": 5, "date": "1 day ago", "text": "The maroon panel lower is an absolute showstopper. Rich burgundy with graphite panels — this combo is fire. Fabric quality is premium and the fit is exactly right at XL. WYNX just keeps getting better."},
+      {"name": "Chiranjeev Mathur", "rating": 5, "date": "4 days ago", "text": "Ordered on impulse and zero regrets. The deep maroon colourway is bold yet wearable — pairs perfectly with a white or black tee. The panel design makes it look way more expensive than it is. Highly recommend."},
+      {"name": "Abhijeet Kulkarni", "rating": 4, "date": "1 week ago", "text": "The crimson-maroon shade is gorgeous in person — photos don't do it justice. Fabric is smooth, stitching is clean, and the waistband sits perfectly. Only wish the pockets were slightly deeper. Otherwise excellent."},
+      {"name": "Swaroop Krishnamurti", "rating": 5, "date": "2 weeks ago", "text": "This colour is a statement — people noticed immediately when I wore these to the gym. The maroon + graphite combination is sophisticated and unique. Build quality is outstanding. Will be ordering the navy version next."},
+      {"name": "Jaideep Bhattacharya", "rating": 5, "date": "1 month ago", "text": "The Crimson Reign panel lower is my favourite piece from WYNX. Rich maroon, premium fabric, clean stitching — everything is dialled in. Comfortable enough for gym use and stylish enough for casual wear. Perfect balance."}
+    ]
+  },
+  {
+    "id": "wynx-panel-brown-track-v2",
+    "name": "Walnut Dusk Panel Lowers",
+    "price": 469,
+    "oldPrice": 1699,
+    "discount": 72,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Trending",
+    "rating": 4.7,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL", "3XL"],
+    "intensity": "Pro",
+    "tags": ["new-arrival", "trending"],
+    "description": "Walnut Dusk Panel Lowers — a refined warm-brown colourway with deep graphite contrast panels and crisp white piping. This earth-tone colourway channels timeless style with a modern athletic silhouette. Crafted with premium smooth-knit fabric for an effortless fit from morning training to evening strolls.",
+    "features": [
+      "Warm Walnut-Brown Colourway",
+      "Deep Graphite Panel Contrast",
+      "Crisp White Piping Detail",
+      "Smooth-Knit Premium Fabric",
+      "Wide-Leg Athletic Silhouette"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "\u20b938 off \u2014 Add 2 items to unlock offer"},
+      {"type": "bank", "text": "Paytm \u20b950 off"}
+    ],
+    "buyAtPrice": 419,
+    "img": "/products/wynx-brown-panel-2.jpg",
+    "reviewData": [
+      {"name": "Omkar Deshmukh", "rating": 5, "date": "2 days ago", "text": "Walnut brown with graphite panels — this is an elite combination. The fabric is incredibly smooth and the piping detail is crisp. Wearing these daily to the gym and getting constant compliments. WYNX at its best."},
+      {"name": "Yashvardhan Mehra", "rating": 5, "date": "5 days ago", "text": "The warm brown tone is so versatile — pairs with black, white, cream, olive. The panel design elevates it from a basic track pant to a fashion piece. Fabric quality is outstanding for the price. 10/10."},
+      {"name": "Kushal Rathore", "rating": 4, "date": "2 weeks ago", "text": "Really impressed with the Walnut Dusk design. The colour is warm and earthy without being dull. Stitching is clean and the fit is accurate to size. Small note — delivery could be faster. Product itself is flawless."},
+      {"name": "Harshvardhan Negi", "rating": 5, "date": "3 weeks ago", "text": "This is the brown panel lower I've been looking for. Warm walnut tone, graphite panel inserts, white piping — it's a perfect design. Premium fabric that breathes well and maintains shape after washing. Absolute value."},
+      {"name": "Ratnesh Pandey", "rating": 5, "date": "6 weeks ago", "text": "Ordered this as a second brown panel lower and it's a completely different vibe from the first. This walnut shade is warmer and more versatile. The panel design is sharp, stitching is perfect. Highly recommend WYNX."}
     ]
   }
 ];
