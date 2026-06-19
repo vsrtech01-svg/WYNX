@@ -15,7 +15,6 @@ const Footer = () => {
   const bottomLinks = [
     { label: 'Terms', to: '/policy/terms' },
     { label: 'Shipping', to: '/policy/shipping' },
-    { label: 'Returns', to: '/policy/returns' },
     { label: 'Privacy', to: '/policy/privacy' },
   ];
   
@@ -57,14 +56,13 @@ const Footer = () => {
         </p>
 
         <p className={styles.madeBy}>
-          DESIGNED BY{' '}
           <a
             href="https://www.vsr-tech.com/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.madeByLink}
           >
-            VSR TECH
+            Designed and Developed by VSR Tech
           </a>
         </p>
         
