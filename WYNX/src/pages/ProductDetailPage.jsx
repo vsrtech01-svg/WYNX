@@ -118,36 +118,47 @@ const REVIEWS_TEXT = [
   "The fabric has this slight sheen that catches light beautifully. Looks way more expensive than it is."
 ];
 
-// Deterministic review assignment — each product gets 4 completely unique reviews
-const getReviewsForProduct = (productId) => {
+// Deterministic review assignment — each product gets 5 completely unique reviews
+const getReviewsForProduct = (productId, productReviewData) => {
+  // If the product has embedded reviewData, use it directly
+  if (productReviewData && productReviewData.length >= 5) {
+    return productReviewData.map((r, i) => ({
+      id: i + 1,
+      name: r.name,
+      rating: r.rating,
+      date: r.date || '1 month ago',
+      comment: r.text
+    }));
+  }
+
   const index = products.findIndex(p => p.id === productId);
-  const nameBase = index >= 0 ? index * 4 : 0;
-  const reviewBase = index >= 0 ? index * 4 : 0;
+  const nameBase = index >= 0 ? index * 5 : 0;
+  const reviewBase = index >= 0 ? index * 5 : 0;
 
   // Realistic rating distribution — mostly strong, with some variance
   const ratingPatterns = [
-    [5, 5, 4, 5], [5, 4, 5, 4], [4, 5, 5, 5], [5, 5, 5, 4], [5, 4, 4, 5],
-    [4, 5, 4, 5], [5, 5, 5, 5], [4, 4, 5, 5], [5, 5, 4, 4], [5, 4, 5, 5],
-    [5, 5, 5, 4], [4, 5, 5, 5], [5, 4, 4, 5], [5, 5, 5, 5], [4, 5, 5, 4],
-    [5, 5, 4, 5], [5, 4, 5, 5], [5, 5, 5, 4], [4, 5, 4, 5], [5, 5, 5, 5],
-    [5, 4, 5, 4], [5, 5, 4, 5], [4, 5, 5, 5], [5, 5, 5, 4], [5, 4, 4, 5],
-    [5, 5, 5, 5], [4, 5, 5, 4], [5, 4, 5, 5], [5, 5, 4, 5], [5, 5, 5, 5],
-    [4, 5, 5, 5], [5, 5, 4, 4], [5, 4, 5, 5], [5, 5, 5, 5], [4, 5, 4, 5],
-    [5, 5, 5, 4], [5, 4, 5, 5], [5, 5, 4, 5], [4, 5, 5, 5], [5, 5, 5, 5]
+    [5, 5, 4, 5, 5], [5, 4, 5, 4, 5], [4, 5, 5, 5, 4], [5, 5, 5, 4, 5], [5, 4, 4, 5, 5],
+    [4, 5, 4, 5, 5], [5, 5, 5, 5, 4], [4, 4, 5, 5, 5], [5, 5, 4, 4, 5], [5, 4, 5, 5, 5],
+    [5, 5, 5, 4, 4], [4, 5, 5, 5, 5], [5, 4, 4, 5, 5], [5, 5, 5, 5, 4], [4, 5, 5, 4, 5],
+    [5, 5, 4, 5, 5], [5, 4, 5, 5, 4], [5, 5, 5, 4, 5], [4, 5, 4, 5, 5], [5, 5, 5, 5, 4],
+    [5, 4, 5, 4, 5], [5, 5, 4, 5, 5], [4, 5, 5, 5, 5], [5, 5, 5, 4, 4], [5, 4, 4, 5, 5],
+    [5, 5, 5, 5, 4], [4, 5, 5, 4, 5], [5, 4, 5, 5, 5], [5, 5, 4, 5, 4], [5, 5, 5, 5, 5],
+    [4, 5, 5, 5, 4], [5, 5, 4, 4, 5], [5, 4, 5, 5, 5], [5, 5, 5, 5, 4], [4, 5, 4, 5, 5],
+    [5, 5, 5, 4, 5], [5, 4, 5, 5, 5], [5, 5, 4, 5, 5], [4, 5, 5, 5, 5], [5, 5, 5, 5, 4]
   ];
   const ratings = ratingPatterns[index % ratingPatterns.length];
 
   const dateOptions = [
-    ["3 days ago", "2 weeks ago", "1 month ago", "3 months ago"],
-    ["1 week ago", "3 weeks ago", "2 months ago", "4 months ago"],
-    ["5 days ago", "2 weeks ago", "6 weeks ago", "3 months ago"],
-    ["2 days ago", "10 days ago", "1 month ago", "2 months ago"],
-    ["1 week ago", "1 month ago", "3 months ago", "5 months ago"],
-    ["4 days ago", "3 weeks ago", "2 months ago", "4 months ago"],
-    ["6 days ago", "2 weeks ago", "5 weeks ago", "3 months ago"],
-    ["Just now", "1 week ago", "1 month ago", "2 months ago"],
-    ["3 days ago", "3 weeks ago", "2 months ago", "6 months ago"],
-    ["1 week ago", "2 weeks ago", "6 weeks ago", "4 months ago"]
+    ["3 days ago", "2 weeks ago", "1 month ago", "3 months ago", "5 months ago"],
+    ["1 week ago", "3 weeks ago", "2 months ago", "4 months ago", "6 months ago"],
+    ["5 days ago", "2 weeks ago", "6 weeks ago", "3 months ago", "5 months ago"],
+    ["2 days ago", "10 days ago", "1 month ago", "2 months ago", "4 months ago"],
+    ["1 week ago", "1 month ago", "3 months ago", "5 months ago", "7 months ago"],
+    ["4 days ago", "3 weeks ago", "2 months ago", "4 months ago", "6 months ago"],
+    ["6 days ago", "2 weeks ago", "5 weeks ago", "3 months ago", "5 months ago"],
+    ["Just now", "1 week ago", "1 month ago", "2 months ago", "4 months ago"],
+    ["3 days ago", "3 weeks ago", "2 months ago", "6 months ago", "8 months ago"],
+    ["1 week ago", "2 weeks ago", "6 weeks ago", "4 months ago", "7 months ago"]
   ];
   const dates = dateOptions[index % dateOptions.length];
 
@@ -179,6 +190,13 @@ const getReviewsForProduct = (productId) => {
       rating: ratings[3],
       date: dates[3],
       comment: REVIEWS_TEXT[(reviewBase + 63) % REVIEWS_TEXT.length]
+    },
+    {
+      id: 5,
+      name: NAMES[(nameBase + 4) % NAMES.length],
+      rating: ratings[4],
+      date: dates[4],
+      comment: REVIEWS_TEXT[(reviewBase + 83) % REVIEWS_TEXT.length]
     }
   ];
 };
@@ -440,7 +458,7 @@ const ProductDetailPage = () => {
             <h2 className={styles.relatedTitle}>Customer Reviews</h2>
           </div>
           <div className={styles.reviewsList}>
-            {getReviewsForProduct(product.id).map((review) => (
+            {getReviewsForProduct(product.id, product.reviewData).map((review) => (
               <div key={review.id} className={styles.reviewItem}>
                 <div className={styles.reviewItemHeader}>
                   <div className={styles.reviewAuthor}>
