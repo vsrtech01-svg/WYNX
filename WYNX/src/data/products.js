@@ -1640,6 +1640,186 @@ const products = [
       {"name": "Harshvardhan Negi", "rating": 5, "date": "3 weeks ago", "text": "This is the brown panel lower I've been looking for. Warm walnut tone, graphite panel inserts, white piping — it's a perfect design. Premium fabric that breathes well and maintains shape after washing. Absolute value."},
       {"name": "Ratnesh Pandey", "rating": 5, "date": "6 weeks ago", "text": "Ordered this as a second brown panel lower and it's a completely different vibe from the first. This walnut shade is warmer and more versatile. The panel design is sharp, stitching is perfect. Highly recommend WYNX."}
     ]
+  },
+  {
+    "id": "wynx-tshirt-maroon",
+    "name": "Crimson Pulse Signature Tee",
+    "price": 299,
+    "oldPrice": 899,
+    "discount": 67,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "New Drop",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "trending"],
+    "description": "Crimson Pulse Signature Tee — a deep, rich maroon crafted from ultra-soft premium cotton blend. The subtle WYNX script logo on the chest adds a touch of refined branding without shouting. Form-fitting yet breathable, this tee transitions flawlessly from morning workouts to casual evenings. The colour that commands respect.",
+    "features": [
+      "Deep Maroon Colourway",
+      "Premium Cotton Blend Fabric",
+      "WYNX Script Chest Logo",
+      "Form-Fit Athletic Cut",
+      "Breathable & Soft"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 249,
+    "img": "/products/wynx-tshirt-maroon-1.jpg",
+    "reviewData": [
+      {"name": "Akshay Nadkarni", "rating": 5, "date": "1 day ago", "text": "This maroon tee is absolutely stunning. The fabric is incredibly soft — softer than most branded tees I've owned at twice the price. The WYNX logo placement is tasteful and the fit is perfect at M. Instant favourite."},
+      {"name": "Siddhant Bora", "rating": 5, "date": "3 days ago", "text": "Ordered this as a casual gym tee and now it's my everyday wear. The deep maroon colour is rich and vibrant — doesn't look cheap at all. Fabric breathes well and the stitching is clean. Excellent value from WYNX."},
+      {"name": "Vipul Acharya", "rating": 4, "date": "1 week ago", "text": "Great tee for the price. The maroon shade is exactly as shown in the photos — deep and rich. Fit is spot-on and the cotton blend feels premium against skin. Would give 5 stars if there was a 3XL option."},
+      {"name": "Tanishq Banerji", "rating": 5, "date": "2 weeks ago", "text": "The Crimson Pulse Tee is a wardrobe must-have. Rich maroon that pairs with everything from blacks to khakis. Fabric is smooth, lightweight, and doesn't cling. The WYNX logo is subtle but makes the tee feel premium."},
+      {"name": "Siddhanth Chattopadhyay", "rating": 5, "date": "1 month ago", "text": "Was sceptical about ordering tees online but WYNX delivered. The maroon is spot on — not too bright, not too dark. Form-fit cut shows off the build without being too tight. Quality rivals brands that charge 3x more."}
+    ]
+  },
+  {
+    "id": "wynx-tshirt-mauve",
+    "name": "Dusk Rose Minimal Tee",
+    "price": 299,
+    "oldPrice": 899,
+    "discount": 67,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Exclusive",
+    "rating": 4.7,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "trending"],
+    "description": "Dusk Rose Minimal Tee — a sophisticated dusty mauve-purple that sits at the intersection of street style and athleisure. Crafted from a premium soft-touch cotton blend with the iconic WYNX script logo on the chest. This understated colourway makes a confident statement without effort. Wear it alone or layer it — either way, you win.",
+    "features": [
+      "Dusty Mauve-Rose Colourway",
+      "Soft-Touch Cotton Blend",
+      "WYNX Script Chest Logo",
+      "Athletic Form Fit",
+      "Lightweight & Breathable"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 249,
+    "img": "/products/wynx-tshirt-mauve-1.jpg",
+    "reviewData": [
+      {"name": "Hrishikesh Manohar", "rating": 5, "date": "2 days ago", "text": "The dusty mauve colour is one of a kind — I haven't seen this shade in any other brand at this price point. Fabric is extremely soft and the WYNX logo on the chest is clean and minimal. Wearing this everywhere now."},
+      {"name": "Prathamesh Kulkarni", "rating": 4, "date": "5 days ago", "text": "Unique colour, premium feel. The mauve shade is sophisticated without trying too hard. Fabric breathes well and the form fit suits my build at L. Would have given 5 stars but the sleeve length could be slightly longer."},
+      {"name": "Amogh Bhat", "rating": 5, "date": "1 week ago", "text": "My wife picked this colour and I was hesitant, but it looks absolutely amazing. The muted rose-purple tone is masculine and stylish. So many compliments when I wore this to a casual dinner. WYNX quality is elite."},
+      {"name": "Shreekant Joshi", "rating": 5, "date": "3 weeks ago", "text": "This tee is a vibe. The dusty mauve is unique among men's tees and the WYNX branding is just right — not loud, not invisible. Fabric is buttery smooth against skin. Goes perfectly with white shorts or black lowers."},
+      {"name": "Rishab Subramaniam", "rating": 5, "date": "1 month ago", "text": "Bold colour choice and it absolutely paid off. The mauve shade photographs beautifully and looks even better in real life. Soft premium cotton, excellent fit, clean stitching. WYNX tees are an unbelievable value."}
+    ]
+  },
+  {
+    "id": "wynx-tshirt-brown",
+    "name": "Terra Nova Essentials Tee",
+    "price": 319,
+    "oldPrice": 999,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "New Drop",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Terra Nova Essentials Tee — a warm, earthy deep brown crafted from ultra-premium cotton blend that feels like a second skin. The WYNX script logo sits elegantly on the chest. An earth-tone staple that pairs with virtually every bottom in your wardrobe. Built for the man who keeps it grounded, refined, and effortlessly cool.",
+    "features": [
+      "Deep Walnut-Brown Colourway",
+      "Ultra-Premium Cotton Blend",
+      "WYNX Script Chest Logo",
+      "Second-Skin Form Fit",
+      "All-Day Comfort Fabric"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹28 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 269,
+    "img": "/products/wynx-tshirt-brown-1.jpg",
+    "reviewData": [
+      {"name": "Soumyajit Ghosh", "rating": 5, "date": "1 day ago", "text": "The Terra Nova brown tee is my absolute favourite purchase this year. The earthy deep brown is unique and versatile. Fabric quality is exceptional — incredibly soft and the colour doesn't fade after washing. WYNX is the real deal."},
+      {"name": "Nitesh Chourasiya", "rating": 5, "date": "4 days ago", "text": "This brown tee pairs with literally everything in my wardrobe — navy shorts, black lowers, beige tracks. The WYNX logo on the chest is clean. Fabric is soft and breathable. Perfect for both gym and everyday use."},
+      {"name": "Kaustubh Limaye", "rating": 5, "date": "10 days ago", "text": "Got compliments within the first hour of wearing this. The deep brown colourway is warm and unique — not the typical plain colours. Fits perfectly at XL, fabric is premium quality. Highly recommend the Terra Nova tee."},
+      {"name": "Prashant Dongre", "rating": 4, "date": "3 weeks ago", "text": "Really impressed with this tee. The brown colour is rich and earthy, very different from the usual blacks and greys. Form fit is excellent and the cotton blend breathes well in summer. Packaging was clean and delivery was on time."},
+      {"name": "Shubhrajit Mukherjee", "rating": 5, "date": "2 months ago", "text": "The Terra Nova tee is the one earthy-coloured tee every man needs. Deep brown, premium cotton, perfect logo placement. Wore this on a trek and it handled sweat like a champ. Versatile, comfortable, and stylish. Full marks."}
+    ]
+  },
+  {
+    "id": "wynx-tshirt-charcoal",
+    "name": "Graphite Stealth Core Tee",
+    "price": 279,
+    "oldPrice": 899,
+    "discount": 69,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "best-seller", "trending"],
+    "description": "Graphite Stealth Core Tee — a premium dark charcoal grey that exudes quiet confidence. The soft-touch cotton blend fabric delivers unmatched comfort, while the WYNX script logo on the chest adds signature branding in understated white. Versatile, sharp, and built for the man who moves through the world with precision.",
+    "features": [
+      "Dark Charcoal Grey Colourway",
+      "Soft-Touch Cotton Blend",
+      "WYNX Script Logo in White",
+      "Athletic Form Fit",
+      "Anti-Shrink Fabric"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "Paytm ₹50 off"}
+    ],
+    "buyAtPrice": 229,
+    "img": "/products/wynx-tshirt-charcoal-1.jpg",
+    "reviewData": [
+      {"name": "Saurabh Deshpande", "rating": 5, "date": "2 days ago", "text": "The Graphite Stealth tee is everything. Dark charcoal that looks sharp with any outfit. The cotton blend is incredibly soft — zero discomfort even after wearing all day. WYNX logo in white on the chest is clean and minimal. Love it."},
+      {"name": "Vinayak Apte", "rating": 5, "date": "6 days ago", "text": "Been wearing this grey tee for a week straight and it's still fresh — no pilling, no stretching, and the colour remains rich. The anti-shrink fabric actually works. This is my new everyday tee. Value is incredible."},
+      {"name": "Sudarshan Hegde", "rating": 4, "date": "2 weeks ago", "text": "Clean charcoal tone, great form fit. The WYNX white logo on the chest is the perfect finishing touch. Fabric quality is above expectations for this price range. Minor wish — an XS size option. Otherwise flawless."},
+      {"name": "Aniket Marathe", "rating": 5, "date": "1 month ago", "text": "This is the tee you throw on when you want to look put together with zero effort. Deep charcoal, WYNX logo, premium cotton — simple but premium in every way. Fits my athletic build perfectly at L. Ordering another."},
+      {"name": "Pushkar Pande", "rating": 5, "date": "2 months ago", "text": "The Graphite Stealth tee is now my gym-to-street go-to. Wore it for a workout, then straight to a café without changing and got compliments. That's the WYNX effect — premium quality at a price that doesn't hurt."}
+    ]
+  },
+  {
+    "id": "wynx-tshirt-navy",
+    "name": "Oceanic Prestige Signature Tee",
+    "price": 299,
+    "oldPrice": 899,
+    "discount": 67,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Top Rated",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Oceanic Prestige Signature Tee — a deep, classic navy blue refined for the modern man. Premium cotton-blend fabric with a form-fitting athletic cut and the iconic WYNX script logo on the chest. Navy never goes wrong — this is your versatile anchor piece that works with everything and elevates everything it touches.",
+    "features": [
+      "Deep Navy Blue Colourway",
+      "Premium Cotton-Blend Fabric",
+      "WYNX Script Chest Logo",
+      "Form-Fitting Athletic Cut",
+      "Fade-Resistant Colour"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 249,
+    "img": "/products/wynx-tshirt-navy-1.jpg",
+    "reviewData": [
+      {"name": "Kedar Kulkarni", "rating": 5, "date": "1 day ago", "text": "The Oceanic Prestige tee is a masterclass in simplicity done right. Deep navy, premium cotton, WYNX logo — that's all you need. Fabric is incredibly soft and the fit is spot on for an athletic build. Ordering all 5 colours now."},
+      {"name": "Swapnil Ghanekar", "rating": 5, "date": "3 days ago", "text": "Navy is always a safe choice but WYNX elevates it to something special. The fabric quality is exceptional — no stiffness, no cling, just smooth comfort all day. The fade-resistant colour claim is real, still vibrant after 15 washes."},
+      {"name": "Amartya Sengupta", "rating": 5, "date": "1 week ago", "text": "I bought the navy first to test the quality and now I've ordered the maroon and charcoal too. The form-fit is perfect for my athletic build and the cotton blend is ultra-soft. WYNX tees are criminally underpriced."},
+      {"name": "Parth Parekh", "rating": 4, "date": "3 weeks ago", "text": "Great quality navy tee from WYNX. The deep navy tone is rich and doesn't look washed-out. WYNX script logo placement on the chest is tasteful. Form fit is excellent at M. Minor note — delivery took 3 days longer than promised."},
+      {"name": "Aarav Jaiswal", "rating": 5, "date": "1 month ago", "text": "The Oceanic Prestige tee is now my go-to casual piece. Deep navy, soft cotton, clean WYNX branding — it checks every box. Wore it to a meeting, then straight to the gym. Zero wrinkle, zero discomfort. Pure quality from WYNX."}
+    ]
   }
 ];
 
