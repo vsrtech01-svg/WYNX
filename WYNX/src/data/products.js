@@ -1820,6 +1820,186 @@ const products = [
       {"name": "Parth Parekh", "rating": 4, "date": "3 weeks ago", "text": "Great quality navy tee from WYNX. The deep navy tone is rich and doesn't look washed-out. WYNX script logo placement on the chest is tasteful. Form fit is excellent at M. Minor note — delivery took 3 days longer than promised."},
       {"name": "Aarav Jaiswal", "rating": 5, "date": "1 month ago", "text": "The Oceanic Prestige tee is now my go-to casual piece. Deep navy, soft cotton, clean WYNX branding — it checks every box. Wore it to a meeting, then straight to the gym. Zero wrinkle, zero discomfort. Pure quality from WYNX."}
     ]
+  },
+  {
+    "id": "wynx-jogger-lavender",
+    "name": "Amethyst Aura Panel Joggers",
+    "price": 459,
+    "oldPrice": 1599,
+    "discount": 71,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Limited",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Pro",
+    "tags": ["new-arrival", "trending"],
+    "description": "Amethyst Aura Panel Joggers — a premium lilac-lavender active jogger featuring soft dual side panels in contrasting light orchid tones. Engineered from an ultra-breathable cotton-poly tech fleece, they deliver the ultimate balance of structure and cozy stretch. Finished with a white WYNX crest on the left thigh and secure drawstring waistband.",
+    "features": [
+      "Aesthetic Lavender-Lilac Tone",
+      "Contrasting Side Stripe Panels",
+      "Soft cotton-poly tech fleece",
+      "Comfort elastic cuffs & hem",
+      "White WYNX branding"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹30 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 409,
+    "img": "/products/wynx-lavender-jogger.jpg",
+    "reviewData": [
+      {"name": "Abhinav Bhasin", "rating": 5, "date": "1 day ago", "text": "The lavender shade is extremely subtle and looks incredibly premium. WYNX logo is clean and print quality is top notch. The elastic fit around the waist and ankles is spot on."},
+      {"name": "Ayush Bhatnagar", "rating": 5, "date": "4 days ago", "text": "Was skeptical about lilac track pants, but these are absolute fire. Extremely comfortable for gym workouts and they look great for casual outings too."},
+      {"name": "Deepak Rathi", "rating": 4, "date": "1 week ago", "text": "Super soft fabric, fits like a dream. Side panels are a nice design touch. Very satisfied with the quick delivery and packaging."},
+      {"name": "Girish Wadhwa", "rating": 5, "date": "2 weeks ago", "text": "High quality material, breathable and flexible. Perfect jogger length. The color doesn't run even after multiple machine washes."},
+      {"name": "Himanshu Sethi", "rating": 5, "date": "1 month ago", "text": "Unbelievable value for 459! The material feels premium, doesn't feel cheap at all. Recommended to my friends."}
+    ]
+  },
+  {
+    "id": "wynx-jogger-charcoal",
+    "name": "Carbon Eclipse Panel Joggers",
+    "price": 439,
+    "oldPrice": 1499,
+    "discount": 71,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Best Seller",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Pro",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Carbon Eclipse Panel Joggers — a stealthy charcoal grey base accented with deep navy panel inserts on the sides for a sleek, contemporary look. Crafted with double-knit premium fleece for standard durability and all-day ease. Perfect for warming up, cooling down, or lounging in premium comfort.",
+    "features": [
+      "Stealth Charcoal & Navy Panels",
+      "Double-knit premium tech fleece",
+      "Deep secure zippered pockets",
+      "Drawstring waist customization",
+      "Signature WYNX script logo"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 389,
+    "img": "/products/wynx-charcoal-jogger.jpg",
+    "reviewData": [
+      {"name": "Jatin Gahlot", "rating": 5, "date": "2 days ago", "text": "Best charcoal joggers I've owned. The fit is superb and fabric has a nice weight to it. Side stripe panels give it a premium sporty look."},
+      {"name": "Lalit Chandila", "rating": 5, "date": "5 days ago", "text": "Very comfortable and durable. Pocket zipper is smooth and secure. Wore these for a full day trek, no issues whatsoever."},
+      {"name": "Manish Bindra", "rating": 4, "date": "1 week ago", "text": "The dark grey color is versatile. Fabric quality is amazing for this price range. Very happy with the purchase!"},
+      {"name": "Naman Sarin", "rating": 5, "date": "3 weeks ago", "text": "The panels add a nice touch to the plain grey style. Perfect slim fit without being restrictive. Extremely breathable."},
+      {"name": "Piyush Chhabra", "rating": 5, "date": "1 month ago", "text": "Exceptional quality. Fabric feels soft and is ideal for both jogging and lounge wear. Five stars from me."}
+    ]
+  },
+  {
+    "id": "wynx-jogger-brown",
+    "name": "Sienna Horizon Panel Joggers",
+    "price": 449,
+    "oldPrice": 1499,
+    "discount": 70,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Hot Product",
+    "rating": 4.7,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Base",
+    "tags": ["new-arrival", "trending"],
+    "description": "Sienna Horizon Panel Joggers — a rich earth-toned brown jogger highlighted by warm sand contrast side panels. Designed for the modern athlete, they combine mid-weight cotton-poly blend fleece with utility pockets and a standard tapered fit. A grounded, stylish essential that looks and feels top tier.",
+    "features": [
+      "Earthy Sienna Brown Colourway",
+      "Contrast Sand Side Panels",
+      "Premium cotton-poly blend fleece",
+      "Utility pocket space",
+      "Tapered modern jogger silhouette"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹30 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 399,
+    "img": "/products/wynx-brown-jogger.png",
+    "reviewData": [
+      {"name": "Rahul Bhalla", "rating": 5, "date": "3 days ago", "text": "Lovely earthy brown shade. The side panel detailing is very elegant. Fits perfectly around my thighs and waist."},
+      {"name": "Sanjeev Chawla", "rating": 5, "date": "1 week ago", "text": "Excellent product. Cotton blend is smooth and lightweight. Pairs really well with a basic white tee. Highly recommended!"},
+      {"name": "Tarun Khattar", "rating": 4, "date": "2 weeks ago", "text": "The material has good stretchability. Great for running and weight training. Pockets are deep and practical."},
+      {"name": "Umesh Khurana", "rating": 5, "date": "3 weeks ago", "text": "The fit is relaxed yet looks stylish. The sienna brown color is unique in a sea of black track pants. Very comfortable."},
+      {"name": "Varun Taneja", "rating": 5, "date": "1 month ago", "text": "Very happy with the stitching and overall finish. There are no loose threads, and the brand printing looks durable."}
+    ]
+  },
+  {
+    "id": "wynx-jogger-maroon",
+    "name": "Cabernet Zenith Panel Joggers",
+    "price": 479,
+    "oldPrice": 1699,
+    "discount": 72,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Limited Edition",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Pro",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Cabernet Zenith Panel Joggers — a striking deep burgundy maroon base featuring premium contrast panels running down the outer seams. Engineered with high-retention performance fleece for athletic agility and recovery. The ultimate statement lower designed to make you stand out while staying relaxed.",
+    "features": [
+      "Rich Cabernet Maroon Hue",
+      "High-Retention Performance Fleece",
+      "Dynamic Side Stripe Panels",
+      "Cuffed Jogger Ankle design",
+      "Embossed signature logo details"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 429,
+    "img": "/products/wynx-maroon-jogger.png",
+    "reviewData": [
+      {"name": "Yogesh Madan", "rating": 5, "date": "1 day ago", "text": "Deep rich maroon color. Looks extremely premium. Fabric has a smooth feel to it, perfect for workouts in air-conditioned gyms."},
+      {"name": "Anoop Kapur", "rating": 5, "date": "4 days ago", "text": "Very cozy joggers. The side panels have a nice matching contrast. Drawstrings are high quality with metal tips."},
+      {"name": "Brijesh Kathuria", "rating": 4, "date": "1 week ago", "text": "Fabric is breathable and quick-drying. Perfect length for my height. Very comfortable to wear all day."},
+      {"name": "Divyansh Rustogi", "rating": 5, "date": "2 weeks ago", "text": "Value for money! The Maroon looks elite. Got several compliments at the gym today. Thanks WYNX!"},
+      {"name": "Gaurav Kheterpal", "rating": 5, "date": "1 month ago", "text": "Excellent joggers. The fabric is durable, has survived three washes already with zero shrinkage or color fade."}
+    ]
+  },
+  {
+    "id": "wynx-jogger-navy",
+    "name": "Meridian Cobalt Panel Joggers",
+    "price": 469,
+    "oldPrice": 1599,
+    "discount": 71,
+    "category": "men",
+    "subcategory": "Lowers",
+    "badge": "Top Rated",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "intensity": "Elite",
+    "tags": ["new-arrival", "trending"],
+    "description": "Meridian Cobalt Panel Joggers — classic dark navy blue jogger offset with bright cobalt side paneling. Crafted from premium breathable knit loopback fabric, this jogger provides breathable insulation during cold sessions and lightweight cooling during heavy workouts.",
+    "features": [
+      "Deep Navy & Cobalt Panels",
+      "Breathable Loopback Tech Knit",
+      "Ergonomic flatlock stitching",
+      "Deep side zip-pockets",
+      "Crisp white WYNX crest logo"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹35 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹50 off on bank offers"}
+    ],
+    "buyAtPrice": 419,
+    "img": "/products/wynx-navy-jogger.png",
+    "reviewData": [
+      {"name": "Harish Juneja", "rating": 5, "date": "2 days ago", "text": "Navy blue joggers that fit like a glove. The cobalt blue panels on the side look amazing and sport-ready."},
+      {"name": "Inderpreet Sodhi", "rating": 5, "date": "5 days ago", "text": "Excellent comfort. Waistband elastic is gentle yet holds well. Pocket size is deep enough for large smartphones."},
+      {"name": "Kartik Sobti", "rating": 5, "date": "1 week ago", "text": "Outstanding material. Keeps me dry during high intensity workouts. The contrast panels are clean and well stitched."},
+      {"name": "Mayank Talwar", "rating": 4, "date": "3 weeks ago", "text": "Highly durable. The stitching quality is solid. Perfect for active lifestyle. Will buy another color soon."},
+      {"name": "Naveen Dua", "rating": 5, "date": "1 month ago", "text": "Very stylish and comfortable. The design is unique and fabric feels premium. Absolute bargain at this price point."}
+    ]
   }
 ];
 
