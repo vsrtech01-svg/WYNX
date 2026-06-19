@@ -6,7 +6,6 @@ import BestSellers from '../components/BestSellers';
 import TechBanner from '../components/TechBanner';
 import TrendingSection from '../components/TrendingSection';
 import ScrollingTextBanner from '../components/ScrollingTextBanner';
-import CategoriesSection from '../components/CategoriesSection';
 import ReviewSection from '../components/ReviewSection';
 import NewArrivals from '../components/NewArrivals';
 
@@ -23,7 +22,6 @@ const HomePage = () => {
         <Hero />
         <ProductList />
         <ScrollingTextBanner />
-        <CategoriesSection />
         <TrendingSection />
         <ReviewSection />
         <BestSellers />

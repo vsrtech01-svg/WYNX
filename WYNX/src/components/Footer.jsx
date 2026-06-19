@@ -55,6 +55,18 @@ const Footer = () => {
         <p className={styles.copyright}>
           © 2026 WYNX PERFORMANCE. ALL RIGHTS RESERVED.
         </p>
+
+        <p className={styles.madeBy}>
+          DESIGNED BY{' '}
+          <a
+            href="https://www.vsr-tech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.madeByLink}
+          >
+            VSR TECH
+          </a>
+        </p>
         
         <div className={styles.socials}>
           <motion.a href="#" whileHover={{ y: -3, color: 'var(--primary)' }} className={styles.socialIcon}>FB</motion.a>

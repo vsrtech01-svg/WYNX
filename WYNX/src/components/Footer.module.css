@@ -105,3 +105,24 @@
   font-weight: 900;
   letter-spacing: 0.05em;
 }
+
+.madeBy {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--outline);
+}
+
+.madeByLink {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 800;
+  transition: opacity 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.madeByLink:hover {
+  opacity: 0.75;
+  letter-spacing: 0.22em;
+}
