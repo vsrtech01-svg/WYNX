@@ -156,7 +156,7 @@ const CollectionPage = () => {
           onComingSoon={handleComingSoon}
         />
         <main className="main-content">
-          <Hero title={"MEN'S\nCOLLECTION"} subtitle="Premium Track Pants & Lowers" />
+          <Hero title={"MEN'S\nCOLLECTION"} subtitle="Premium Tees, Lowers & Shorts" />
           
           {searchQuery && (
             <motion.div 

@@ -1,6 +1,6 @@
-// Full product catalog for WYNX eCommerce — LOWERS ONLY
+﻿// Full product catalog for WYNX eCommerce â€” LOWERS ONLY
 // Each product has a unique token for WhatsApp order tracking
-// Prices in INR (₹)
+// Prices in INR (â‚¹)
 const products = [
   {
     "id": "wynx-solid-black-track-v1",
@@ -21,7 +21,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Void Runner Lowers — sleek, minimal, and built for all-day ease. Crafted with premium-grade fabric for a silky-smooth fit that holds up through every session. Whether it's an early run or a late-night chill, these track pants deliver effortless style.",
+    "description": "Void Runner Lowers â€” sleek, minimal, and built for all-day ease. Crafted with premium-grade fabric for a silky-smooth fit that holds up through every session. Whether it's an early run or a late-night chill, these track pants deliver effortless style.",
     "features": [
       "Comfortable Fit",
       "Elastic Waistband",
@@ -31,15 +31,15 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       },
       {
         "type": "bank",
-        "text": "Paytm ₹50 off"
+        "text": "Paytm â‚¹50 off"
       },
       {
         "type": "bank",
-        "text": "₹50 off on bank offers"
+        "text": "â‚¹50 off on bank offers"
       }
     ],
     "buyAtPrice": 439,
@@ -67,7 +67,7 @@ const products = [
       "best-seller",
       "trending"
     ],
-    "description": "Onyx Phantom Joggers — athletic slim-fit engineering with adaptive stretch fabric. Built for those who refuse to compromise between gym performance and street credibility. The tapered silhouette with elastic ankle cuffs seals the deal.",
+    "description": "Onyx Phantom Joggers â€” athletic slim-fit engineering with adaptive stretch fabric. Built for those who refuse to compromise between gym performance and street credibility. The tapered silhouette with elastic ankle cuffs seals the deal.",
     "features": [
       "Slim-Fit Design",
       "Elastic Ankle Cuffs",
@@ -77,7 +77,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
+        "text": "â‚¹37 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 416,
@@ -105,7 +105,7 @@ const products = [
       "trending",
       "best-seller"
     ],
-    "description": "Apex Venom Stripers — black base with classic white side stripes that scream athletic finesse. A sporty staple for workouts, travel, and casual hangouts, built with soft stretchable fabric for unrestricted movement.",
+    "description": "Apex Venom Stripers â€” black base with classic white side stripes that scream athletic finesse. A sporty staple for workouts, travel, and casual hangouts, built with soft stretchable fabric for unrestricted movement.",
     "features": [
       "Classic Side Stripes",
       "Stretchable Fabric",
@@ -115,7 +115,7 @@ const products = [
     "offers": [
       {
         "type": "bank",
-        "text": "Best value for you — Bank offers available"
+        "text": "Best value for you â€” Bank offers available"
       }
     ],
     "buyAtPrice": 385,
@@ -143,7 +143,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Nebula Coast Tracks — a deep navy blue that hits different. Premium comfort meets refined styling with breathable, lightweight material engineered for gym sessions, morning jogs, or just owning the vibe wherever you go.",
+    "description": "Nebula Coast Tracks â€” a deep navy blue that hits different. Premium comfort meets refined styling with breathable, lightweight material engineered for gym sessions, morning jogs, or just owning the vibe wherever you go.",
     "features": [
       "Navy Blue Color",
       "Breathable Material",
@@ -153,7 +153,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Buy More Save More"
+        "text": "â‚¹36 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 355,
@@ -180,7 +180,7 @@ const products = [
     "tags": [
       "best-seller"
     ],
-    "description": "Iron Flux Stripers — featuring side stripe detailing on a jet-black canvas. Modern tapered fit with anti-shrink construction ensures these track pants hold their shape and style, wash after wash.",
+    "description": "Iron Flux Stripers â€” featuring side stripe detailing on a jet-black canvas. Modern tapered fit with anti-shrink construction ensures these track pants hold their shape and style, wash after wash.",
     "features": [
       "Side Stripe Detail",
       "Tapered Fit",
@@ -190,7 +190,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
+        "text": "â‚¹37 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 402,
@@ -218,7 +218,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Zenith Flex 4-Way Pro — engineered with 360° flex technology for unmatched freedom, whether you're crushing leg day or cruising through the weekend. The premium elastic waistband locks in comfort without the bulk.",
+    "description": "Zenith Flex 4-Way Pro â€” engineered with 360Â° flex technology for unmatched freedom, whether you're crushing leg day or cruising through the weekend. The premium elastic waistband locks in comfort without the bulk.",
     "features": [
       "4-Way Stretch Fabric",
       "Elastic Waistband",
@@ -228,7 +228,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Add 2 items to unlock offer"
+        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 439,
@@ -256,7 +256,7 @@ const products = [
       "best-seller",
       "trending"
     ],
-    "description": "Granite Haze Joggers — a versatile grey that pairs with literally everything. Soft, breathable fabric engineered for all-day zen. From the gym to the couch to the street, these joggers have zero off-days.",
+    "description": "Granite Haze Joggers â€” a versatile grey that pairs with literally everything. Soft, breathable fabric engineered for all-day zen. From the gym to the couch to the street, these joggers have zero off-days.",
     "features": [
       "Versatile Grey Color",
       "Soft Breathable Fabric",
@@ -266,7 +266,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Buy More Save More"
+        "text": "â‚¹37 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 381,
@@ -294,7 +294,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Mariner Storm Tracks — deep navy blue meets premium lightweight engineering. Built for kings who demand both sharp aesthetics and all-day comfort, whether it's a power workout or a casual Saturday.",
+    "description": "Mariner Storm Tracks â€” deep navy blue meets premium lightweight engineering. Built for kings who demand both sharp aesthetics and all-day comfort, whether it's a power workout or a casual Saturday.",
     "features": [
       "Deep Navy Blue",
       "Lightweight Material",
@@ -304,15 +304,15 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       },
       {
         "type": "bank",
-        "text": "Paytm ₹50 off"
+        "text": "Paytm â‚¹50 off"
       },
       {
         "type": "bank",
-        "text": "₹50 off on bank offers"
+        "text": "â‚¹50 off on bank offers"
       }
     ],
     "buyAtPrice": 427,
@@ -337,7 +337,7 @@ const products = [
     "tags": [
       "best-seller"
     ],
-    "description": "Eclipse Monarch Lowers — crafted for ultimate comfort with a sleek, boardroom-to-boulevard silhouette. Premium heavyweight fabric with excellent durability makes these the undisputed king of everyday track pants.",
+    "description": "Eclipse Monarch Lowers â€” crafted for ultimate comfort with a sleek, boardroom-to-boulevard silhouette. Premium heavyweight fabric with excellent durability makes these the undisputed king of everyday track pants.",
     "features": [
       "Premium Quality Fabric",
       "Fitted Athletic Cut",
@@ -347,15 +347,15 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       },
       {
         "type": "bank",
-        "text": "Paytm ₹50 off"
+        "text": "Paytm â‚¹50 off"
       },
       {
         "type": "bank",
-        "text": "₹50 off on bank offers"
+        "text": "â‚¹50 off on bank offers"
       }
     ],
     "buyAtPrice": 393,
@@ -384,7 +384,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Shadow Drift 4-Way Elite — the latest evolution of elite 4-way stretch technology. Advanced flex engineering meets relaxed modern aesthetics with deep pockets and an anti-shrink guarantee.",
+    "description": "Shadow Drift 4-Way Elite â€” the latest evolution of elite 4-way stretch technology. Advanced flex engineering meets relaxed modern aesthetics with deep pockets and an anti-shrink guarantee.",
     "features": [
       "4-Way Stretch Technology",
       "Relaxed Modern Fit",
@@ -394,7 +394,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 436,
@@ -422,7 +422,7 @@ const products = [
     "tags": [
       "trending"
     ],
-    "description": "Blitz Vanguard 3-Line — the triple-stripe icon in jet black. Bold athletic energy with soft, stretchable fabric that moves when you move. A sporty classic reimagined for the modern man.",
+    "description": "Blitz Vanguard 3-Line â€” the triple-stripe icon in jet black. Bold athletic energy with soft, stretchable fabric that moves when you move. A sporty classic reimagined for the modern man.",
     "features": [
       "3-Line Stripe Design",
       "Stretchable Fabric",
@@ -432,7 +432,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Buy More Save More"
+        "text": "â‚¹36 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 395,
@@ -460,7 +460,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Cipher Stealth Lowers — no stripes, no noise, just pure minimalist energy. Clean black with subtle WYNX branding, a drawstring waistband, and anti-wrinkle tech for effortless drip on the go.",
+    "description": "Cipher Stealth Lowers â€” no stripes, no noise, just pure minimalist energy. Clean black with subtle WYNX branding, a drawstring waistband, and anti-wrinkle tech for effortless drip on the go.",
     "features": [
       "NS Minimalist Design",
       "Drawstring Waistband",
@@ -470,7 +470,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 378,
@@ -498,7 +498,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Titanium Surge Joggers — charcoal grey redefined. Premium breathable fabric meets athletic silhouette with WYNX logo detailing. Built to perform from sunrise to sunset without breaking a sweat.",
+    "description": "Titanium Surge Joggers â€” charcoal grey redefined. Premium breathable fabric meets athletic silhouette with WYNX logo detailing. Built to perform from sunrise to sunset without breaking a sweat.",
     "features": [
       "Charcoal Grey Color",
       "Breathable Fabric",
@@ -508,7 +508,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 435,
@@ -536,7 +536,7 @@ const products = [
       "trending",
       "best-seller"
     ],
-    "description": "Carbon Mist Lowers — premium charcoal grey with tapered fit and bold WYNX branding. Durable fabric that maintains its shape wash after wash. The essential athleisure piece for every wardrobe.",
+    "description": "Carbon Mist Lowers â€” premium charcoal grey with tapered fit and bold WYNX branding. Durable fabric that maintains its shape wash after wash. The essential athleisure piece for every wardrobe.",
     "features": [
       "Premium Charcoal Grey",
       "Tapered Fit",
@@ -546,7 +546,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 393,
@@ -574,7 +574,7 @@ const products = [
       "best-seller",
       "trending"
     ],
-    "description": "Sapphire Reign Tracks — a rich navy blue canvas with WYNX signature branding. Lightweight premium fabric delivers all-day comfort while the elastic waistband and deep pockets keep you moving seamlessly.",
+    "description": "Sapphire Reign Tracks â€” a rich navy blue canvas with WYNX signature branding. Lightweight premium fabric delivers all-day comfort while the elastic waistband and deep pockets keep you moving seamlessly.",
     "features": [
       "Rich Navy Blue",
       "Lightweight Fabric",
@@ -584,7 +584,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Buy More Save More"
+        "text": "â‚¹36 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 403,
@@ -612,7 +612,7 @@ const products = [
     "tags": [
       "trending"
     ],
-    "description": "Indigo Pulse 3-Line — classic triple white stripes on a deep navy blue base. The intersection of sport and style, made with soft stretchable fabric and WYNX logo for maximum branded appeal.",
+    "description": "Indigo Pulse 3-Line â€” classic triple white stripes on a deep navy blue base. The intersection of sport and style, made with soft stretchable fabric and WYNX logo for maximum branded appeal.",
     "features": [
       "3-Line Stripe Design",
       "Navy Blue Color",
@@ -622,7 +622,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Buy More Save More"
+        "text": "â‚¹36 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 351,
@@ -650,7 +650,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Obsidian Aura Minimal — the understated classic. No-stripe, all-class. Premium NS styling with WYNX logo, drawstring waistband, and breathable fabric for a sleek, low-key look that speaks volumes.",
+    "description": "Obsidian Aura Minimal â€” the understated classic. No-stripe, all-class. Premium NS styling with WYNX logo, drawstring waistband, and breathable fabric for a sleek, low-key look that speaks volumes.",
     "features": [
       "NS Clean Design",
       "Drawstring Waistband",
@@ -660,7 +660,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 352,
@@ -688,7 +688,7 @@ const products = [
       "trending",
       "new-arrival"
     ],
-    "description": "Slate Forge Tracks — premium charcoal grey with WYNX signature logo. High-quality breathable fabric meets a comfortable athletic build with elastic waistband and drawstring closure.",
+    "description": "Slate Forge Tracks â€” premium charcoal grey with WYNX signature logo. High-quality breathable fabric meets a comfortable athletic build with elastic waistband and drawstring closure.",
     "features": [
       "Premium Charcoal Grey",
       "Breathable Fabric",
@@ -698,7 +698,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 367,
@@ -726,7 +726,7 @@ const products = [
       "new-arrival",
       "best-seller"
     ],
-    "description": "Noir Kinetic Weave — featuring a subtle self-design texture that sets you apart. Premium craftsmanship meets comfort with WYNX logo branding and a unique textured look that elevates every outfit.",
+    "description": "Noir Kinetic Weave â€” featuring a subtle self-design texture that sets you apart. Premium craftsmanship meets comfort with WYNX logo branding and a unique textured look that elevates every outfit.",
     "features": [
       "Self Design Pattern",
       "Textured Black Fabric",
@@ -736,7 +736,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 391,
@@ -765,7 +765,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Phantom Grid Tracks — the latest NS edition with refined modern fit and bold WYNX logo. Soft anti-wrinkle fabric and elastic drawstring waistband deliver comfort that goes the distance.",
+    "description": "Phantom Grid Tracks â€” the latest NS edition with refined modern fit and bold WYNX logo. Soft anti-wrinkle fabric and elastic drawstring waistband deliver comfort that goes the distance.",
     "features": [
       "NS Modern Fit",
       "Anti-Wrinkle Fabric",
@@ -775,7 +775,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 429,
@@ -803,7 +803,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Atlas Navy Lowers — a clean no-stripe design in deep navy blue with WYNX logo branding. The relaxed modern fit and elastic waistband make these your everyday go-to for effortless style.",
+    "description": "Atlas Navy Lowers â€” a clean no-stripe design in deep navy blue with WYNX logo branding. The relaxed modern fit and elastic waistband make these your everyday go-to for effortless style.",
     "features": [
       "NS No-Stripe Design",
       "Deep Navy Blue",
@@ -813,7 +813,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 386,
@@ -842,7 +842,7 @@ const products = [
       "trending",
       "best-seller"
     ],
-    "description": "Oceanic Flex 4-Way Pro — premium 4-way stretch fabric in deep navy blue for 360° flexibility. The WYNX logo and tapered athletic fit make this ideal for gym warriors and street style kings alike.",
+    "description": "Oceanic Flex 4-Way Pro â€” premium 4-way stretch fabric in deep navy blue for 360Â° flexibility. The WYNX logo and tapered athletic fit make this ideal for gym warriors and street style kings alike.",
     "features": [
       "4-Way Stretch Fabric",
       "Navy Blue Color",
@@ -852,7 +852,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Add 2 items to unlock offer"
+        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 433,
@@ -881,7 +881,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Tidal Drift Joggers — a refined no-stripe navy blue design with drawstring waistband and WYNX logo. Modern relaxed fit meets superior comfort for all-day wearability.",
+    "description": "Tidal Drift Joggers â€” a refined no-stripe navy blue design with drawstring waistband and WYNX logo. Modern relaxed fit meets superior comfort for all-day wearability.",
     "features": [
       "NS Refined Design",
       "Navy Blue",
@@ -891,7 +891,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Add 2 items to unlock offer"
+        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 387,
@@ -919,7 +919,7 @@ const products = [
       "new-arrival",
       "best-seller"
     ],
-    "description": "Darksteel Weave Elite — self-design artistry meets premium craftsmanship. Subtle textured panels on black fabric with WYNX logo branding create a unique, sophisticated look that's impossible to replicate.",
+    "description": "Darksteel Weave Elite â€” self-design artistry meets premium craftsmanship. Subtle textured panels on black fabric with WYNX logo branding create a unique, sophisticated look that's impossible to replicate.",
     "features": [
       "Black Patti Design",
       "Textured Panels",
@@ -929,7 +929,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹37 off — Add 2 items to unlock offer"
+        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 405,
@@ -958,7 +958,7 @@ const products = [
       "trending",
       "best-seller"
     ],
-    "description": "Cobalt Blaze 3-Line — the latest edition of the iconic triple-stripe in deep navy. Bold white side stripes meet WYNX heritage branding, wrapped in comfortable stretchable fabric.",
+    "description": "Cobalt Blaze 3-Line â€” the latest edition of the iconic triple-stripe in deep navy. Bold white side stripes meet WYNX heritage branding, wrapped in comfortable stretchable fabric.",
     "features": [
       "3-Line Stripe Design",
       "Deep Navy Blue",
@@ -968,7 +968,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Buy More Save More"
+        "text": "â‚¹36 off â€” Buy More Save More"
       }
     ],
     "buyAtPrice": 422,
@@ -997,7 +997,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Neptune Surge 4-Way Stretch — premium 4-way stretch fabric in deep navy blue for ultimate flexibility and comfort. WYNX logo and modern tapered fit make these perfect for performance and leisure alike.",
+    "description": "Neptune Surge 4-Way Stretch â€” premium 4-way stretch fabric in deep navy blue for ultimate flexibility and comfort. WYNX logo and modern tapered fit make these perfect for performance and leisure alike.",
     "features": [
       "4-Way Stretch Fabric",
       "Deep Navy Blue",
@@ -1007,7 +1007,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 448,
@@ -1035,7 +1035,7 @@ const products = [
     "tags": [
       "new-arrival"
     ],
-    "description": "Azure Luxe Patti Lowers — subtle self-design texture in deep navy blue for a one-of-a-kind look. WYNX logo branding and premium fabric combine style with all-day wearable comfort.",
+    "description": "Azure Luxe Patti Lowers â€” subtle self-design texture in deep navy blue for a one-of-a-kind look. WYNX logo branding and premium fabric combine style with all-day wearable comfort.",
     "features": [
       "Blue Patti Design",
       "Textured Fabric",
@@ -1045,7 +1045,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 444,
@@ -1074,7 +1074,7 @@ const products = [
       "new-arrival",
       "trending"
     ],
-    "description": "Deep Tide Weave Tracks — refined self-design pattern in deep navy with WYNX logo branding. Premium quality fabric delivers all-day comfort with a textured look that turns heads.",
+    "description": "Deep Tide Weave Tracks â€” refined self-design pattern in deep navy with WYNX logo branding. Premium quality fabric delivers all-day comfort with a textured look that turns heads.",
     "features": [
       "Blue Patti Pattern",
       "Refined Design",
@@ -1084,7 +1084,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 443,
@@ -1113,7 +1113,7 @@ const products = [
       "trending",
       "best-seller"
     ],
-    "description": "Ironclad Patti Joggers — subtle textured panels on deep black with WYNX logo branding. Premium fabric, elastic waistband, and a comfortable athletic fit make these a daily essential.",
+    "description": "Ironclad Patti Joggers â€” subtle textured panels on deep black with WYNX logo branding. Premium fabric, elastic waistband, and a comfortable athletic fit make these a daily essential.",
     "features": [
       "Black Patti Design",
       "Textured Panels",
@@ -1123,7 +1123,7 @@ const products = [
     "offers": [
       {
         "type": "bundle",
-        "text": "₹36 off — Add 2 items to unlock offer"
+        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
       }
     ],
     "buyAtPrice": 416,
@@ -1143,13 +1143,13 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["new-arrival", "shorts", "trending"],
-    "description": "Alpine Frost Sport Shorts — pristine white with a clean, minimal WYNX script logo. Ultra-lightweight performance fabric with a relaxed athletic fit. These shorts bring effortless sophistication to your gym-to-street rotation.",
+    "description": "Alpine Frost Sport Shorts â€” pristine white with a clean, minimal WYNX script logo. Ultra-lightweight performance fabric with a relaxed athletic fit. These shorts bring effortless sophistication to your gym-to-street rotation.",
     "features": ["Pristine White Colorway", "WYNX Script Logo", "Lightweight Performance Fabric", "Relaxed Athletic Fit"],
-    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
+    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
     "buyAtPrice": 429,
     "img": "/products/wynx-shorts-white-v2.png",
     "reviewData": [
-      {"name": "Sameer Khatri", "rating": 5, "text": "Cleanest white shorts I've owned — the fabric doesn't go see-through and the WYNX logo is subtle but premium. Perfect for summer workouts."},
+      {"name": "Sameer Khatri", "rating": 5, "text": "Cleanest white shorts I've owned â€” the fabric doesn't go see-through and the WYNX logo is subtle but premium. Perfect for summer workouts."},
       {"name": "Dhruv Malhotra", "rating": 4, "text": "Love the relaxed fit and breathable material. Only wish they came in a 3XL. Otherwise flawless quality for this price range."},
       {"name": "Ishaan Batra", "rating": 5, "text": "Wore these to the gym and got three compliments. The white stays white even after multiple washes. Impressive build quality."},
       {"name": "Neil Kapoor", "rating": 4, "text": "Great for both training and casual outings. The elastic waist sits just right without feeling too tight. Solid purchase."}
@@ -1169,13 +1169,13 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["trending", "shorts", "best-seller"],
-    "description": "Sand Drift Lounge Shorts — warm beige with the iconic WYNX script logo. A neutral-tone essential that pairs effortlessly with any top. Crafted from premium cotton-blend fabric for all-day comfort whether you're training or unwinding.",
+    "description": "Sand Drift Lounge Shorts â€” warm beige with the iconic WYNX script logo. A neutral-tone essential that pairs effortlessly with any top. Crafted from premium cotton-blend fabric for all-day comfort whether you're training or unwinding.",
     "features": ["Warm Beige Tone", "Premium Cotton-Blend", "WYNX Script Logo", "Deep Side Pockets"],
-    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-beige-v2.png",
     "reviewData": [
-      {"name": "Kabir Sehgal", "rating": 5, "text": "This beige tone is incredible — neutral enough for everything but still looks premium. The fabric quality surprised me at this price point."},
+      {"name": "Kabir Sehgal", "rating": 5, "text": "This beige tone is incredible â€” neutral enough for everything but still looks premium. The fabric quality surprised me at this price point."},
       {"name": "Yash Singhania", "rating": 5, "text": "These are my new go-to for weekends. Super comfortable, the fit is just right, and the beige color is exactly as shown."},
       {"name": "Rohan Dasgupta", "rating": 4, "text": "Love the earth-tone aesthetic. They pair well with both black and white tees. The cotton-blend feels luxurious against the skin."},
       {"name": "Arnav Thakur", "rating": 5, "text": "Ordered two pairs because the first one was so good. The drawstring waist holds perfectly during squats. Top-notch quality from WYNX."}
@@ -1195,16 +1195,16 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
     "tags": ["best-seller", "shorts", "trending"],
-    "description": "Midnight Cruise Navy Shorts — deep navy with white WYNX script branding. Engineered for versatility — from morning runs to evening hangouts. The dark navy never fades and the fabric dries in minutes after a wash.",
+    "description": "Midnight Cruise Navy Shorts â€” deep navy with white WYNX script branding. Engineered for versatility â€” from morning runs to evening hangouts. The dark navy never fades and the fabric dries in minutes after a wash.",
     "features": ["Deep Navy Colorway", "Quick-Dry Fabric", "WYNX Script Branding", "Fade-Resistant Dye"],
-    "offers": [{"type": "bundle", "text": "₹37 off — Buy More Save More"}],
+    "offers": [{"type": "bundle", "text": "â‚¹37 off â€” Buy More Save More"}],
     "buyAtPrice": 419,
     "img": "/products/wynx-shorts-navy-v2.png",
     "reviewData": [
       {"name": "Vikram Joshi", "rating": 5, "text": "Navy is always a safe bet but these elevate it to another level. The fit is modern, not baggy, and the logo placement is tasteful."},
       {"name": "Aditya Choudhary", "rating": 4, "text": "Wore them for a 10K run and they performed like premium running shorts. Zero chafing, great breathability. Will buy the black version next."},
-      {"name": "Karan Mehra", "rating": 5, "text": "The color is a perfect deep navy — not too bright, not too dark. These look and feel way more expensive than they cost."},
-      {"name": "Pranav Nair", "rating": 5, "text": "Fast delivery and the packaging felt premium. The shorts themselves are excellent — lightweight, well-stitched, and the navy is gorgeous."}
+      {"name": "Karan Mehra", "rating": 5, "text": "The color is a perfect deep navy â€” not too bright, not too dark. These look and feel way more expensive than they cost."},
+      {"name": "Pranav Nair", "rating": 5, "text": "Fast delivery and the packaging felt premium. The shorts themselves are excellent â€” lightweight, well-stitched, and the navy is gorgeous."}
     ]
   },
   {
@@ -1221,9 +1221,9 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
     "tags": ["best-seller", "shorts", "new-arrival"],
-    "description": "Obsidian Core Essential Shorts — deep matte black with white WYNX script logo. The definitive black shorts for every man's rotation. Premium quick-dry fabric, reinforced stitching, and a fit that moves with you. The essential you never knew you needed.",
+    "description": "Obsidian Core Essential Shorts â€” deep matte black with white WYNX script logo. The definitive black shorts for every man's rotation. Premium quick-dry fabric, reinforced stitching, and a fit that moves with you. The essential you never knew you needed.",
     "features": ["Deep Matte Black", "Reinforced Stitching", "Quick-Dry Performance", "WYNX Script Logo"],
-    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
     "buyAtPrice": 409,
     "img": "/products/wynx-shorts-black-v2.png",
     "reviewData": [
@@ -1247,13 +1247,13 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
     "tags": ["premium", "shorts", "new-arrival"],
-    "description": "Graphite Flex Training Shorts — sleek charcoal-grey with white WYNX branding. The darkest grey in the lineup delivers a stealth aesthetic while the 4-way stretch fabric handles every lunge, sprint, and deadlift. For the man who trains hard and looks harder.",
+    "description": "Graphite Flex Training Shorts â€” sleek charcoal-grey with white WYNX branding. The darkest grey in the lineup delivers a stealth aesthetic while the 4-way stretch fabric handles every lunge, sprint, and deadlift. For the man who trains hard and looks harder.",
     "features": ["Charcoal Grey Colorway", "4-Way Stretch Fabric", "WYNX Performance Logo", "Ergonomic Cut"],
-    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
+    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
     "buyAtPrice": 449,
     "img": "/products/wynx-shorts-charcoal-v2.png",
     "reviewData": [
-      {"name": "Omar Hussain", "rating": 5, "text": "The charcoal color is stunning in person. Not too light, not black — just perfect. The stretch fabric makes these ideal for leg day."},
+      {"name": "Omar Hussain", "rating": 5, "text": "The charcoal color is stunning in person. Not too light, not black â€” just perfect. The stretch fabric makes these ideal for leg day."},
       {"name": "Vivaan Saxena", "rating": 4, "text": "Great fit and the charcoal looks sharp with any color top. The WYNX logo on the thigh is a nice touch. Very comfortable for all-day wear."},
       {"name": "Harsh Agarwal", "rating": 5, "text": "These are the best training shorts I've used. The stretch is incredible and they don't ride up during squats. Premium feel throughout."},
       {"name": "Lakshya Patel", "rating": 5, "text": "Ordered based on the product photo and they look even better in real life. The fabric quality is outstanding and delivery was super fast."}
@@ -1273,13 +1273,13 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["new-arrival", "shorts", "trending"],
-    "description": "Horizon Steel Sport Shorts — a refined steel blue that bridges the gap between casual and athletic. The WYNX script logo in white pops against the muted blue, while the quick-dry fabric keeps you fresh through any workout. A versatile colorway built for the modern man.",
+    "description": "Horizon Steel Sport Shorts â€” a refined steel blue that bridges the gap between casual and athletic. The WYNX script logo in white pops against the muted blue, while the quick-dry fabric keeps you fresh through any workout. A versatile colorway built for the modern man.",
     "features": ["Steel Blue Colorway", "Quick-Dry Technology", "WYNX Script Branding", "Relaxed Athletic Fit"],
-    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-steelblue-v2.jpg",
     "reviewData": [
-      {"name": "Arjun Menon", "rating": 5, "text": "The steel blue is unique — haven't seen this shade anywhere else. The fabric is lightweight but feels durable. Love the understated WYNX branding."},
+      {"name": "Arjun Menon", "rating": 5, "text": "The steel blue is unique â€” haven't seen this shade anywhere else. The fabric is lightweight but feels durable. Love the understated WYNX branding."},
       {"name": "Siddharth Rao", "rating": 4, "text": "Perfect color for summer. These pair beautifully with a white tee. Comfortable enough for all-day wear, even in the heat."},
       {"name": "Nikhil Tandon", "rating": 5, "text": "Ordered for gym use but I wear them everywhere now. The blue is calming yet bold. Excellent stitching and the elastic waist is soft."},
       {"name": "Rishi Grover", "rating": 5, "text": "The color in person is even better than the photos. Premium feel, great fit, and fast delivery. WYNX keeps raising the bar."}
@@ -1299,14 +1299,14 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
     "tags": ["limited", "shorts", "best-seller"],
-    "description": "Ranger Tactical Olive Shorts — deep military olive with crisp white WYNX script logo. Inspired by tactical utility wear but refined for street and gym. The dark olive tone commands respect while the performance fabric delivers unrestricted movement.",
+    "description": "Ranger Tactical Olive Shorts â€” deep military olive with crisp white WYNX script logo. Inspired by tactical utility wear but refined for street and gym. The dark olive tone commands respect while the performance fabric delivers unrestricted movement.",
     "features": ["Military Olive Tone", "Tactical Utility Style", "WYNX Performance Logo", "4-Way Stretch"],
-    "offers": [{"type": "bundle", "text": "₹37 off — Buy More Save More"}],
+    "offers": [{"type": "bundle", "text": "â‚¹37 off â€” Buy More Save More"}],
     "buyAtPrice": 449,
     "img": "/products/wynx-shorts-olive-v2.jpg",
     "reviewData": [
       {"name": "Kunal Bhatt", "rating": 5, "text": "These olive shorts are a must-have. The military green tone is deep and rich, not washed out. Perfect for outdoor runs and weekend errands."},
-      {"name": "Shaurya Reddy", "rating": 5, "text": "The color is absolutely fire — pairs perfectly with black and white tops. The stretch fabric makes leg day so much more comfortable."},
+      {"name": "Shaurya Reddy", "rating": 5, "text": "The color is absolutely fire â€” pairs perfectly with black and white tops. The stretch fabric makes leg day so much more comfortable."},
       {"name": "Mohit Chauhan", "rating": 4, "text": "Love the tactical vibe. These feel rugged but look refined at the same time. The WYNX logo placement on the thigh is tasteful."},
       {"name": "Raghav Sinha", "rating": 5, "text": "Got compliments the very first day I wore these. The olive color is versatile and the build quality is exceptional for this price."}
     ]
@@ -1325,14 +1325,14 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "High",
     "tags": ["trending", "shorts", "new-arrival"],
-    "description": "Deep Tide Teal Shorts — a bold, saturated teal that stands out from every angle. White WYNX branding pops against the deep oceanic tone. Engineered with sweat-wicking fabric for high-intensity training sessions while looking effortlessly premium.",
+    "description": "Deep Tide Teal Shorts â€” a bold, saturated teal that stands out from every angle. White WYNX branding pops against the deep oceanic tone. Engineered with sweat-wicking fabric for high-intensity training sessions while looking effortlessly premium.",
     "features": ["Deep Teal Colorway", "Sweat-Wicking Fabric", "WYNX Script Logo", "Side-Slit Design"],
-    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
+    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
     "buyAtPrice": 429,
     "img": "/products/wynx-shorts-teal-v2.jpg",
     "reviewData": [
-      {"name": "Ethan Fernandes", "rating": 5, "text": "The teal is absolutely gorgeous — deep and rich without being too loud. These are my new favorite gym shorts. The fit is perfect."},
-      {"name": "Veer Malhotra", "rating": 4, "text": "Such a refreshing color. Not the typical black or grey — these stand out in the best way. Comfortable and well-made."},
+      {"name": "Ethan Fernandes", "rating": 5, "text": "The teal is absolutely gorgeous â€” deep and rich without being too loud. These are my new favorite gym shorts. The fit is perfect."},
+      {"name": "Veer Malhotra", "rating": 4, "text": "Such a refreshing color. Not the typical black or grey â€” these stand out in the best way. Comfortable and well-made."},
       {"name": "Krish Oberoi", "rating": 5, "text": "Bought these on a whim and they exceeded every expectation. The teal pops in natural light and the fabric breathes incredibly well."},
       {"name": "Farhan Qureshi", "rating": 5, "text": "The sweat-wicking feature actually works. Wore these for a HIIT session and stayed dry throughout. The teal color gets me compliments every time."}
     ]
@@ -1351,14 +1351,14 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["best-seller", "shorts"],
-    "description": "Cloud Nine Grey Flex Shorts — a versatile mid-grey with white WYNX branding. The neutral grey pairs with literally everything in your wardrobe. Lightweight and stretchy with deep pockets and a secure elastic waistband. The everyday essential.",
+    "description": "Cloud Nine Grey Flex Shorts â€” a versatile mid-grey with white WYNX branding. The neutral grey pairs with literally everything in your wardrobe. Lightweight and stretchy with deep pockets and a secure elastic waistband. The everyday essential.",
     "features": ["Mid-Grey Neutral Tone", "Lightweight Stretch Fabric", "WYNX Script Branding", "Deep Pockets"],
-    "offers": [{"type": "bundle", "text": "₹36 off — Add 2 items to unlock offer"}],
+    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
     "buyAtPrice": 419,
     "img": "/products/wynx-shorts-grey-v2.jpg",
     "reviewData": [
       {"name": "Ansh Kapoor", "rating": 5, "text": "Finally a grey that doesn't look boring. This mid-tone is perfect and the fabric feels soft yet sturdy. Great for gym and casual wear."},
-      {"name": "Parth Mehta", "rating": 4, "text": "These are incredibly versatile — I've worn them with black tees, white polos, even a casual blazer. The grey is clean and modern."},
+      {"name": "Parth Mehta", "rating": 4, "text": "These are incredibly versatile â€” I've worn them with black tees, white polos, even a casual blazer. The grey is clean and modern."},
       {"name": "Tanay Jain", "rating": 5, "text": "The stretch on these is amazing. They move with you during workouts but still look put-together for coffee runs after. Excellent value."},
       {"name": "Manav Khanna", "rating": 4, "text": "Solid grey shorts with a premium feel. The WYNX logo is subtle and classy. The elastic waistband is comfortable without being loose."}
     ]
@@ -1377,15 +1377,15 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["premium", "shorts", "trending"],
-    "description": "Sage Mist Lounge Shorts — a soft, muted sage green with black WYNX script logo. An earthy, calming tone that brings a fresh perspective to your shorts rotation. Premium cotton-blend fabric with a relaxed fit designed for all-day comfort and effortless style.",
+    "description": "Sage Mist Lounge Shorts â€” a soft, muted sage green with black WYNX script logo. An earthy, calming tone that brings a fresh perspective to your shorts rotation. Premium cotton-blend fabric with a relaxed fit designed for all-day comfort and effortless style.",
     "features": ["Sage Green Colorway", "Premium Cotton-Blend", "WYNX Script Logo", "Relaxed Lounge Fit"],
-    "offers": [{"type": "bank", "text": "₹50 off on bank offers"}],
+    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-sage-v2.jpg",
     "reviewData": [
-      {"name": "Zayn Mirza", "rating": 5, "text": "The sage green is absolutely beautiful — earthy and sophisticated. These feel like luxury loungewear. Perfect for weekends and light workouts."},
+      {"name": "Zayn Mirza", "rating": 5, "text": "The sage green is absolutely beautiful â€” earthy and sophisticated. These feel like luxury loungewear. Perfect for weekends and light workouts."},
       {"name": "Advait Kulkarni", "rating": 5, "text": "This color is unique and refreshing. The cotton-blend fabric is soft against the skin. I've already ordered a second pair for my brother."},
-      {"name": "Tejas Iyer", "rating": 4, "text": "Love the muted green tone — it's subtle but stylish. The fit is relaxed without being baggy. Great for summer days."},
+      {"name": "Tejas Iyer", "rating": 4, "text": "Love the muted green tone â€” it's subtle but stylish. The fit is relaxed without being baggy. Great for summer days."},
       {"name": "Gaurav Tiwari", "rating": 5, "text": "WYNX knocked it out of the park with this sage colorway. Premium packaging, fast delivery, and the shorts themselves are top-tier quality."}
     ]
   },
@@ -1403,7 +1403,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending"],
-    "description": "Ashen Drift Panel Lowers — a sophisticated charcoal-grey two-tone panel design featuring contrast grey inserts and signature white piping. Built with premium smooth-knit fabric engineered for unrestricted movement. The panelled silhouette creates a sculptural athletic look unlike anything in your wardrobe.",
+    "description": "Ashen Drift Panel Lowers â€” a sophisticated charcoal-grey two-tone panel design featuring contrast grey inserts and signature white piping. Built with premium smooth-knit fabric engineered for unrestricted movement. The panelled silhouette creates a sculptural athletic look unlike anything in your wardrobe.",
     "features": [
       "Dual-Panel Colour Block Design",
       "White Contrast Piping",
@@ -1412,17 +1412,17 @@ const products = [
       "Deep Side Pockets"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹40 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 439,
     "img": "/products/wynx-charcoal-panel-1.png",
     "reviewData": [
-      {"name": "Shreyansh Bhardwaj", "rating": 5, "date": "2 days ago", "text": "The charcoal panel design is absolutely elite. White piping gives it that premium edge. Fabric is incredibly smooth — feels like you're wearing liquid comfort. Best track pants I've bought in years."},
+      {"name": "Shreyansh Bhardwaj", "rating": 5, "date": "2 days ago", "text": "The charcoal panel design is absolutely elite. White piping gives it that premium edge. Fabric is incredibly smooth â€” feels like you're wearing liquid comfort. Best track pants I've bought in years."},
       {"name": "Prabhdeep Sidhu", "rating": 5, "date": "1 week ago", "text": "Ordered this on a whim and it completely blew me away. The two-tone panel look is unique and sophisticated. Got compliments at the gym within 10 minutes of wearing them. WYNX has a customer for life."},
-      {"name": "Neeraj Rawat", "rating": 4, "date": "2 weeks ago", "text": "Quality is top-notch — the stitching on the panels is clean and precise. Drawstring waistband sits perfectly. Only giving 4 stars because I wish they had a 4XL option. Otherwise flawless."},
-      {"name": "Sujith Menon", "rating": 5, "date": "3 weeks ago", "text": "These look way more premium than the price suggests. The charcoal tone is deep and rich — not a dull grey. Paired with white sneakers and a black tee, it's a complete fit. Super comfortable for long wear."},
-      {"name": "Dilpreet Walia", "rating": 5, "date": "1 month ago", "text": "The panel cut design is genuinely unique — haven't seen this style at this price anywhere. Fabric is breathable and doesn't trap heat. Highly recommended for both gym and casual use."}
+      {"name": "Neeraj Rawat", "rating": 4, "date": "2 weeks ago", "text": "Quality is top-notch â€” the stitching on the panels is clean and precise. Drawstring waistband sits perfectly. Only giving 4 stars because I wish they had a 4XL option. Otherwise flawless."},
+      {"name": "Sujith Menon", "rating": 5, "date": "3 weeks ago", "text": "These look way more premium than the price suggests. The charcoal tone is deep and rich â€” not a dull grey. Paired with white sneakers and a black tee, it's a complete fit. Super comfortable for long wear."},
+      {"name": "Dilpreet Walia", "rating": 5, "date": "1 month ago", "text": "The panel cut design is genuinely unique â€” haven't seen this style at this price anywhere. Fabric is breathable and doesn't trap heat. Highly recommended for both gym and casual use."}
     ]
   },
   {
@@ -1439,7 +1439,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "best-seller"],
-    "description": "Mocha Flux Panel Lowers — a rare deep brown colourway with graphite-grey contrast panels and white piping detail. This earthy, warm tone brings a distinctly bold personality to athleisure. Crafted for the man who refuses to blend in. Premium comfort fabric with anti-pilling construction.",
+    "description": "Mocha Flux Panel Lowers â€” a rare deep brown colourway with graphite-grey contrast panels and white piping detail. This earthy, warm tone brings a distinctly bold personality to athleisure. Crafted for the man who refuses to blend in. Premium comfort fabric with anti-pilling construction.",
     "features": [
       "Deep Brown Colourway",
       "Graphite Contrast Panel",
@@ -1448,14 +1448,14 @@ const products = [
       "Comfortable Wide-Leg Fit"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹42 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "Paytm ₹50 off"}
+      {"type": "bundle", "text": "â‚¹42 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "Paytm â‚¹50 off"}
     ],
     "buyAtPrice": 449,
     "img": "/products/wynx-brown-panel-1.png",
     "reviewData": [
       {"name": "Harjot Sandhu", "rating": 5, "date": "3 days ago", "text": "Brown track pants sound like an unusual choice but these look absolutely fire. The graphite panel and white piping make the whole design pop. Fabric quality is exceptional. Will order more colours."},
-      {"name": "Mihir Trivedi", "rating": 5, "date": "1 week ago", "text": "This colour is so unique — you won't see anyone else wearing these. The deep brown tone is warm and earthy, pairs incredibly well with white or beige tees. Comfort level is 10/10."},
+      {"name": "Mihir Trivedi", "rating": 5, "date": "1 week ago", "text": "This colour is so unique â€” you won't see anyone else wearing these. The deep brown tone is warm and earthy, pairs incredibly well with white or beige tees. Comfort level is 10/10."},
       {"name": "Sumeet Khatavkar", "rating": 4, "date": "10 days ago", "text": "The dual panel design on this brown colourway is genuinely premium-looking. Stitching is clean, fabric is smooth against skin. Perfect fit at XL. Minus one star because delivery took 4 days instead of 2."},
       {"name": "Rajkumar Pillai", "rating": 5, "date": "3 weeks ago", "text": "Got these as a gift for my brother and he absolutely loves them. The brown + grey combo is a head-turner. Fabric doesn't wrinkle easily and the waistband is very comfortable. WYNX quality is consistent."},
       {"name": "Gauransh Tomar", "rating": 5, "date": "1 month ago", "text": "These are my favourite WYNX purchase to date. The brown panel lower is exactly the kind of statement piece missing from the athleisure market. Build quality rivals brands 3x the price. Absolutely worth it."}
@@ -1475,7 +1475,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending"],
-    "description": "Rosewood Cipher Panel Lowers — a refined dusty mauve-pink colourway with graphite panel inserts and white piping. Designed for the bold man who embraces colour without compromise. The muted rose tone is sophisticated, not loud — a quiet flex that commands second glances. Premium breathable knit keeps you cool through every session.",
+    "description": "Rosewood Cipher Panel Lowers â€” a refined dusty mauve-pink colourway with graphite panel inserts and white piping. Designed for the bold man who embraces colour without compromise. The muted rose tone is sophisticated, not loud â€” a quiet flex that commands second glances. Premium breathable knit keeps you cool through every session.",
     "features": [
       "Muted Mauve-Rose Colourway",
       "Graphite Panel Inserts",
@@ -1484,17 +1484,17 @@ const products = [
       "Relaxed Wide-Leg Cut"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹44 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹44 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 429,
     "img": "/products/wynx-mauve-panel-1.png",
     "reviewData": [
       {"name": "Aaditya Inamdar", "rating": 5, "date": "1 day ago", "text": "Wasn't sure about mauve for men's track pants but these absolutely work. The dusty rose-grey combination is tasteful and unique. Several gym members stopped to ask where I got these. WYNX wins again."},
-      {"name": "Keshav Balwani", "rating": 4, "date": "5 days ago", "text": "These are a brave colourway choice and it pays off completely. The muted mauve is very wearable — not too pink, not too grey. Fabric quality is premium and the panel design elevates the whole look significantly."},
+      {"name": "Keshav Balwani", "rating": 4, "date": "5 days ago", "text": "These are a brave colourway choice and it pays off completely. The muted mauve is very wearable â€” not too pink, not too grey. Fabric quality is premium and the panel design elevates the whole look significantly."},
       {"name": "Aniruddha Gogte", "rating": 5, "date": "2 weeks ago", "text": "Ordered this colour on my wife's suggestion and I'm so glad I did. The dusty rose tone is clean and masculine when paired right. Unbelievably comfortable for all-day use. The piping detail is crisp and well-finished."},
-      {"name": "Ronit Chakravarti", "rating": 5, "date": "3 weeks ago", "text": "This is the most unique lower I own. The mauve panel design turns heads everywhere. Quality is outstanding — fabric is soft, breathable, and doesn't lose shape after washing. WYNX continues to impress."},
-      {"name": "Virender Dhaliwal", "rating": 5, "date": "6 weeks ago", "text": "Bold colour, premium quality. The graphite contrast panels and white piping make this look far more expensive than it is. Ordered XL and the fit is perfect — not too tight, not too loose. Highly recommend."}
+      {"name": "Ronit Chakravarti", "rating": 5, "date": "3 weeks ago", "text": "This is the most unique lower I own. The mauve panel design turns heads everywhere. Quality is outstanding â€” fabric is soft, breathable, and doesn't lose shape after washing. WYNX continues to impress."},
+      {"name": "Virender Dhaliwal", "rating": 5, "date": "6 weeks ago", "text": "Bold colour, premium quality. The graphite contrast panels and white piping make this look far more expensive than it is. Ordered XL and the fit is perfect â€” not too tight, not too loose. Highly recommend."}
     ]
   },
   {
@@ -1511,7 +1511,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending", "best-seller"],
-    "description": "Indigo Storm Panel Lowers — deep navy blue meets graphite contrast panels with signature white piping in a structured athletic silhouette. The dual-panel construction adds visual depth and dimension to a classic navy base. Built with smooth premium fabric for the athlete who refuses to sacrifice style for performance.",
+    "description": "Indigo Storm Panel Lowers â€” deep navy blue meets graphite contrast panels with signature white piping in a structured athletic silhouette. The dual-panel construction adds visual depth and dimension to a classic navy base. Built with smooth premium fabric for the athlete who refuses to sacrifice style for performance.",
     "features": [
       "Deep Navy Blue Base",
       "Graphite Contrast Panels",
@@ -1520,13 +1520,13 @@ const products = [
       "Structured Athletic Fit"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "Paytm ₹50 off"}
+      {"type": "bundle", "text": "â‚¹40 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "Paytm â‚¹50 off"}
     ],
     "buyAtPrice": 419,
     "img": "/products/wynx-navy-panel-1.png",
     "reviewData": [
-      {"name": "Sachit Kulkarni", "rating": 5, "date": "2 days ago", "text": "The navy panel lower is an absolute stunner. Deep navy with graphite panels is such a premium combination. Fabric is top-tier smooth — zero irritation even after wearing for 8+ hours. My new daily go-to."},
+      {"name": "Sachit Kulkarni", "rating": 5, "date": "2 days ago", "text": "The navy panel lower is an absolute stunner. Deep navy with graphite panels is such a premium combination. Fabric is top-tier smooth â€” zero irritation even after wearing for 8+ hours. My new daily go-to."},
       {"name": "Taranveer Singh", "rating": 5, "date": "1 week ago", "text": "Compared to my old navy track pants, these are on a completely different level. The panel design gives it that structured athletic look. White piping is sharp and clean. WYNX quality is seriously impressive."},
       {"name": "Devashish Pawar", "rating": 4, "date": "2 weeks ago", "text": "Great looking track pants with a very premium feel. The navy tone is rich and deep. Panel stitching is clean and precise. Would have given 5 stars but the pocket opening could be a touch wider. Still an excellent buy."},
       {"name": "Bhavesh Prajapati", "rating": 5, "date": "1 month ago", "text": "Ordered navy for my everyday athleisure and these exceeded all expectations. The panel cut makes them look like designer pieces. Breathable fabric keeps me cool through intense gym sessions. Absolutely value for money."},
@@ -1547,7 +1547,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "best-seller", "trending"],
-    "description": "Shadow Veil Panel Lowers — the pinnacle of stealth athletic design. Jet black base with dark charcoal contrast panels and crisp white piping create a monochromatic power look built for serious athletes. This is the track pant that works everywhere — gym floor, street, lounge — without ever looking out of place. Premium smooth-knit construction.",
+    "description": "Shadow Veil Panel Lowers â€” the pinnacle of stealth athletic design. Jet black base with dark charcoal contrast panels and crisp white piping create a monochromatic power look built for serious athletes. This is the track pant that works everywhere â€” gym floor, street, lounge â€” without ever looking out of place. Premium smooth-knit construction.",
     "features": [
       "Jet Black Base Colourway",
       "Dark Charcoal Panel Contrast",
@@ -1556,15 +1556,15 @@ const products = [
       "Wide Athletic Silhouette"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹42 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹42 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 409,
     "img": "/products/wynx-black-panel-2.png",
     "reviewData": [
       {"name": "Anshuman Tripathi", "rating": 5, "date": "1 day ago", "text": "These are the most premium-feeling track pants I've ever worn under 600 bucks. The jet black with charcoal panels is a head-turner. White piping is sharp. Fabric is buttery smooth. Absolutely worth every rupee."},
       {"name": "Paranjay Desai", "rating": 5, "date": "4 days ago", "text": "Wore these to the gym yesterday and got asked about the brand three separate times. The panel design makes them stand out instantly. Super comfortable, great fit at XL, and the black stays rich after washing."},
-      {"name": "Rituraj Choudhary", "rating": 5, "date": "1 week ago", "text": "These Shadow Veil lowers are exactly what I was looking for — sleek, minimal, yet distinctive. The monochromatic black panel design is elite. Fabric quality is exceptional for the price. Already ordered the charcoal version."},
+      {"name": "Rituraj Choudhary", "rating": 5, "date": "1 week ago", "text": "These Shadow Veil lowers are exactly what I was looking for â€” sleek, minimal, yet distinctive. The monochromatic black panel design is elite. Fabric quality is exceptional for the price. Already ordered the charcoal version."},
       {"name": "Gajendra Shekhawat", "rating": 4, "date": "3 weeks ago", "text": "Excellent quality and a very unique design. The black panel lower looks much more premium than the price indicates. Waistband elastic is comfortable and the fit is great at XXL. Small wish: a zip pocket. Otherwise perfection."},
       {"name": "Shashank Goswami", "rating": 5, "date": "1 month ago", "text": "Replaced my old black track pants with these and there's no going back. The panel design elevates a classic black to something truly special. WYNX branding is subtle and tasteful. Premium all around. Highly recommend."}
     ]
@@ -1583,7 +1583,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending", "best-seller"],
-    "description": "Crimson Reign Panel Lowers — a bold, deep maroon colourway with graphite contrast panels and signature white piping. This rich burgundy-red brings intense personality to your athleisure wardrobe. The dual-panel construction adds structured dimension while the smooth-knit fabric delivers all-day comfort. Wear it like the statement it is.",
+    "description": "Crimson Reign Panel Lowers â€” a bold, deep maroon colourway with graphite contrast panels and signature white piping. This rich burgundy-red brings intense personality to your athleisure wardrobe. The dual-panel construction adds structured dimension while the smooth-knit fabric delivers all-day comfort. Wear it like the statement it is.",
     "features": [
       "Deep Maroon-Burgundy Colourway",
       "Graphite Contrast Panel Inserts",
@@ -1598,11 +1598,11 @@ const products = [
     "buyAtPrice": 429,
     "img": "/products/wynx-maroon-panel-1.png",
     "reviewData": [
-      {"name": "Prateek Vashishth", "rating": 5, "date": "1 day ago", "text": "The maroon panel lower is an absolute showstopper. Rich burgundy with graphite panels — this combo is fire. Fabric quality is premium and the fit is exactly right at XL. WYNX just keeps getting better."},
-      {"name": "Chiranjeev Mathur", "rating": 5, "date": "4 days ago", "text": "Ordered on impulse and zero regrets. The deep maroon colourway is bold yet wearable — pairs perfectly with a white or black tee. The panel design makes it look way more expensive than it is. Highly recommend."},
-      {"name": "Abhijeet Kulkarni", "rating": 4, "date": "1 week ago", "text": "The crimson-maroon shade is gorgeous in person — photos don't do it justice. Fabric is smooth, stitching is clean, and the waistband sits perfectly. Only wish the pockets were slightly deeper. Otherwise excellent."},
-      {"name": "Swaroop Krishnamurti", "rating": 5, "date": "2 weeks ago", "text": "This colour is a statement — people noticed immediately when I wore these to the gym. The maroon + graphite combination is sophisticated and unique. Build quality is outstanding. Will be ordering the navy version next."},
-      {"name": "Jaideep Bhattacharya", "rating": 5, "date": "1 month ago", "text": "The Crimson Reign panel lower is my favourite piece from WYNX. Rich maroon, premium fabric, clean stitching — everything is dialled in. Comfortable enough for gym use and stylish enough for casual wear. Perfect balance."}
+      {"name": "Prateek Vashishth", "rating": 5, "date": "1 day ago", "text": "The maroon panel lower is an absolute showstopper. Rich burgundy with graphite panels â€” this combo is fire. Fabric quality is premium and the fit is exactly right at XL. WYNX just keeps getting better."},
+      {"name": "Chiranjeev Mathur", "rating": 5, "date": "4 days ago", "text": "Ordered on impulse and zero regrets. The deep maroon colourway is bold yet wearable â€” pairs perfectly with a white or black tee. The panel design makes it look way more expensive than it is. Highly recommend."},
+      {"name": "Abhijeet Kulkarni", "rating": 4, "date": "1 week ago", "text": "The crimson-maroon shade is gorgeous in person â€” photos don't do it justice. Fabric is smooth, stitching is clean, and the waistband sits perfectly. Only wish the pockets were slightly deeper. Otherwise excellent."},
+      {"name": "Swaroop Krishnamurti", "rating": 5, "date": "2 weeks ago", "text": "This colour is a statement â€” people noticed immediately when I wore these to the gym. The maroon + graphite combination is sophisticated and unique. Build quality is outstanding. Will be ordering the navy version next."},
+      {"name": "Jaideep Bhattacharya", "rating": 5, "date": "1 month ago", "text": "The Crimson Reign panel lower is my favourite piece from WYNX. Rich maroon, premium fabric, clean stitching â€” everything is dialled in. Comfortable enough for gym use and stylish enough for casual wear. Perfect balance."}
     ]
   },
   {
@@ -1619,7 +1619,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL", "3XL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending"],
-    "description": "Walnut Dusk Panel Lowers — a refined warm-brown colourway with deep graphite contrast panels and crisp white piping. This earth-tone colourway channels timeless style with a modern athletic silhouette. Crafted with premium smooth-knit fabric for an effortless fit from morning training to evening strolls.",
+    "description": "Walnut Dusk Panel Lowers â€” a refined warm-brown colourway with deep graphite contrast panels and crisp white piping. This earth-tone colourway channels timeless style with a modern athletic silhouette. Crafted with premium smooth-knit fabric for an effortless fit from morning training to evening strolls.",
     "features": [
       "Warm Walnut-Brown Colourway",
       "Deep Graphite Panel Contrast",
@@ -1634,90 +1634,18 @@ const products = [
     "buyAtPrice": 419,
     "img": "/products/wynx-brown-panel-2.jpg",
     "reviewData": [
-      {"name": "Omkar Deshmukh", "rating": 5, "date": "2 days ago", "text": "Walnut brown with graphite panels — this is an elite combination. The fabric is incredibly smooth and the piping detail is crisp. Wearing these daily to the gym and getting constant compliments. WYNX at its best."},
-      {"name": "Yashvardhan Mehra", "rating": 5, "date": "5 days ago", "text": "The warm brown tone is so versatile — pairs with black, white, cream, olive. The panel design elevates it from a basic track pant to a fashion piece. Fabric quality is outstanding for the price. 10/10."},
-      {"name": "Kushal Rathore", "rating": 4, "date": "2 weeks ago", "text": "Really impressed with the Walnut Dusk design. The colour is warm and earthy without being dull. Stitching is clean and the fit is accurate to size. Small note — delivery could be faster. Product itself is flawless."},
-      {"name": "Harshvardhan Negi", "rating": 5, "date": "3 weeks ago", "text": "This is the brown panel lower I've been looking for. Warm walnut tone, graphite panel inserts, white piping — it's a perfect design. Premium fabric that breathes well and maintains shape after washing. Absolute value."},
+      {"name": "Omkar Deshmukh", "rating": 5, "date": "2 days ago", "text": "Walnut brown with graphite panels â€” this is an elite combination. The fabric is incredibly smooth and the piping detail is crisp. Wearing these daily to the gym and getting constant compliments. WYNX at its best."},
+      {"name": "Yashvardhan Mehra", "rating": 5, "date": "5 days ago", "text": "The warm brown tone is so versatile â€” pairs with black, white, cream, olive. The panel design elevates it from a basic track pant to a fashion piece. Fabric quality is outstanding for the price. 10/10."},
+      {"name": "Kushal Rathore", "rating": 4, "date": "2 weeks ago", "text": "Really impressed with the Walnut Dusk design. The colour is warm and earthy without being dull. Stitching is clean and the fit is accurate to size. Small note â€” delivery could be faster. Product itself is flawless."},
+      {"name": "Harshvardhan Negi", "rating": 5, "date": "3 weeks ago", "text": "This is the brown panel lower I've been looking for. Warm walnut tone, graphite panel inserts, white piping â€” it's a perfect design. Premium fabric that breathes well and maintains shape after washing. Absolute value."},
       {"name": "Ratnesh Pandey", "rating": 5, "date": "6 weeks ago", "text": "Ordered this as a second brown panel lower and it's a completely different vibe from the first. This walnut shade is warmer and more versatile. The panel design is sharp, stitching is perfect. Highly recommend WYNX."}
     ]
   },
   {
-    "id": "wynx-tshirt-maroon",
-    "name": "Crimson Pulse Signature Tee",
-    "price": 299,
-    "oldPrice": 899,
-    "discount": 67,
-    "category": "men",
-    "subcategory": "T-Shirts",
-    "badge": "New Drop",
-    "rating": 4.8,
-    "reviews": 5,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "intensity": "Base",
-    "tags": ["new-arrival", "trending"],
-    "description": "Crimson Pulse Signature Tee — a deep, rich maroon crafted from ultra-soft premium cotton blend. The subtle WYNX script logo on the chest adds a touch of refined branding without shouting. Form-fitting yet breathable, this tee transitions flawlessly from morning workouts to casual evenings. The colour that commands respect.",
-    "features": [
-      "Deep Maroon Colourway",
-      "Premium Cotton Blend Fabric",
-      "WYNX Script Chest Logo",
-      "Form-Fit Athletic Cut",
-      "Breathable & Soft"
-    ],
-    "offers": [
-      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
-    ],
-    "buyAtPrice": 249,
-    "img": "/products/wynx-tshirt-maroon-1.jpg",
-    "reviewData": [
-      {"name": "Akshay Nadkarni", "rating": 5, "date": "1 day ago", "text": "This maroon tee is absolutely stunning. The fabric is incredibly soft — softer than most branded tees I've owned at twice the price. The WYNX logo placement is tasteful and the fit is perfect at M. Instant favourite."},
-      {"name": "Siddhant Bora", "rating": 5, "date": "3 days ago", "text": "Ordered this as a casual gym tee and now it's my everyday wear. The deep maroon colour is rich and vibrant — doesn't look cheap at all. Fabric breathes well and the stitching is clean. Excellent value from WYNX."},
-      {"name": "Vipul Acharya", "rating": 4, "date": "1 week ago", "text": "Great tee for the price. The maroon shade is exactly as shown in the photos — deep and rich. Fit is spot-on and the cotton blend feels premium against skin. Would give 5 stars if there was a 3XL option."},
-      {"name": "Tanishq Banerji", "rating": 5, "date": "2 weeks ago", "text": "The Crimson Pulse Tee is a wardrobe must-have. Rich maroon that pairs with everything from blacks to khakis. Fabric is smooth, lightweight, and doesn't cling. The WYNX logo is subtle but makes the tee feel premium."},
-      {"name": "Siddhanth Chattopadhyay", "rating": 5, "date": "1 month ago", "text": "Was sceptical about ordering tees online but WYNX delivered. The maroon is spot on — not too bright, not too dark. Form-fit cut shows off the build without being too tight. Quality rivals brands that charge 3x more."}
-    ]
-  },
-  {
-    "id": "wynx-tshirt-mauve",
-    "name": "Dusk Rose Minimal Tee",
-    "price": 299,
-    "oldPrice": 899,
-    "discount": 67,
-    "category": "men",
-    "subcategory": "T-Shirts",
-    "badge": "Exclusive",
-    "rating": 4.7,
-    "reviews": 5,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "intensity": "Base",
-    "tags": ["new-arrival", "trending"],
-    "description": "Dusk Rose Minimal Tee — a sophisticated dusty mauve-purple that sits at the intersection of street style and athleisure. Crafted from a premium soft-touch cotton blend with the iconic WYNX script logo on the chest. This understated colourway makes a confident statement without effort. Wear it alone or layer it — either way, you win.",
-    "features": [
-      "Dusty Mauve-Rose Colourway",
-      "Soft-Touch Cotton Blend",
-      "WYNX Script Chest Logo",
-      "Athletic Form Fit",
-      "Lightweight & Breathable"
-    ],
-    "offers": [
-      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
-    ],
-    "buyAtPrice": 249,
-    "img": "/products/wynx-tshirt-mauve-1.jpg",
-    "reviewData": [
-      {"name": "Hrishikesh Manohar", "rating": 5, "date": "2 days ago", "text": "The dusty mauve colour is one of a kind — I haven't seen this shade in any other brand at this price point. Fabric is extremely soft and the WYNX logo on the chest is clean and minimal. Wearing this everywhere now."},
-      {"name": "Prathamesh Kulkarni", "rating": 4, "date": "5 days ago", "text": "Unique colour, premium feel. The mauve shade is sophisticated without trying too hard. Fabric breathes well and the form fit suits my build at L. Would have given 5 stars but the sleeve length could be slightly longer."},
-      {"name": "Amogh Bhat", "rating": 5, "date": "1 week ago", "text": "My wife picked this colour and I was hesitant, but it looks absolutely amazing. The muted rose-purple tone is masculine and stylish. So many compliments when I wore this to a casual dinner. WYNX quality is elite."},
-      {"name": "Shreekant Joshi", "rating": 5, "date": "3 weeks ago", "text": "This tee is a vibe. The dusty mauve is unique among men's tees and the WYNX branding is just right — not loud, not invisible. Fabric is buttery smooth against skin. Goes perfectly with white shorts or black lowers."},
-      {"name": "Rishab Subramaniam", "rating": 5, "date": "1 month ago", "text": "Bold colour choice and it absolutely paid off. The mauve shade photographs beautifully and looks even better in real life. Soft premium cotton, excellent fit, clean stitching. WYNX tees are an unbelievable value."}
-    ]
-  },
-  {
-    "id": "wynx-tshirt-brown",
-    "name": "Terra Nova Essentials Tee",
-    "price": 319,
-    "oldPrice": 999,
+    "id": "wynx-ft-tshirt-brown",
+    "name": "Cocoa Veldt French Terry Tee",
+    "price": 549,
+    "oldPrice": 1699,
     "discount": 68,
     "category": "men",
     "subcategory": "T-Shirts",
@@ -1725,100 +1653,172 @@ const products = [
     "rating": 4.9,
     "reviews": 5,
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "intensity": "Base",
+    "intensity": "Premium",
     "tags": ["new-arrival", "best-seller"],
-    "description": "Terra Nova Essentials Tee — a warm, earthy deep brown crafted from ultra-premium cotton blend that feels like a second skin. The WYNX script logo sits elegantly on the chest. An earth-tone staple that pairs with virtually every bottom in your wardrobe. Built for the man who keeps it grounded, refined, and effortlessly cool.",
+    "description": "Cocoa Veldt French Terry Tee â€” a rich, deep dark-brown oversized tee crafted from ultra-premium French Terry fabric that gives it a unique textured warmth. The raised loop interior ensures all-day cloud-like comfort, while the embroidered WYNX signature logo on the chest delivers refined branding. A statement essential for the man who values fabric quality above all.",
     "features": [
-      "Deep Walnut-Brown Colourway",
-      "Ultra-Premium Cotton Blend",
-      "WYNX Script Chest Logo",
-      "Second-Skin Form Fit",
-      "All-Day Comfort Fabric"
+      "Deep Dark-Brown Colourway",
+      "Premium French Terry Fabric",
+      "Embroidered WYNX Chest Logo",
+      "Relaxed Oversized Fit",
+      "Soft Loop Interior Texture"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹28 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹75 off on bank offers"}
     ],
-    "buyAtPrice": 269,
-    "img": "/products/wynx-tshirt-brown-1.jpg",
+    "buyAtPrice": 479,
+    "img": "/products/wynx-ft-tshirt-brown.jpg",
     "reviewData": [
-      {"name": "Soumyajit Ghosh", "rating": 5, "date": "1 day ago", "text": "The Terra Nova brown tee is my absolute favourite purchase this year. The earthy deep brown is unique and versatile. Fabric quality is exceptional — incredibly soft and the colour doesn't fade after washing. WYNX is the real deal."},
-      {"name": "Nitesh Chourasiya", "rating": 5, "date": "4 days ago", "text": "This brown tee pairs with literally everything in my wardrobe — navy shorts, black lowers, beige tracks. The WYNX logo on the chest is clean. Fabric is soft and breathable. Perfect for both gym and everyday use."},
-      {"name": "Kaustubh Limaye", "rating": 5, "date": "10 days ago", "text": "Got compliments within the first hour of wearing this. The deep brown colourway is warm and unique — not the typical plain colours. Fits perfectly at XL, fabric is premium quality. Highly recommend the Terra Nova tee."},
-      {"name": "Prashant Dongre", "rating": 4, "date": "3 weeks ago", "text": "Really impressed with this tee. The brown colour is rich and earthy, very different from the usual blacks and greys. Form fit is excellent and the cotton blend breathes well in summer. Packaging was clean and delivery was on time."},
-      {"name": "Shubhrajit Mukherjee", "rating": 5, "date": "2 months ago", "text": "The Terra Nova tee is the one earthy-coloured tee every man needs. Deep brown, premium cotton, perfect logo placement. Wore this on a trek and it handled sweat like a champ. Versatile, comfortable, and stylish. Full marks."}
+      {"name": "Aarav Nambiar", "rating": 5, "date": "1 day ago", "text": "The French Terry fabric on this tee is genuinely next-level. That textured loop feel on the inside is unlike anything I've felt before in a T-shirt at this price. The dark brown is super versatile â€” pairs with olive lowers, black joggers, you name it. WYNX has levelled up with this one."},
+      {"name": "Bhavesh Mirashi", "rating": 5, "date": "4 days ago", "text": "Got this in XL and the oversized fit is spot on. Not too baggy, not too slim â€” just right. The embroidered logo looks premium and doesn't peel or crack after washing. French Terry is an underrated fabric choice and WYNX nailed it."},
+      {"name": "Chirag Wadekar", "rating": 4, "date": "1 week ago", "text": "Solid quality tee. The dark cocoa brown is unique and sophisticated. The French Terry texture is noticeable and gives it a premium feel. My only wish is they'd offer a heavyweight version. Still, this is 5-star quality at 4-star pricing."},
+      {"name": "Dhanraj Gokhale", "rating": 5, "date": "2 weeks ago", "text": "WYNX tees keep getting better. The embroidered logo is chef's kiss â€” tiny, precise, and super clean. The French Terry fabric stays soft even after 8 washes without any pilling. This cocoa brown colourway is now my favourite piece."},
+      {"name": "Eshan Palkar", "rating": 5, "date": "1 month ago", "text": "Ordered this because a friend had it and the quality impressed me. Now I own three WYNX French Terry tees. The dark brown is underrated â€” it complements literally every bottom colour. Fabric is thick enough to feel premium, light enough to breathe."}
     ]
   },
   {
-    "id": "wynx-tshirt-charcoal",
-    "name": "Graphite Stealth Core Tee",
-    "price": 279,
-    "oldPrice": 899,
-    "discount": 69,
-    "category": "men",
-    "subcategory": "T-Shirts",
-    "badge": "Best Seller",
-    "rating": 4.8,
-    "reviews": 5,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "intensity": "Base",
-    "tags": ["new-arrival", "best-seller", "trending"],
-    "description": "Graphite Stealth Core Tee — a premium dark charcoal grey that exudes quiet confidence. The soft-touch cotton blend fabric delivers unmatched comfort, while the WYNX script logo on the chest adds signature branding in understated white. Versatile, sharp, and built for the man who moves through the world with precision.",
-    "features": [
-      "Dark Charcoal Grey Colourway",
-      "Soft-Touch Cotton Blend",
-      "WYNX Script Logo in White",
-      "Athletic Form Fit",
-      "Anti-Shrink Fabric"
-    ],
-    "offers": [
-      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "Paytm ₹50 off"}
-    ],
-    "buyAtPrice": 229,
-    "img": "/products/wynx-tshirt-charcoal-1.jpg",
-    "reviewData": [
-      {"name": "Saurabh Deshpande", "rating": 5, "date": "2 days ago", "text": "The Graphite Stealth tee is everything. Dark charcoal that looks sharp with any outfit. The cotton blend is incredibly soft — zero discomfort even after wearing all day. WYNX logo in white on the chest is clean and minimal. Love it."},
-      {"name": "Vinayak Apte", "rating": 5, "date": "6 days ago", "text": "Been wearing this grey tee for a week straight and it's still fresh — no pilling, no stretching, and the colour remains rich. The anti-shrink fabric actually works. This is my new everyday tee. Value is incredible."},
-      {"name": "Sudarshan Hegde", "rating": 4, "date": "2 weeks ago", "text": "Clean charcoal tone, great form fit. The WYNX white logo on the chest is the perfect finishing touch. Fabric quality is above expectations for this price range. Minor wish — an XS size option. Otherwise flawless."},
-      {"name": "Aniket Marathe", "rating": 5, "date": "1 month ago", "text": "This is the tee you throw on when you want to look put together with zero effort. Deep charcoal, WYNX logo, premium cotton — simple but premium in every way. Fits my athletic build perfectly at L. Ordering another."},
-      {"name": "Pushkar Pande", "rating": 5, "date": "2 months ago", "text": "The Graphite Stealth tee is now my gym-to-street go-to. Wore it for a workout, then straight to a café without changing and got compliments. That's the WYNX effect — premium quality at a price that doesn't hurt."}
-    ]
-  },
-  {
-    "id": "wynx-tshirt-navy",
-    "name": "Oceanic Prestige Signature Tee",
-    "price": 299,
-    "oldPrice": 899,
-    "discount": 67,
+    "id": "wynx-ft-tshirt-navy",
+    "name": "Midnight Fleet French Terry Tee",
+    "price": 569,
+    "oldPrice": 1799,
+    "discount": 68,
     "category": "men",
     "subcategory": "T-Shirts",
     "badge": "Top Rated",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Premium",
+    "tags": ["new-arrival", "trending"],
+    "description": "Midnight Fleet French Terry Tee â€” a commanding deep navy blue crafted in ultra-premium French Terry for that perfect balance between casual and elevated. The embroidered WYNX logo sits boldly on the left chest in crisp white â€” sharp, clean, unforgettable. A boxy oversized silhouette that works effortlessly from morning workouts to evening outings.",
+    "features": [
+      "Deep Midnight Navy Colourway",
+      "French Terry Loopback Fabric",
+      "Embroidered White WYNX Logo",
+      "Boxy Oversized Cut",
+      "Pre-Shrunk Prestige Finish"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+    ],
+    "buyAtPrice": 499,
+    "img": "/products/wynx-ft-tshirt-navy.jpg",
+    "reviewData": [
+      {"name": "Fahad Siddiqui", "rating": 5, "date": "2 days ago", "text": "This navy French Terry tee from WYNX is exceptional. The embroidered logo is sharp and doesn't fade. The fabric has that premium loopback texture which feels luxurious inside. Wearing this everywhere â€” gym, coffee shop, casual dinners. Totally versatile."},
+      {"name": "Gaurav Bendale", "rating": 5, "date": "5 days ago", "text": "I was comparing this to branded tees that cost 3x more and honestly WYNX wins on fabric quality. The navy is rich and deep, not washed out. French Terry is thicker and more structured than regular cotton. Very impressed."},
+      {"name": "Harshit Gaur", "rating": 5, "date": "2 weeks ago", "text": "The oversized boxy cut of this tee is exactly what I was looking for. Not a skinny fit, not overly baggy â€” just that perfect drop shoulder look. The navy colour with white embroidered logo is clean and premium. Love this piece."},
+      {"name": "Ishan Malhotra", "rating": 4, "date": "3 weeks ago", "text": "Great tee overall. The French Terry fabric is the highlight â€” super soft, textured, and holds its shape well. Navy is a classic colour that works with everything. Would love to see more colourways. Otherwise, a solid buy."},
+      {"name": "Jayesh Nimkar", "rating": 5, "date": "2 months ago", "text": "The Midnight Fleet tee lives up to its name. The deep navy is perfect and the French Terry fabric quality is outstanding. The fit is relaxed without looking sloppy. Embroidered logo is neat and premium. WYNX earns every rupee."}
+    ]
+  },
+  {
+    "id": "wynx-ft-tshirt-black",
+    "name": "Onyx Phantom French Terry Tee",
+    "price": 579,
+    "oldPrice": 1799,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Best Seller",
     "rating": 4.9,
     "reviews": 5,
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "intensity": "Base",
-    "tags": ["new-arrival", "best-seller"],
-    "description": "Oceanic Prestige Signature Tee — a deep, classic navy blue refined for the modern man. Premium cotton-blend fabric with a form-fitting athletic cut and the iconic WYNX script logo on the chest. Navy never goes wrong — this is your versatile anchor piece that works with everything and elevates everything it touches.",
+    "intensity": "Premium",
+    "tags": ["new-arrival", "best-seller", "trending"],
+    "description": "Onyx Phantom French Terry Tee â€” the definitive black tee, reimagined in premium French Terry for maximum texture and depth. The soft loopback construction feels plush against the skin while keeping the silhouette structured. The tone-on-tone embroidered WYNX logo blends subtly into the black for a stealth aesthetic that never screams but always commands attention.",
     "features": [
-      "Deep Navy Blue Colourway",
-      "Premium Cotton-Blend Fabric",
-      "WYNX Script Chest Logo",
-      "Form-Fitting Athletic Cut",
-      "Fade-Resistant Colour"
+      "Deep Onyx Black Colourway",
+      "French Terry Loopback Fabric",
+      "Tone-on-Tone Embroidered Logo",
+      "Relaxed Oversized Drop-Shoulder",
+      "Anti-Fade Colour Treatment"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹75 off on bank offers"}
     ],
-    "buyAtPrice": 249,
-    "img": "/products/wynx-tshirt-navy-1.jpg",
+    "buyAtPrice": 509,
+    "img": "/products/wynx-ft-tshirt-black.jpg",
     "reviewData": [
-      {"name": "Kedar Kulkarni", "rating": 5, "date": "1 day ago", "text": "The Oceanic Prestige tee is a masterclass in simplicity done right. Deep navy, premium cotton, WYNX logo — that's all you need. Fabric is incredibly soft and the fit is spot on for an athletic build. Ordering all 5 colours now."},
-      {"name": "Swapnil Ghanekar", "rating": 5, "date": "3 days ago", "text": "Navy is always a safe choice but WYNX elevates it to something special. The fabric quality is exceptional — no stiffness, no cling, just smooth comfort all day. The fade-resistant colour claim is real, still vibrant after 15 washes."},
-      {"name": "Amartya Sengupta", "rating": 5, "date": "1 week ago", "text": "I bought the navy first to test the quality and now I've ordered the maroon and charcoal too. The form-fit is perfect for my athletic build and the cotton blend is ultra-soft. WYNX tees are criminally underpriced."},
-      {"name": "Parth Parekh", "rating": 4, "date": "3 weeks ago", "text": "Great quality navy tee from WYNX. The deep navy tone is rich and doesn't look washed-out. WYNX script logo placement on the chest is tasteful. Form fit is excellent at M. Minor note — delivery took 3 days longer than promised."},
-      {"name": "Aarav Jaiswal", "rating": 5, "date": "1 month ago", "text": "The Oceanic Prestige tee is now my go-to casual piece. Deep navy, soft cotton, clean WYNX branding — it checks every box. Wore it to a meeting, then straight to the gym. Zero wrinkle, zero discomfort. Pure quality from WYNX."}
+      {"name": "Kartik Maheshwari", "rating": 5, "date": "1 day ago", "text": "The Onyx Phantom is the perfect black tee. The French Terry texture adds depth to what would otherwise be a plain black tee. Tone-on-tone embroidered logo is super clean and subtle. Fabric is thick, soft, and luxurious. This is now my go-to every single day."},
+      {"name": "Lakshman Pillai", "rating": 5, "date": "3 days ago", "text": "Black tees are everywhere but this one is genuinely different. The French Terry loopback makes it look premium and feel incredible. The drop shoulder cut is trendy but not try-hard. Size L fits me perfectly. Anti-fade treatment actually works â€” still pitch black after 12 washes."},
+      {"name": "Mohit Kukreja", "rating": 5, "date": "1 week ago", "text": "Got compliments on this tee twice in the same week. People assumed it was some expensive European brand. The French Terry texture is unlike regular cotton and catches the light beautifully. WYNX is genuinely world-class quality."},
+      {"name": "Nikhil Bajaj", "rating": 4, "date": "2 weeks ago", "text": "Solid premium black tee. The French Terry fabric is the star here â€” soft, structured, and unique. The drop shoulder fit looks great on my frame at L. Logo is subtle and tasteful. Would've loved if they had a heavyweight 280GSM version. Still, excellent buy."},
+      {"name": "Omkar Joshi", "rating": 5, "date": "1 month ago", "text": "I own 4 WYNX tees and this black one is my absolute favourite. The French Terry fabric is luxurious and the tone-on-tone embroidery is elite craftsmanship. This tee looks just as good after 20 washes. A permanent wardrobe staple for me."}
+    ]
+  },
+  {
+    "id": "wynx-ft-tshirt-mauve",
+    "name": "Dusty Rose Prestige French Terry Tee",
+    "price": 559,
+    "oldPrice": 1699,
+    "discount": 67,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Limited Edition",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Premium",
+    "tags": ["new-arrival", "trending"],
+    "description": "Dusty Rose Prestige French Terry Tee â€” a sophisticated muted mauve-berry colourway that redefines masculine colour dressing. Crafted from premium French Terry fabric with a satisfying textured interior, this oversized tee is for the confident man who isn't afraid of colour. The embroidered WYNX logo on the chest completes a look that is equal parts effortless and elevated.",
+    "features": [
+      "Muted Mauve-Berry Colourway",
+      "Premium French Terry Fabric",
+      "Embroidered WYNX Logo Detail",
+      "Relaxed Oversized Silhouette",
+      "Colour-Lock Wash Technology"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+    ],
+    "buyAtPrice": 489,
+    "img": "/products/wynx-ft-tshirt-mauve.jpg",
+    "reviewData": [
+      {"name": "Pranav Chitale", "rating": 5, "date": "2 days ago", "text": "Wasn't sure about the mauve colourway for a men's tee but my partner convinced me and I'm so glad. The dusty berry tone is absolutely unique and pairs beautifully with white lowers. French Terry fabric is gorgeous and the embroidered logo is precise and clean."},
+      {"name": "Qasim Shaikh", "rating": 5, "date": "6 days ago", "text": "The Dusty Rose tee is my most-complimented piece this season. The muted mauve is masculine and trendy â€” not feminine at all. French Terry gives it a premium texture. Oversized fit is on point. WYNX knows how to do bold colourways right."},
+      {"name": "Rohan Achrekar", "rating": 4, "date": "1 week ago", "text": "This colour is genuinely beautiful in person â€” the photos don't fully capture it. The mauve has warm pink and purple undertones that look amazing in natural light. French Terry quality is top-notch. Slightly wish the fit was more relaxed, but still excellent."},
+      {"name": "Sarthak Naik", "rating": 5, "date": "3 weeks ago", "text": "The colour-lock wash technology is real â€” I've washed this mauve tee 10 times and the shade is still vibrant and true. French Terry fabric is thick, soft, and comfortable. The embroidered logo adds an artisan touch. Best tee I've owned at this price."},
+      {"name": "Tejas Chavan", "rating": 5, "date": "1 month ago", "text": "Bold choice, flawless execution. The dusty rose colourway is unique in the men's wardrobe space. Pairs with black, cream, and navy lowers. French Terry is comfortable enough for all-day wear. The embroidered WYNX logo is precise and premium. Full marks."}
+    ]
+  },
+  {
+    "id": "wynx-ft-tshirt-charcoal",
+    "name": "Ash Veil French Terry Tee",
+    "price": 549,
+    "oldPrice": 1699,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "New Arrival",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Premium",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Ash Veil French Terry Tee â€” a deep heathered charcoal grey that carries an air of quiet authority. The French Terry construction adds a textured dimension that sets it apart from any ordinary grey tee. With an embroidered WYNX logo on the chest and a relaxed drop-shoulder oversized fit, this tee is engineered for the modern man who lives between the gym and the streets.",
+    "features": [
+      "Heathered Charcoal Grey Colourway",
+      "French Terry Loopback Construction",
+      "Embroidered WYNX Chest Signature",
+      "Drop-Shoulder Oversized Profile",
+      "Anti-Shrink Prestige Blend"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+    ],
+    "buyAtPrice": 479,
+    "img": "/products/wynx-ft-tshirt-charcoal.jpg",
+    "reviewData": [
+      {"name": "Ujjawal Gupta", "rating": 5, "date": "1 day ago", "text": "The Ash Veil tee is the grey tee I've been searching for. The heathered charcoal has this depth and texture that plain grey can't match. French Terry loopback is soft and premium. Drop-shoulder fit looks incredible on my frame. WYNX quality is unmatched."},
+      {"name": "Vivek Srivastav", "rating": 5, "date": "4 days ago", "text": "I own the navy and black French Terry tees and the charcoal is my favourite of the three. The heathered texture gives it character. The embroidered logo on charcoal looks sharp with the tonal contrast. Anti-shrink claim holds up â€” no issues after multiple washes."},
+      {"name": "Waqar Farooqi", "rating": 5, "date": "1 week ago", "text": "This grey tee is premium beyond its price. The French Terry texture is visible and sophisticated. Oversized drop-shoulder cut is perfectly balanced â€” casual enough for daily wear, sharp enough for outings. Embroidered WYNX logo is crisp and durable."},
+      {"name": "Xitij Bhatt", "rating": 4, "date": "2 weeks ago", "text": "Really solid charcoal tee. The French Terry construction gives it a weight and feel that's far above standard cotton tees. Heathered grey looks great in different lighting conditions. Perfect fit at L for my build. Would order again in a heartbeat."},
+      {"name": "Yuvraj Mehrotra", "rating": 5, "date": "1 month ago", "text": "The Ash Veil tee completes my WYNX collection. Dark heathered charcoal, premium French Terry, embroidered logo â€” everything about this tee communicates quality. It's replaced my old gym tees entirely. Nothing beats WYNX for premium athleisure at this price."}
     ]
   },
   {
@@ -1835,7 +1835,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "trending"],
-    "description": "Amethyst Aura Panel Joggers — a premium lilac-lavender active jogger featuring soft dual side panels in contrasting light orchid tones. Engineered from an ultra-breathable cotton-poly tech fleece, they deliver the ultimate balance of structure and cozy stretch. Finished with a white WYNX crest on the left thigh and secure drawstring waistband.",
+    "description": "Amethyst Aura Panel Joggers â€” a premium lilac-lavender active jogger featuring soft dual side panels in contrasting light orchid tones. Engineered from an ultra-breathable cotton-poly tech fleece, they deliver the ultimate balance of structure and cozy stretch. Finished with a white WYNX crest on the left thigh and secure drawstring waistband.",
     "features": [
       "Aesthetic Lavender-Lilac Tone",
       "Contrasting Side Stripe Panels",
@@ -1844,8 +1844,8 @@ const products = [
       "White WYNX branding"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹30 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹30 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 409,
     "img": "/products/wynx-lavender-jogger.jpg",
@@ -1871,7 +1871,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "best-seller"],
-    "description": "Carbon Eclipse Panel Joggers — a stealthy charcoal grey base accented with deep navy panel inserts on the sides for a sleek, contemporary look. Crafted with double-knit premium fleece for standard durability and all-day ease. Perfect for warming up, cooling down, or lounging in premium comfort.",
+    "description": "Carbon Eclipse Panel Joggers â€” a stealthy charcoal grey base accented with deep navy panel inserts on the sides for a sleek, contemporary look. Crafted with double-knit premium fleece for standard durability and all-day ease. Perfect for warming up, cooling down, or lounging in premium comfort.",
     "features": [
       "Stealth Charcoal & Navy Panels",
       "Double-knit premium tech fleece",
@@ -1880,8 +1880,8 @@ const products = [
       "Signature WYNX script logo"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹25 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹25 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 389,
     "img": "/products/wynx-charcoal-jogger.jpg",
@@ -1907,7 +1907,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Base",
     "tags": ["new-arrival", "trending"],
-    "description": "Sienna Horizon Panel Joggers — a rich earth-toned brown jogger highlighted by warm sand contrast side panels. Designed for the modern athlete, they combine mid-weight cotton-poly blend fleece with utility pockets and a standard tapered fit. A grounded, stylish essential that looks and feels top tier.",
+    "description": "Sienna Horizon Panel Joggers â€” a rich earth-toned brown jogger highlighted by warm sand contrast side panels. Designed for the modern athlete, they combine mid-weight cotton-poly blend fleece with utility pockets and a standard tapered fit. A grounded, stylish essential that looks and feels top tier.",
     "features": [
       "Earthy Sienna Brown Colourway",
       "Contrast Sand Side Panels",
@@ -1916,8 +1916,8 @@ const products = [
       "Tapered modern jogger silhouette"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹30 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹30 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 399,
     "img": "/products/wynx-brown-jogger.png",
@@ -1943,7 +1943,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Pro",
     "tags": ["new-arrival", "best-seller"],
-    "description": "Cabernet Zenith Panel Joggers — a striking deep burgundy maroon base featuring premium contrast panels running down the outer seams. Engineered with high-retention performance fleece for athletic agility and recovery. The ultimate statement lower designed to make you stand out while staying relaxed.",
+    "description": "Cabernet Zenith Panel Joggers â€” a striking deep burgundy maroon base featuring premium contrast panels running down the outer seams. Engineered with high-retention performance fleece for athletic agility and recovery. The ultimate statement lower designed to make you stand out while staying relaxed.",
     "features": [
       "Rich Cabernet Maroon Hue",
       "High-Retention Performance Fleece",
@@ -1952,8 +1952,8 @@ const products = [
       "Embossed signature logo details"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹40 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹40 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 429,
     "img": "/products/wynx-maroon-jogger.png",
@@ -1979,7 +1979,7 @@ const products = [
     "sizes": ["M", "L", "XL", "XXL"],
     "intensity": "Elite",
     "tags": ["new-arrival", "trending"],
-    "description": "Meridian Cobalt Panel Joggers — classic dark navy blue jogger offset with bright cobalt side paneling. Crafted from premium breathable knit loopback fabric, this jogger provides breathable insulation during cold sessions and lightweight cooling during heavy workouts.",
+    "description": "Meridian Cobalt Panel Joggers â€” classic dark navy blue jogger offset with bright cobalt side paneling. Crafted from premium breathable knit loopback fabric, this jogger provides breathable insulation during cold sessions and lightweight cooling during heavy workouts.",
     "features": [
       "Deep Navy & Cobalt Panels",
       "Breathable Loopback Tech Knit",
@@ -1988,8 +1988,8 @@ const products = [
       "Crisp white WYNX crest logo"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹35 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹50 off on bank offers"}
+      {"type": "bundle", "text": "â‚¹35 off â€” Add 2 items to unlock offer"},
+      {"type": "bank", "text": "â‚¹50 off on bank offers"}
     ],
     "buyAtPrice": 419,
     "img": "/products/wynx-navy-jogger.png",

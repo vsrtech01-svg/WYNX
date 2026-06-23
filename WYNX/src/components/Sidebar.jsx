@@ -8,7 +8,7 @@ const Sidebar = ({ onFilterChange, activeFilters = {}, onComingSoon }) => {
     { icon: <Shirt size={18} />, label: 'All Products', value: 'all', available: true },
     { icon: <Layers size={18} />, label: 'Lowers', value: 'Lowers', available: true },
     { icon: <Waves size={18} />, label: 'Shorts', value: 'Shorts', available: true },
-    { icon: <Ruler size={18} />, label: 'Tops', value: 'Tops', available: false },
+    { icon: <Ruler size={18} />, label: 'T-Shirts', value: 'T-Shirts', available: true },
     { icon: <Zap size={18} />, label: 'Compression', value: 'Compression', available: false },
   ];
 
@@ -60,7 +60,7 @@ const Sidebar = ({ onFilterChange, activeFilters = {}, onComingSoon }) => {
     >
       <div className={styles.header}>
         <h2>Filters</h2>
-        <p>WYNX Track Pants</p>
+        <p>WYNX Collection</p>
       </div>
 
       <nav className={styles.categories}>
