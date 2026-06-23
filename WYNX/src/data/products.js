@@ -1,4 +1,4 @@
-﻿// Full product catalog for WYNX eCommerce â€” LOWERS ONLY
+// Full product catalog for WYNX eCommerce â€” LOWERS ONLY
 // Each product has a unique token for WhatsApp order tracking
 // Prices in INR (â‚¹)
 const products = [
@@ -1999,6 +1999,78 @@ const products = [
       {"name": "Kartik Sobti", "rating": 5, "date": "1 week ago", "text": "Outstanding material. Keeps me dry during high intensity workouts. The contrast panels are clean and well stitched."},
       {"name": "Mayank Talwar", "rating": 4, "date": "3 weeks ago", "text": "Highly durable. The stitching quality is solid. Perfect for active lifestyle. Will buy another color soon."},
       {"name": "Naveen Dua", "rating": 5, "date": "1 month ago", "text": "Very stylish and comfortable. The design is unique and fabric feels premium. Absolute bargain at this price point."}
+    ]
+  },
+  {
+    "id": "wynx-ft-tshirt-black-v2",
+    "name": "Void Eclipse Oversized French Terry Tee",
+    "price": 549,
+    "oldPrice": 1699,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "New Drop",
+    "rating": 4.9,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Premium",
+    "tags": ["new-arrival", "best-seller"],
+    "description": "Void Eclipse Oversized French Terry Tee — the purest expression of black, reimagined in premium French Terry construction. This is the blacker-than-black statement tee with a relaxed oversized drop-shoulder silhouette and a subtle tone-on-tone embroidered WYNX logo that whispers prestige. Crafted for those who demand the absolute best in everyday luxury.",
+    "features": [
+      "Pure Jet-Black Colourway",
+      "Premium French Terry Fabric",
+      "Tone-on-Tone Embroidered WYNX Logo",
+      "Relaxed Oversized Drop-Shoulder Cut",
+      "Anti-Pilling Long-Wear Treatment"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹50 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹75 off on bank offers"}
+    ],
+    "buyAtPrice": 479,
+    "img": "/products/wynx-ft-tshirt-black-v2.jpg",
+    "reviewData": [
+      {"name": "Aakash Sengupta", "rating": 5, "date": "1 day ago", "text": "This is hands down the best black tee I've ever bought. The French Terry fabric has a depth and texture that plain black cotton can never achieve. Oversized fit is perfectly balanced — not sloppy, not tight. The embroidered WYNX logo is razor-sharp and adds that luxury finish."},
+      {"name": "Balraj Tiwari", "rating": 5, "date": "3 days ago", "text": "I've tried many black oversized tees from different brands and this is at a different level. The fabric quality of French Terry gives it a premium weight and feel. Anti-pilling treatment actually works — no fuzz after 10+ washes. This tee is a permanent wardrobe essential."},
+      {"name": "Chandan Mishra", "rating": 5, "date": "1 week ago", "text": "The Void Eclipse is exactly the kind of product that justifies the WYNX brand name. Pure jet black, premium fabric with visible texture, clean oversized silhouette — it's the tee you reach for on days when you need to look effortlessly good. Worth every rupee."},
+      {"name": "Devendra Varma", "rating": 4, "date": "2 weeks ago", "text": "Really impressed with this tee. The French Terry texture on black looks incredibly sophisticated and unique. The drop-shoulder cut sits great on my frame at L. Logo is subtle and tasteful. Slightly wish the hem was slightly longer but overall a stellar product."},
+      {"name": "Farhan Ansari", "rating": 5, "date": "1 month ago", "text": "WYNX keeps outdoing themselves. This black French Terry tee is the epitome of understated luxury. The fabric has just the right weight, the fit is relaxed without looking shapeless, and the embroidered logo looks like it belongs on a designer piece. Best purchase this month."}
+    ]
+  },
+  {
+    "id": "wynx-ft-tshirt-choco",
+    "name": "Mocha Elevation French Terry Tee",
+    "price": 569,
+    "oldPrice": 1799,
+    "discount": 68,
+    "category": "men",
+    "subcategory": "T-Shirts",
+    "badge": "Limited",
+    "rating": 4.8,
+    "reviews": 5,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "intensity": "Premium",
+    "tags": ["new-arrival", "trending"],
+    "description": "Mocha Elevation French Terry Tee — a warm, rich chocolate brown crafted in premium French Terry for those who understand that colour is a statement. The soft loopback interior wraps you in comfort while the relaxed oversized structure creates a silhouette that's effortlessly cool. The embroidered WYNX logo in cream-white on the chest is the perfect finishing touch on this earth-toned masterpiece.",
+    "features": [
+      "Rich Chocolate Brown Colourway",
+      "Premium French Terry Loopback Fabric",
+      "Cream-White Embroidered WYNX Logo",
+      "Relaxed Oversized Silhouette",
+      "Fade-Resistant Colour Technology"
+    ],
+    "offers": [
+      {"type": "bundle", "text": "₹50 off — Add 2 items to unlock offer"},
+      {"type": "bank", "text": "₹75 off on bank offers"}
+    ],
+    "buyAtPrice": 499,
+    "img": "/products/wynx-ft-tshirt-choco.jpg",
+    "reviewData": [
+      {"name": "Gaurav Sondhi", "rating": 5, "date": "2 days ago", "text": "The Mocha Elevation tee is something special. That rich chocolate brown in French Terry is absolutely unique — I've never seen this combination anywhere else. The cream-white embroidered logo pops beautifully against the brown. Fabric is plush, soft, and structured perfectly."},
+      {"name": "Hemant Pawar", "rating": 5, "date": "5 days ago", "text": "This chocolate brown French Terry tee pairs with literally everything — white lowers, cream joggers, beige shorts, even dark navys. The fabric quality is exceptional and the oversized cut is exactly what modern streetwear demands. WYNX has created a wardrobe essential."},
+      {"name": "Ishwar Patil", "rating": 4, "date": "1 week ago", "text": "Very unique colourway. The chocolate brown is warm and earthy without being boring. French Terry gives it a texture you can feel and see — it's clearly a step above regular cotton. The cream embroidery on the chest is a great design choice. Highly satisfied."},
+      {"name": "Jayant Kaushik", "rating": 5, "date": "3 weeks ago", "text": "Got tonnes of compliments wearing this Mocha tee for the first time. The colour is rich and unique, the French Terry fabric has a premium heft, and the WYNX embroidery is crisp and precise. Fade-resistant claim holds true — still deep chocolate brown after 8 washes."},
+      {"name": "Kapil Sachdev", "rating": 5, "date": "1 month ago", "text": "This is a tee that makes you feel like you're wearing something expensive — because the quality genuinely justifies it. The warm chocolate brown in French Terry is sophisticated and unique. The oversized fit is perfectly measured — relaxed but intentional. Pure WYNX class."}
     ]
   }
 ];
