@@ -15,6 +15,7 @@ import AboutPage from './pages/AboutPage';
 import TrendingPage from './pages/TrendingPage';
 import NewArrivalsPage from './pages/NewArrivalsPage';
 import PolicyPage from './pages/PolicyPage';
+import SocialPanel from './components/SocialPanel';
 
 // Mobile page transition variants
 const mobilePageVariants = {
@@ -90,6 +91,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
+      <SocialPanel />
       <MobileBottomNav />
     </>
   );
