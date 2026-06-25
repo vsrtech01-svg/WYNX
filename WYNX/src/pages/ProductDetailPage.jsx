@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import styles from './ProductDetailPage.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Minus, Plus, ShoppingCart, Check, Star, Tag, Percent, MessageCircle, Truck } from 'lucide-react';
 import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
@@ -325,7 +325,7 @@ const ProductDetailPage = () => {
             {product.offers && product.offers.length > 0 && (
               <div className={styles.offersSection}>
                 <h3 className={styles.sectionLabel}>
-                  <Percent size={14} /> Available Offers
+                  <Truck size={14} /> Delivery Offers
                 </h3>
                 <div className={styles.offersList}>
                   {product.offers.map((offer, i) => (

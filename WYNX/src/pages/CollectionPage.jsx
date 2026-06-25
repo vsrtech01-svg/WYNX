@@ -186,43 +186,74 @@ const CollectionPage = () => {
                 {filteredProducts.map((product, index) => (
                   <motion.div
                     key={product.id}
-                    className={styles.productCard}
+                    className={`${styles.productCard} ${product.soldOut ? styles.soldOutCard : ''}`}
                     initial={{ y: 50, opacity: 0 }}
                     animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                     exit={{ scale: 0.8, opacity: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
                     layout
                   >
-                    <Link 
-                      to={`/product/${product.id}`} 
-                      style={{ textDecoration: 'none', color: 'inherit' }}
-                      onClick={(e) => handleProductClick(e, product)}
-                    >
-                      <div className={`product-image-container ${styles.imageContainer}`}>
-                        {product.badge && <div className={styles.badge}>{product.badge}</div>}
-                        {product.discount && (
-                          <div className={styles.discountBadge}>↓{product.discount}%</div>
-                        )}
-                        <img src={product.img} alt={product.name} />
-                        <div className={styles.imageOverlay}>
-                          <motion.button 
-                            className={styles.quickAdd}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={(e) => handleQuickAdd(e, product)}
+                    {product.soldOut ? (
+                      /* Sold Out — no link, no quick add */
+                      <div>
+                        <div className={`product-image-container ${styles.imageContainer}`}>
+                          {product.badge && <div className={styles.badge}>{product.badge}</div>}
+                          <img src={product.img} alt={product.name} style={{ filter: 'grayscale(100%)' }} />
+                          <motion.div
+                            className={styles.soldOutOverlay}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.6, delay: index * 0.05 + 0.2 }}
                           >
-                            Quick Add
-                          </motion.button>
+                            <motion.span
+                              className={styles.soldOutTag}
+                              initial={{ scale: 0.8, opacity: 0 }}
+                              animate={{ scale: 1, opacity: 1 }}
+                              transition={{ type: 'spring', stiffness: 300, damping: 20, delay: index * 0.05 + 0.3 }}
+                            >
+                              SOLD OUT
+                            </motion.span>
+                          </motion.div>
+                        </div>
+                        <h3 className={`${styles.productName} ${styles.soldOutName}`}>{product.name}</h3>
+                        <p className={styles.productCategory}>{product.subcategory}</p>
+                        <div className={styles.priceContainer}>
+                          <span className={`${styles.price} ${styles.soldOutPrice}`}>₹{product.price}</span>
+                          {product.oldPrice && <span className={styles.oldPrice}>₹{product.oldPrice}</span>}
                         </div>
                       </div>
-                      <h3 className={styles.productName}>{product.name}</h3>
-                      <p className={styles.productCategory}>{product.subcategory}</p>
-                      <div className={styles.priceContainer}>
-                        <span className={styles.price}>₹{product.price}</span>
-                        {product.oldPrice && <span className={styles.oldPrice}>₹{product.oldPrice}</span>}
-                        {product.discount && <span className={styles.discountText}>{product.discount}% off</span>}
-                      </div>
-                    </Link>
+                    ) : (
+                      <Link
+                        to={`/product/${product.id}`}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                        onClick={(e) => handleProductClick(e, product)}
+                      >
+                        <div className={`product-image-container ${styles.imageContainer}`}>
+                          {product.badge && <div className={styles.badge}>{product.badge}</div>}
+                          {product.discount && (
+                            <div className={styles.discountBadge}>↓{product.discount}%</div>
+                          )}
+                          <img src={product.img} alt={product.name} />
+                          <div className={styles.imageOverlay}>
+                            <motion.button
+                              className={styles.quickAdd}
+                              whileHover={{ scale: 1.05 }}
+                              whileTap={{ scale: 0.95 }}
+                              onClick={(e) => handleQuickAdd(e, product)}
+                            >
+                              Quick Add
+                            </motion.button>
+                          </div>
+                        </div>
+                        <h3 className={styles.productName}>{product.name}</h3>
+                        <p className={styles.productCategory}>{product.subcategory}</p>
+                        <div className={styles.priceContainer}>
+                          <span className={styles.price}>₹{product.price}</span>
+                          {product.oldPrice && <span className={styles.oldPrice}>₹{product.oldPrice}</span>}
+                          {product.discount && <span className={styles.discountText}>{product.discount}% off</span>}
+                        </div>
+                      </Link>
+                    )}
                   </motion.div>
                 ))}
               </AnimatePresence>

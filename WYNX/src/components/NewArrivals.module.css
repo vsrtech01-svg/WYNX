@@ -151,6 +151,53 @@
   opacity: 1;
 }
 
+/* Sold Out */
+.soldOutCard {
+  cursor: default;
+}
+
+.soldOutOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  border-radius: 10px;
+}
+
+.soldOutTag {
+  background: rgba(0, 0, 0, 0.82);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 768px) {
+  .soldOutTag {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.soldOutName {
+  color: var(--secondary) !important;
+}
+
+.soldOutPrice {
+  color: var(--secondary) !important;
+}
+
+
 .quickAdd {
   background-color: white;
   color: var(--primary);

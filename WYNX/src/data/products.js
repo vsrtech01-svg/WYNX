@@ -29,18 +29,8 @@ const products = [
       "Durable Fabric"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      },
-      {
-        "type": "bank",
-        "text": "Paytm â‚¹50 off"
-      },
-      {
-        "type": "bank",
-        "text": "â‚¹50 off on bank offers"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 439,
     "img": "/products/wynx-black-track-1.png"
@@ -75,10 +65,8 @@ const products = [
       "Zip Pockets"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 416,
     "img": "/products/wynx-black-track-2.png"
@@ -113,10 +101,8 @@ const products = [
       "Deep Pockets"
     ],
     "offers": [
-      {
-        "type": "bank",
-        "text": "Best value for you â€” Bank offers available"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 385,
     "img": "/products/wynx-black-3line-1.png"
@@ -151,10 +137,8 @@ const products = [
       "Reinforced Stitching"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 355,
     "img": "/products/wynx-navy-solid-1.png"
@@ -188,10 +172,8 @@ const products = [
       "Anti-Shrink Fabric"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 402,
     "img": "/products/wynx-black-3line-1.png"
@@ -226,10 +208,8 @@ const products = [
       "Modern Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 439,
     "img": "/products/wynx-black-track-1.png"
@@ -264,10 +244,8 @@ const products = [
       "Relaxed Athletic Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 381,
     "img": "/products/wynx-charcoal-track-1.png"
@@ -302,18 +280,8 @@ const products = [
       "Reinforced Stitching"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      },
-      {
-        "type": "bank",
-        "text": "Paytm â‚¹50 off"
-      },
-      {
-        "type": "bank",
-        "text": "â‚¹50 off on bank offers"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 427,
     "img": "/products/wynx-navy-solid-1.png"
@@ -345,18 +313,8 @@ const products = [
       "Durable & Long-Lasting"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      },
-      {
-        "type": "bank",
-        "text": "Paytm â‚¹50 off"
-      },
-      {
-        "type": "bank",
-        "text": "â‚¹50 off on bank offers"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 393,
     "img": "/products/wynx-black-track-1.png"
@@ -392,10 +350,8 @@ const products = [
       "Anti-Shrink Fabric"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 436,
     "img": "/products/wynx-black-track-2.png"
@@ -430,10 +386,8 @@ const products = [
       "Comfortable Athletic Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 395,
     "img": "/products/wynx-black-3line-1.png"
@@ -468,10 +422,8 @@ const products = [
       "Anti-Wrinkle Fabric"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 378,
     "img": "/products/wynx-black-track-1.png"
@@ -506,10 +458,8 @@ const products = [
       "Comfortable Athletic Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 435,
     "img": "/products/wynx-charcoal-track-2.png"
@@ -544,10 +494,8 @@ const products = [
       "Shape-Retaining Material"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 393,
     "img": "/products/wynx-charcoal-track-1.png"
@@ -582,10 +530,8 @@ const products = [
       "Deep Pockets"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 403,
     "img": "/products/wynx-navy-track-1.png"
@@ -620,10 +566,8 @@ const products = [
       "Elastic Waistband"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 351,
     "img": "/products/wynx-navy-3line-1.png"
@@ -658,10 +602,8 @@ const products = [
       "Breathable Fabric"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 352,
     "img": "/products/wynx-black-track-2.png"
@@ -696,10 +638,8 @@ const products = [
       "Athletic Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 367,
     "img": "/products/wynx-charcoal-track-2.png"
@@ -734,10 +674,8 @@ const products = [
       "Premium Build Quality"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 391,
     "img": "/products/wynx-black-panel-1.png"
@@ -773,10 +711,8 @@ const products = [
       "Wynx Logo Branding"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 429,
     "img": "/products/wynx-black-track-1.png"
@@ -811,10 +747,8 @@ const products = [
       "Relaxed Modern Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 386,
     "img": "/products/wynx-navy-solid-1.png"
@@ -850,10 +784,8 @@ const products = [
       "Maximum Flexibility"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 433,
     "img": "/products/wynx-navy-track-1.png"
@@ -889,10 +821,8 @@ const products = [
       "Modern Relaxed Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 387,
     "img": "/products/wynx-navy-track-1.png"
@@ -927,10 +857,8 @@ const products = [
       "Wynx Logo Branding"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹37 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 405,
     "img": "/products/wynx-black-panel-1.png"
@@ -966,10 +894,8 @@ const products = [
       "Wynx Logo Branding"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Buy More Save More"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 422,
     "img": "/products/wynx-navy-3line-2.png"
@@ -1005,10 +931,8 @@ const products = [
       "Wynx Logo Branding"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 448,
     "img": "/products/wynx-navy-solid-1.png"
@@ -1043,10 +967,8 @@ const products = [
       "Comfortable Fit"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 444,
     "img": "/products/wynx-navy-3line-1.png"
@@ -1082,10 +1004,8 @@ const products = [
       "All-Day Comfort"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 443,
     "img": "/products/wynx-navy-3line-2.png"
@@ -1121,10 +1041,8 @@ const products = [
       "Wynx Logo Branding"
     ],
     "offers": [
-      {
-        "type": "bundle",
-        "text": "â‚¹36 off â€” Add 2 items to unlock offer"
-      }
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 416,
     "img": "/products/wynx-black-panel-1.png"
@@ -1136,6 +1054,7 @@ const products = [
     "oldPrice": 1499,
     "discount": 68,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "New Drop",
     "rating": 4.8,
@@ -1145,7 +1064,10 @@ const products = [
     "tags": ["new-arrival", "shorts", "trending"],
     "description": "Alpine Frost Sport Shorts â€” pristine white with a clean, minimal WYNX script logo. Ultra-lightweight performance fabric with a relaxed athletic fit. These shorts bring effortless sophistication to your gym-to-street rotation.",
     "features": ["Pristine White Colorway", "WYNX Script Logo", "Lightweight Performance Fabric", "Relaxed Athletic Fit"],
-    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 429,
     "img": "/products/wynx-shorts-white-v2.png",
     "reviewData": [
@@ -1162,6 +1084,7 @@ const products = [
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Trending",
     "rating": 4.9,
@@ -1171,7 +1094,10 @@ const products = [
     "tags": ["trending", "shorts", "best-seller"],
     "description": "Sand Drift Lounge Shorts â€” warm beige with the iconic WYNX script logo. A neutral-tone essential that pairs effortlessly with any top. Crafted from premium cotton-blend fabric for all-day comfort whether you're training or unwinding.",
     "features": ["Warm Beige Tone", "Premium Cotton-Blend", "WYNX Script Logo", "Deep Side Pockets"],
-    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-beige-v2.png",
     "reviewData": [
@@ -1188,6 +1114,7 @@ const products = [
     "oldPrice": 1399,
     "discount": 66,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Best Seller",
     "rating": 4.8,
@@ -1197,7 +1124,10 @@ const products = [
     "tags": ["best-seller", "shorts", "trending"],
     "description": "Midnight Cruise Navy Shorts â€” deep navy with white WYNX script branding. Engineered for versatility â€” from morning runs to evening hangouts. The dark navy never fades and the fabric dries in minutes after a wash.",
     "features": ["Deep Navy Colorway", "Quick-Dry Fabric", "WYNX Script Branding", "Fade-Resistant Dye"],
-    "offers": [{"type": "bundle", "text": "â‚¹37 off â€” Buy More Save More"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 419,
     "img": "/products/wynx-shorts-navy-v2.png",
     "reviewData": [
@@ -1214,6 +1144,7 @@ const products = [
     "oldPrice": 1299,
     "discount": 65,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Top Rated",
     "rating": 4.9,
@@ -1223,7 +1154,10 @@ const products = [
     "tags": ["best-seller", "shorts", "new-arrival"],
     "description": "Obsidian Core Essential Shorts â€” deep matte black with white WYNX script logo. The definitive black shorts for every man's rotation. Premium quick-dry fabric, reinforced stitching, and a fit that moves with you. The essential you never knew you needed.",
     "features": ["Deep Matte Black", "Reinforced Stitching", "Quick-Dry Performance", "WYNX Script Logo"],
-    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 409,
     "img": "/products/wynx-shorts-black-v2.png",
     "reviewData": [
@@ -1240,6 +1174,7 @@ const products = [
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Premium",
     "rating": 4.7,
@@ -1249,7 +1184,10 @@ const products = [
     "tags": ["premium", "shorts", "new-arrival"],
     "description": "Graphite Flex Training Shorts â€” sleek charcoal-grey with white WYNX branding. The darkest grey in the lineup delivers a stealth aesthetic while the 4-way stretch fabric handles every lunge, sprint, and deadlift. For the man who trains hard and looks harder.",
     "features": ["Charcoal Grey Colorway", "4-Way Stretch Fabric", "WYNX Performance Logo", "Ergonomic Cut"],
-    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 449,
     "img": "/products/wynx-shorts-charcoal-v2.png",
     "reviewData": [
@@ -1266,6 +1204,7 @@ const products = [
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "New Drop",
     "rating": 4.8,
@@ -1275,7 +1214,10 @@ const products = [
     "tags": ["new-arrival", "shorts", "trending"],
     "description": "Horizon Steel Sport Shorts â€” a refined steel blue that bridges the gap between casual and athletic. The WYNX script logo in white pops against the muted blue, while the quick-dry fabric keeps you fresh through any workout. A versatile colorway built for the modern man.",
     "features": ["Steel Blue Colorway", "Quick-Dry Technology", "WYNX Script Branding", "Relaxed Athletic Fit"],
-    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-steelblue-v2.jpg",
     "reviewData": [
@@ -1292,6 +1234,7 @@ const products = [
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Limited",
     "rating": 4.9,
@@ -1301,7 +1244,10 @@ const products = [
     "tags": ["limited", "shorts", "best-seller"],
     "description": "Ranger Tactical Olive Shorts â€” deep military olive with crisp white WYNX script logo. Inspired by tactical utility wear but refined for street and gym. The dark olive tone commands respect while the performance fabric delivers unrestricted movement.",
     "features": ["Military Olive Tone", "Tactical Utility Style", "WYNX Performance Logo", "4-Way Stretch"],
-    "offers": [{"type": "bundle", "text": "â‚¹37 off â€” Buy More Save More"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 449,
     "img": "/products/wynx-shorts-olive-v2.jpg",
     "reviewData": [
@@ -1318,6 +1264,7 @@ const products = [
     "oldPrice": 1499,
     "discount": 68,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Trending",
     "rating": 4.8,
@@ -1327,7 +1274,10 @@ const products = [
     "tags": ["trending", "shorts", "new-arrival"],
     "description": "Deep Tide Teal Shorts â€” a bold, saturated teal that stands out from every angle. White WYNX branding pops against the deep oceanic tone. Engineered with sweat-wicking fabric for high-intensity training sessions while looking effortlessly premium.",
     "features": ["Deep Teal Colorway", "Sweat-Wicking Fabric", "WYNX Script Logo", "Side-Slit Design"],
-    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 429,
     "img": "/products/wynx-shorts-teal-v2.jpg",
     "reviewData": [
@@ -1344,6 +1294,7 @@ const products = [
     "oldPrice": 1399,
     "discount": 66,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Best Seller",
     "rating": 4.7,
@@ -1353,7 +1304,10 @@ const products = [
     "tags": ["best-seller", "shorts"],
     "description": "Cloud Nine Grey Flex Shorts â€” a versatile mid-grey with white WYNX branding. The neutral grey pairs with literally everything in your wardrobe. Lightweight and stretchy with deep pockets and a secure elastic waistband. The everyday essential.",
     "features": ["Mid-Grey Neutral Tone", "Lightweight Stretch Fabric", "WYNX Script Branding", "Deep Pockets"],
-    "offers": [{"type": "bundle", "text": "â‚¹36 off â€” Add 2 items to unlock offer"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 419,
     "img": "/products/wynx-shorts-grey-v2.jpg",
     "reviewData": [
@@ -1370,6 +1324,7 @@ const products = [
     "oldPrice": 1599,
     "discount": 69,
     "category": "men",
+    "soldOut": true,
     "subcategory": "Shorts",
     "badge": "Premium",
     "rating": 4.9,
@@ -1379,7 +1334,10 @@ const products = [
     "tags": ["premium", "shorts", "trending"],
     "description": "Sage Mist Lounge Shorts â€” a soft, muted sage green with black WYNX script logo. An earthy, calming tone that brings a fresh perspective to your shorts rotation. Premium cotton-blend fabric with a relaxed fit designed for all-day comfort and effortless style.",
     "features": ["Sage Green Colorway", "Premium Cotton-Blend", "WYNX Script Logo", "Relaxed Lounge Fit"],
-    "offers": [{"type": "bank", "text": "â‚¹50 off on bank offers"}],
+    "offers": [
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
+    ],
     "buyAtPrice": 439,
     "img": "/products/wynx-shorts-sage-v2.jpg",
     "reviewData": [
@@ -1412,8 +1370,8 @@ const products = [
       "Deep Side Pockets"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹40 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹50 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 439,
     "img": "/products/wynx-charcoal-panel-1.png",
@@ -1448,8 +1406,8 @@ const products = [
       "Structured Athletic Fit"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹40 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "Paytm â‚¹50 off"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 419,
     "img": "/products/wynx-navy-panel-1.png",
@@ -1484,8 +1442,8 @@ const products = [
       "Wide Athletic Silhouette"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹42 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹50 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 409,
     "img": "/products/wynx-black-panel-2.png",
@@ -1520,8 +1478,8 @@ const products = [
       "Soft Loop Interior Texture"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 479,
     "img": "/products/wynx-ft-tshirt-brown.jpg",
@@ -1556,8 +1514,8 @@ const products = [
       "Pre-Shrunk Prestige Finish"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 499,
     "img": "/products/wynx-ft-tshirt-navy.jpg",
@@ -1592,8 +1550,8 @@ const products = [
       "Anti-Fade Colour Treatment"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 509,
     "img": "/products/wynx-ft-tshirt-black.jpg",
@@ -1628,8 +1586,8 @@ const products = [
       "Colour-Lock Wash Technology"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 489,
     "img": "/products/wynx-ft-tshirt-mauve.jpg",
@@ -1664,8 +1622,8 @@ const products = [
       "Anti-Shrink Prestige Blend"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹50 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 479,
     "img": "/products/wynx-ft-tshirt-charcoal.jpg",
@@ -1700,8 +1658,8 @@ const products = [
       "Crisp white WYNX crest logo"
     ],
     "offers": [
-      {"type": "bundle", "text": "â‚¹35 off â€” Add 2 items to unlock offer"},
-      {"type": "bank", "text": "â‚¹50 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 419,
     "img": "/products/wynx-navy-jogger.png",
@@ -1736,8 +1694,8 @@ const products = [
       "Anti-Pilling Long-Wear Treatment"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹50 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 479,
     "img": "/products/wynx-ft-tshirt-black-v2.jpg",
@@ -1772,8 +1730,8 @@ const products = [
       "Fade-Resistant Colour Technology"
     ],
     "offers": [
-      {"type": "bundle", "text": "₹50 off — Add 2 items to unlock offer"},
-      {"type": "bank", "text": "₹75 off on bank offers"}
+      {"type": "delivery", "text": "Bilkul Muft Delivery — Koi minimum order nahi!"},
+      {"type": "delivery", "text": "Seedha ghar pe pahunchao — Free Shipping on all orders"}
     ],
     "buyAtPrice": 499,
     "img": "/products/wynx-ft-tshirt-choco.jpg",
