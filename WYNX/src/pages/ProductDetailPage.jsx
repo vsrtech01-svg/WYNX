@@ -496,18 +496,43 @@ const ProductDetailPage = () => {
                   initial={{ y: 30, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
+                  style={{ cursor: rProduct.soldOut ? 'default' : 'pointer' }}
                 >
-                  <Link to={`/product/${rProduct.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <div className={`product-image-container ${styles.relatedImage}`}>
-                      <img src={rProduct.img} alt={rProduct.name} />
+                  {rProduct.soldOut ? (
+                    <div>
+                      <div className={`product-image-container ${styles.relatedImage}`} style={{ position: 'relative' }}>
+                        <img src={rProduct.img} alt={rProduct.name} style={{ filter: 'grayscale(100%)' }} />
+                        <div style={{
+                          position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.45)',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '8px'
+                        }}>
+                          <span style={{
+                            background: 'rgba(0,0,0,0.82)', border: '1.5px solid rgba(255,255,255,0.3)',
+                            color: '#fff', fontWeight: 900, fontSize: '0.55rem', textTransform: 'uppercase',
+                            letterSpacing: '0.25em', padding: '0.35rem 0.9rem', borderRadius: '30px',
+                            backdropFilter: 'blur(4px)'
+                          }}>SOLD OUT</span>
+                        </div>
+                      </div>
+                      <h3 className={styles.relatedName} style={{ color: 'var(--secondary)' }}>{rProduct.name}</h3>
+                      <div className={styles.relatedPriceRow}>
+                        <span className={styles.relatedPrice} style={{ color: 'var(--secondary)' }}>₹{rProduct.price}</span>
+                        {rProduct.oldPrice && <span className={styles.relatedOldPrice}>₹{rProduct.oldPrice}</span>}
+                      </div>
                     </div>
-                    <h3 className={styles.relatedName}>{rProduct.name}</h3>
-                    <div className={styles.relatedPriceRow}>
-                      <span className={styles.relatedPrice}>₹{rProduct.price}</span>
-                      {rProduct.oldPrice && <span className={styles.relatedOldPrice}>₹{rProduct.oldPrice}</span>}
-                      {rProduct.discount && <span className={styles.relatedDiscount}>{rProduct.discount}% off</span>}
-                    </div>
-                  </Link>
+                  ) : (
+                    <Link to={`/product/${rProduct.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <div className={`product-image-container ${styles.relatedImage}`}>
+                        <img src={rProduct.img} alt={rProduct.name} />
+                      </div>
+                      <h3 className={styles.relatedName}>{rProduct.name}</h3>
+                      <div className={styles.relatedPriceRow}>
+                        <span className={styles.relatedPrice}>₹{rProduct.price}</span>
+                        {rProduct.oldPrice && <span className={styles.relatedOldPrice}>₹{rProduct.oldPrice}</span>}
+                        {rProduct.discount && <span className={styles.relatedDiscount}>{rProduct.discount}% off</span>}
+                      </div>
+                    </Link>
+                  )}
                 </motion.div>
               ))}
             </div>

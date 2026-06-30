@@ -55,19 +55,7 @@
   max-width: 280px;
 }
 
-.socials {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
 
-.socialIcon {
-  color: var(--on-surface-variant);
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .linksGrid {
   display: grid;
