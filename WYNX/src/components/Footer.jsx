@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import { motion } from 'framer-motion';
 import wynxLogo from '../assets/wynx-logo.png';
-import { ArrowRight, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -48,21 +48,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.newsletterSection}>
-          <h4 className={styles.columnTitle}>Join the Club</h4>
-          <p className={styles.newsletterText}>Subscribe to get special offers, free giveaways, and early access.</p>
-          <form className={styles.newsletterForm} onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Enter your email" className={styles.emailInput} />
-            <motion.button 
-              type="submit" 
-              className={styles.submitBtn}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ArrowRight size={18} />
-            </motion.button>
-          </form>
-        </div>
+
       </div>
 
       <div className={styles.bottomSection}>
