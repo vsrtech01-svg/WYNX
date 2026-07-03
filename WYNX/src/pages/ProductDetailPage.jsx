@@ -274,10 +274,28 @@ const ProductDetailPage = () => {
           >
             <div className={`product-image-container ${styles.mainImage}`}>
               {product.badge && <div className={styles.badge}>{product.badge}</div>}
-              {product.discount && (
-                <div className={styles.discountBadge}>↓{product.discount}% OFF</div>
+              {product.soldOut ? (
+                <>
+                  <img src={product.img} alt={product.name} style={{ filter: 'grayscale(100%)' }} />
+                  <div className={styles.soldOutImageOverlay}>
+                    <motion.span
+                      className={styles.soldOutImageTag}
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 20, delay: 0.4 }}
+                    >
+                      SOLD OUT
+                    </motion.span>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {product.discount && (
+                    <div className={styles.discountBadge}>↓{product.discount}% OFF</div>
+                  )}
+                  <img src={product.img} alt={product.name} />
+                </>
               )}
-              <img src={product.img} alt={product.name} />
             </div>
           </motion.div>
 
@@ -353,10 +371,12 @@ const ProductDetailPage = () => {
                 {product.sizes.map(size => (
                   <motion.button
                     key={size}
-                    className={`${styles.sizeBtn} ${selectedSize === size ? styles.activeSizeBtn : ''}`}
-                    onClick={() => setSelectedSize(size)}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    className={`${styles.sizeBtn} ${selectedSize === size ? styles.activeSizeBtn : ''} ${product.soldOut ? styles.soldOutSizeBtn : ''}`}
+                    onClick={() => !product.soldOut && setSelectedSize(size)}
+                    whileHover={!product.soldOut ? { scale: 1.05 } : {}}
+                    whileTap={!product.soldOut ? { scale: 0.95 } : {}}
+                    disabled={product.soldOut}
+                    style={product.soldOut ? { cursor: 'not-allowed', opacity: 0.4, textDecoration: 'line-through' } : {}}
                   >
                     {size}
                   </motion.button>
@@ -364,74 +384,106 @@ const ProductDetailPage = () => {
               </div>
             </div>
 
-            {/* Quantity */}
-            <div className={styles.quantitySection}>
-              <h3 className={styles.sectionLabel}>Quantity</h3>
-              <div className={styles.quantityControl}>
-                <motion.button 
-                  className={styles.qtyBtn}
-                  onClick={() => setQuantity(q => Math.max(1, q - 1))}
-                  whileTap={{ scale: 0.9 }}
+            {product.soldOut ? (
+              /* Sold Out Banner + Disabled Buttons */
+              <>
+                <motion.div
+                  className={styles.soldOutBanner}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
                 >
-                  <Minus size={16} />
-                </motion.button>
-                <span className={styles.qtyValue}>{quantity}</span>
-                <motion.button 
-                  className={styles.qtyBtn}
-                  onClick={() => setQuantity(q => q + 1)}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Plus size={16} />
-                </motion.button>
-              </div>
-            </div>
+                  <span className={styles.soldOutBannerIcon}>⛔</span>
+                  <div>
+                    <p className={styles.soldOutBannerTitle}>Currently Out of Stock</p>
+                    <p className={styles.soldOutBannerSub}>This product is sold out. Check back soon or explore similar items below.</p>
+                  </div>
+                </motion.div>
+                <div className={styles.actionButtons}>
+                  <button className={`${styles.addToCartBtn} ${styles.soldOutBtn}`} disabled>
+                    <div className={styles.btnContent}>
+                      <ShoppingCart size={18} /> Sold Out
+                    </div>
+                  </button>
+                  <button className={`${styles.buyNowBtn} ${styles.soldOutBtn}`} disabled>
+                    <div className={styles.btnContent}>
+                      <MessageCircle size={18} /> Unavailable
+                    </div>
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                {/* Quantity */}
+                <div className={styles.quantitySection}>
+                  <h3 className={styles.sectionLabel}>Quantity</h3>
+                  <div className={styles.quantityControl}>
+                    <motion.button 
+                      className={styles.qtyBtn}
+                      onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Minus size={16} />
+                    </motion.button>
+                    <span className={styles.qtyValue}>{quantity}</span>
+                    <motion.button 
+                      className={styles.qtyBtn}
+                      onClick={() => setQuantity(q => q + 1)}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Plus size={16} />
+                    </motion.button>
+                  </div>
+                </div>
 
-            {/* Action Buttons */}
-            <div className={styles.actionButtons}>
-              <motion.button 
-                className={`${styles.addToCartBtn} ${!selectedSize ? styles.disabledBtn : ''} ${addedToCart ? styles.addedBtn : ''}`}
-                onClick={handleAddToCart}
-                whileHover={selectedSize ? { scale: 1.02 } : {}}
-                whileTap={selectedSize ? { scale: 0.98 } : {}}
-                disabled={!selectedSize}
-              >
-                <AnimatePresence mode="wait">
-                  {addedToCart ? (
-                    <motion.span
-                      key="added"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className={styles.btnContent}
-                    >
-                      <Check size={18} /> Added to Cart
-                    </motion.span>
-                  ) : (
-                    <motion.span
-                      key="add"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className={styles.btnContent}
-                    >
-                      <ShoppingCart size={18} /> {selectedSize ? `Add to Cart — ₹${product.price}` : 'Select a Size'}
-                    </motion.span>
-                  )}
-                </AnimatePresence>
-              </motion.button>
-              
-              <motion.button
-                className={`${styles.buyNowBtn} ${!selectedSize ? styles.disabledBtn : ''}`}
-                onClick={handleBuyNow}
-                whileHover={selectedSize ? { scale: 1.02 } : {}}
-                whileTap={selectedSize ? { scale: 0.98 } : {}}
-                disabled={!selectedSize}
-              >
-                 <div className={styles.btnContent}>
-                    <MessageCircle size={18} /> Buy Now via WhatsApp
-                 </div>
-              </motion.button>
-            </div>
+                {/* Action Buttons */}
+                <div className={styles.actionButtons}>
+                  <motion.button 
+                    className={`${styles.addToCartBtn} ${!selectedSize ? styles.disabledBtn : ''} ${addedToCart ? styles.addedBtn : ''}`}
+                    onClick={handleAddToCart}
+                    whileHover={selectedSize ? { scale: 1.02 } : {}}
+                    whileTap={selectedSize ? { scale: 0.98 } : {}}
+                    disabled={!selectedSize}
+                  >
+                    <AnimatePresence mode="wait">
+                      {addedToCart ? (
+                        <motion.span
+                          key="added"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className={styles.btnContent}
+                        >
+                          <Check size={18} /> Added to Cart
+                        </motion.span>
+                      ) : (
+                        <motion.span
+                          key="add"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className={styles.btnContent}
+                        >
+                          <ShoppingCart size={18} /> {selectedSize ? `Add to Cart — ₹${product.price}` : 'Select a Size'}
+                        </motion.span>
+                      )}
+                    </AnimatePresence>
+                  </motion.button>
+                  
+                  <motion.button
+                    className={`${styles.buyNowBtn} ${!selectedSize ? styles.disabledBtn : ''}`}
+                    onClick={handleBuyNow}
+                    whileHover={selectedSize ? { scale: 1.02 } : {}}
+                    whileTap={selectedSize ? { scale: 0.98 } : {}}
+                    disabled={!selectedSize}
+                  >
+                     <div className={styles.btnContent}>
+                        <MessageCircle size={18} /> Buy Now via WhatsApp
+                     </div>
+                  </motion.button>
+                </div>
+              </>
+            )}
 
             {/* Features */}
             <div className={styles.features}>

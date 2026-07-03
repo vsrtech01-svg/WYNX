@@ -336,3 +336,80 @@
   justify-content: center;
   gap: 0.4rem;
 }
+
+/* Sold Out styles for Modal */
+.soldOutSheet {
+  border-top: 3px solid #b91c1c;
+}
+
+.soldOutImgOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 5;
+}
+
+.soldOutImgTag {
+  background: rgba(0,0,0,0.85);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+}
+
+.soldOutName {
+  color: var(--secondary) !important;
+}
+
+.soldOutPrice {
+  color: var(--secondary) !important;
+}
+
+.soldOutBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  background: linear-gradient(135deg, rgba(30,20,20,0.06) 0%, rgba(200,0,0,0.05) 100%);
+  border: 1px solid rgba(200,0,0,0.12);
+  border-left: 3px solid #b91c1c;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.soldOutBannerTitle {
+  font-weight: 800;
+  color: #b91c1c;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.soldOutBannerSub {
+  color: var(--on-surface-variant);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.soldOutSizeBtn {
+  cursor: not-allowed !important;
+}
+
+.soldOutActionBtn {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+  filter: grayscale(80%);
+  box-shadow: none !important;
+}

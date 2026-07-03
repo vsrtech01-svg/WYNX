@@ -132,6 +132,96 @@
   }
 }
 
+/* Mobile search toggle button */
+.mobileSearchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  color: var(--on-surface);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.mobileSearchBtn:hover {
+  color: var(--accent);
+  background: rgba(27, 29, 40, 0.06);
+}
+
+@media (min-width: 1024px) {
+  .mobileSearchBtn {
+    display: none;
+  }
+}
+
+/* Mobile expandable search bar */
+.mobileSearchBar {
+  overflow: hidden;
+  border-top: 1px solid rgba(27, 29, 40, 0.07);
+  padding: 0;
+  border-radius: 0 0 24px 24px;
+}
+
+.mobileSearchForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  position: relative;
+}
+
+.mobileSearchIcon {
+  color: var(--on-surface);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.mobileSearchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(27, 29, 40, 0.25);
+  padding: 0.4rem 0.25rem;
+  font-size: 0.875rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  color: var(--on-surface);
+  letter-spacing: 0.03em;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.mobileSearchInput:focus {
+  border-bottom-color: var(--on-surface);
+}
+
+.mobileSearchInput::placeholder {
+  color: var(--on-surface);
+  opacity: 0.4;
+}
+
+.mobileSearchClear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--on-surface);
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .mobileSearchBar {
+    display: none;
+  }
+}
+
+
 .searchIcon {
   position: absolute;
   left: 0.75rem;

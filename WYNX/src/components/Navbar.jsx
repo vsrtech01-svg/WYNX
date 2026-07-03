@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, ShoppingCart, Menu, X } from 'lucide-react';
+import { Search, ShoppingCart, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import wynxLogo from '../assets/wynx-logo.png';
 
@@ -11,6 +11,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { getCartCount } = useCart();
   const [searchQuery, setSearchQuery] = useState('');
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const cartCount = getCartCount();
 
   const navLinks = [
@@ -27,6 +28,7 @@ const Navbar = () => {
     if (searchQuery.trim()) {
       navigate(`/collection/men?search=${encodeURIComponent(searchQuery.trim())}`);
       setSearchQuery('');
+      setMobileSearchOpen(false);
     }
   };
 
@@ -60,6 +62,7 @@ const Navbar = () => {
           </div>
           
           <div className={styles.actions}>
+            {/* Desktop search */}
             <form onSubmit={handleSearch} className={styles.searchWrapper}>
               <Search className={styles.searchIcon} size={16} />
               <input 
@@ -70,6 +73,17 @@ const Navbar = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </form>
+
+            {/* Mobile search toggle */}
+            <motion.button
+              className={styles.mobileSearchBtn}
+              onClick={() => setMobileSearchOpen((o) => !o)}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Search"
+            >
+              {mobileSearchOpen ? <X size={20} /> : <Search size={20} />}
+            </motion.button>
+
             <motion.div
               className={styles.cartBtnWrapper}
               whileHover={{ scale: 1.1 }}
@@ -94,6 +108,41 @@ const Navbar = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* Mobile Search Bar — expands below navbar */}
+        <AnimatePresence>
+          {mobileSearchOpen && (
+            <motion.div
+              className={styles.mobileSearchBar}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25, ease: 'easeInOut' }}
+            >
+              <form onSubmit={handleSearch} className={styles.mobileSearchForm}>
+                <Search size={16} className={styles.mobileSearchIcon} />
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  className={styles.mobileSearchInput}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  autoFocus
+                />
+                {searchQuery && (
+                  <motion.button
+                    type="button"
+                    className={styles.mobileSearchClear}
+                    onClick={() => setSearchQuery('')}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <X size={14} />
+                  </motion.button>
+                )}
+              </form>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.nav>
     </div>
   );

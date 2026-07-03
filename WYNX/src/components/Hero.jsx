@@ -12,9 +12,9 @@ const Hero = ({ title, subtitle, category }) => {
 
   // Carousel images mapped to product IDs
   const heroItems = [
-    { img: "/products/wynx-black-track-1.png", productId: "wynx-solid-black-track-v1" },
-    { img: "/products/wynx-navy-track-1.png", productId: "wynx-solid-blue-track-v2" },
-    { img: "/products/wynx-shorts-black-v2.png", productId: "wynx-shorts-obsidian-core" },
+    { img: "/products/wynx-black-track-1.png", productId: "wynx-solid-black-track-v1", soldOut: false },
+    { img: "/products/wynx-navy-track-1.png", productId: "wynx-solid-blue-track-v2", soldOut: false },
+    { img: "/products/wynx-shorts-black-v2.png", productId: "wynx-shorts-obsidian-core", soldOut: true },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -109,10 +109,11 @@ const Hero = ({ title, subtitle, category }) => {
           >
             <div 
               className={styles.carouselContainer}
-              onClick={() => handleImageClick(heroItems[currentIndex].productId)}
+              onClick={() => !heroItems[currentIndex].soldOut && handleImageClick(heroItems[currentIndex].productId)}
               role="button"
               tabIndex={0}
               aria-label="View product details"
+              style={heroItems[currentIndex].soldOut ? { cursor: 'default' } : {}}
             >
               <AnimatePresence mode="wait">
                 <motion.img
@@ -120,15 +121,36 @@ const Hero = ({ title, subtitle, category }) => {
                   src={heroItems[currentIndex].img}
                   alt="WYNX Wear"
                   className={styles.carouselImg}
+                  style={heroItems[currentIndex].soldOut ? { filter: 'grayscale(100%)' } : {}}
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 />
               </AnimatePresence>
-              <div className={styles.carouselOverlay}>
-                <span className={styles.tapHint}>Tap to view</span>
-              </div>
+              {heroItems[currentIndex].soldOut ? (
+                <motion.div
+                  className={styles.soldOutOverlay}
+                  key={`soldout-${currentIndex}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <motion.span
+                    className={styles.soldOutTag}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20, delay: 0.15 }}
+                  >
+                    SOLD OUT
+                  </motion.span>
+                </motion.div>
+              ) : (
+                <div className={styles.carouselOverlay}>
+                  <span className={styles.tapHint}>Tap to view</span>
+                </div>
+              )}
             </div>
             <div className={styles.backgroundAccent}></div>
           </motion.div>
